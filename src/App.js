@@ -17,10 +17,12 @@ function App() {
             <Link to="/about">About</Link>&emsp;
             <Link to="users">Users</Link>
           </Nav>
-          <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-            <Button variant="outline-light">Search</Button>
-          </Form>
+          <div className="hidden">
+            <Form inline >
+              <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+              <Button variant="outline-light">Search</Button>
+            </Form>
+          </div>
         </Navbar>
         <Switch>
           <Route path='/about' component={About}></Route>
