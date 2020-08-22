@@ -13,9 +13,9 @@ function App() {
         <Navbar bg="primary" variant="dark">
           <Navbar.Brand href="#home">Navbar</Navbar.Brand>
           <Nav className="mr-auto">
-            <Nav.Link><Link to="/">Home</Link></Nav.Link>
-            <Nav.Link><Link to="/about">About</Link></Nav.Link>
-            <Nav.Link><Link to="users">Users</Link></Nav.Link>
+            <Link to="/">Home</Link>&emsp;
+            <Link to="/about">About</Link>&emsp;
+            <Link to="users">Users</Link>
           </Nav>
           <Form inline>
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
