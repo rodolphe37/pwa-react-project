@@ -32,9 +32,9 @@ const Users = () => {
             <th>Id</th>
             <th>Name</th>
             <th>Email</th>
-            <th>Address</th>
-            <th>Phone</th>
-            <th>Website</th>
+            <th className="hidden">Address</th>
+            <th className="hidden">Phone</th>
+            <th className="hidden">Website</th>
           </tr>
         </thead>
         <tbody>
@@ -44,9 +44,9 @@ const Users = () => {
                 <td>{item.id}</td>
                 <td>{item.name}</td>
                 <td>{item.email}</td>
-                <td>{item.address.city}</td>
-                <td>{item.phone}</td>
-                <td>{item.website}</td>
+                <td className="hidden">{item.address.city}</td>
+                <td className="hidden">{item.phone}</td>
+                <td className="hidden">{item.website}</td>
               </tr>
             ))
           }
