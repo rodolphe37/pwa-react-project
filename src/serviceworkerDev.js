@@ -1,4 +1,4 @@
-// For generateVAPIDKeys
+// For generateVAPIDKeys()
 // const webpush = require('web-push');
 
 export default function serviceworkerDev() {
@@ -38,8 +38,7 @@ export default function serviceworkerDev() {
   })
 }
 
-
-// generateVAPIDKeys()
+// For generateVAPIDKeys()
 // const vapidKeys = webpush.generateVAPIDKeys();
 
 // Prints 2 URL Safe Base64 Encoded Strings

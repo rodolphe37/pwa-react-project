@@ -18,6 +18,9 @@
   .hidden{
     display: none;
   }
+  .navbar {
+    width: 107%;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
