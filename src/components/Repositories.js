@@ -12,7 +12,7 @@ const Users = () => {
     const url = "https://api.github.com/users/rodolphe37/repos"
     fetch(url).then((response) => {
       response.json().then((result) => {
-        console.warn(result)
+        console.log(result)
         setData(result)
         localStorage.setItem('repository', JSON.stringify(result))
       })

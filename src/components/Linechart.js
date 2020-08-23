@@ -10,7 +10,6 @@ export class Linecharts extends Component {
   componentDidMount() {
     axios.get(`https://raw.githubusercontent.com/madnight/githut/master/src/data/gh-pull-request.json`)
       .then(res => {
-        console.log(res);
         const ipl = res.data;
         let name = [];
         let year = [];
@@ -20,7 +19,7 @@ export class Linecharts extends Component {
           count.push(record.count);
           name.push(record.name)
         });
-        console.log(count, name, year)
+        // console.log(count, name, year)
         this.setState({
           Data: {
             labels: name,
