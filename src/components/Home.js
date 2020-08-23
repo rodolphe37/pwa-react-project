@@ -20,7 +20,7 @@ const Home = (props) => {
     })
   }, [])
 
-  const { id, public_repos, public_gists, html_url, login, created_at, updated_at, followers } = info
+  const { id, public_repos, public_gists, html_url, login, created_at, updated_at, followers, received_events_url, starred_url } = info
   return (
     <div className="linear-gradient">
       {/* <img className="back-img" src={require('../assets/images/good-weather.jpg')} alt="background" />*/}
@@ -38,7 +38,9 @@ const Home = (props) => {
         <sup>Last Update : <Moment style={{ color: 'red' }} locale="fr">{updated_at}</Moment></sup>
         <hr />
         <br />
-        <div> <p>Followers : {followers}</p></div>
+        <div>
+          <p>Followers : {followers}</p>
+        </div>
       </div>
     </div>
   )

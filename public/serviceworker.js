@@ -8,7 +8,10 @@ this.addEventListener("install", (event) => {
         '/static/js/bundle.js',
         '/index.html',
         '/',
-        '/users'
+        '/about',
+        '/home',
+        '/linechart',
+        '/repository'
       ])
     })
   )
@@ -19,7 +22,7 @@ this.addEventListener("fetch", (event) => {
   // console.warn("url", event.request.url)
 
   if (!navigator.onLine) {
-    if (event.request.url === "http://localhost:3001/static/js/main.chunk.js") {
+    if (event.request.url === "http://localhost:3000/static/js/main.chunk.js") {
       event.waitUntil(
         this.registration.showNotification("Internet", {
           body: "Internet not working !!!"

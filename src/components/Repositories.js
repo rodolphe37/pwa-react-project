@@ -23,6 +23,9 @@ const Users = () => {
     })
   }, [])
 
+  const sortedActivities = data.slice().sort((a, b) => b.updated_at - a.updated_at)
+  console.log('data list :', data)
+  console.log('Sorted list :', sortedActivities)
   return (
     <div>
       <div>
@@ -39,7 +42,7 @@ const Users = () => {
             <th>Link</th>
             <th className="hidden">Created</th>
             <th className="hidden">Languages</th>
-            <th className="hidden">Forked</th>
+            <th className="hidden">Updated at</th>
           </tr>
         </thead>
         <tbody>
@@ -51,7 +54,7 @@ const Users = () => {
                 <td><a href={`${item.html_url}`} target="new">{item.full_name}</a></td>
                 <td className="hidden"><Moment locale="fr">{item.created_at}</Moment></td>
                 <td className="hidden">{item.language}</td>
-                <td className="hidden">{item.fork === true ? 'Yes' : 'No'}</td>
+                <td className="hidden"><Moment locale="fr">{item.updated_at}</Moment></td>
               </tr>
             ))
           }
