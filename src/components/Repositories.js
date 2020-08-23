@@ -9,7 +9,7 @@ const Users = () => {
   let idplus = []
 
   useEffect(() => {
-    let url = "https://api.github.com/users/rodolphe37/repos"
+    const url = "https://api.github.com/users/rodolphe37/repos"
     fetch(url).then((response) => {
       response.json().then((result) => {
         console.warn(result)
