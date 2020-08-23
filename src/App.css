@@ -13,6 +13,40 @@
 .navbar a:hover {
   color: #ddd;
 }
+.rounded-img{
+  max-width: 20%;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* .back-img {
+  position: absolute;
+  object-fit: cover;
+  min-width: 100%;
+} */
+/* .contain {
+  background-image: url(https://i.imgur.com/gXGjm3k.jpg);
+  object-fit: cover;
+  min-height: max-content;
+} */
+
+.linear-gradient {
+  background: linear-gradient(180deg, rgb(196, 196, 201), rgb(255,255,255));
+}
+
+.bg-primary {
+  max-width: 100%;
+}
+
+@media (max-width:480px) {
+
+  .navbar-nav {
+    margin-left: 0% !important;
+    font-size: 10px !important;
+    font-weight: 600;
+  }
+}
+
 
 @media (max-width:840px) {
   .hidden{
@@ -20,6 +54,11 @@
   }
   .navbar {
     width: 107%;
+  }
+  .navbar-nav {
+    margin-left: 0%;
+    font-size: 12px;
+    font-weight: 600;
   }
 }
 

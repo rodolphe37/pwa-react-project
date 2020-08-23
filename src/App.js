@@ -3,7 +3,8 @@ import './App.css';
 import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap'
 import Home from './components/Home'
 import About from './components/About'
-import Users from './components/Users'
+import Repositories from './components/Repositories'
+import Linechart from './components/Linechart'
 import { Link, Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 
 function App() {
@@ -11,22 +12,24 @@ function App() {
     <div className="App">
       <Router>
         <Navbar bg="primary" variant="dark">
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Navbar.Brand href="#home">GitHub Activity</Navbar.Brand>
           <Nav className="mr-auto">
             <Link to="/">Home</Link>&emsp;
             <Link to="/about">About</Link>&emsp;
-            <Link to="users">Users</Link>
+            <Link to="/linechart">Graph</Link>&emsp;
+            <Link to="repository">My Repositories</Link>
           </Nav>
           <div className="hidden">
-            <Form inline >
+            {/*<Form inline >
               <FormControl type="text" placeholder="Search" className="mr-sm-2" />
               <Button variant="outline-light">Search</Button>
-            </Form>
+            </Form>*/}
           </div>
         </Navbar>
         <Switch>
           <Route path='/about' component={About}></Route>
-          <Route path='/users' component={Users}></Route>
+          <Route path='/linechart' component={Linechart}></Route>
+          <Route path='/repository' component={Repositories}></Route>
           <Route path='/' component={Home}></Route>
         </Switch>
       </Router>
