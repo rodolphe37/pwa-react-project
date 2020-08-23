@@ -6,7 +6,7 @@ const Home = (props) => {
   const [mode, setMode] = useState('online')
 
   useEffect(() => {
-    let url2 = "https://api.github.com/users/rodolphe37"
+    const url2 = "https://api.github.com/users/rodolphe37"
     fetch(url2).then((res) => {
       res.json().then((resultat) => {
         console.warn(resultat)
