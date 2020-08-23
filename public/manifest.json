@@ -1,6 +1,6 @@
 {
-  "short_name": "PWA React app",
-  "name": "Users list PWA React",
+  "short_name": "My Github",
+  "name": "PWA My Github",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,7 +10,8 @@
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "logo512.png",
