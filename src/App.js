@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar bg="primary" variant="dark">
-          <Navbar.Brand className="brand" href="/">GitHub Activity</Navbar.Brand>
+          <Navbar.Brand className="brand" href="/">My GitHub</Navbar.Brand>&emsp;
           <Nav className="mr-auto">
             <Link to="/">Home</Link>&emsp;
             <Link to="/about">About</Link>&emsp;

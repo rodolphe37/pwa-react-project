@@ -56,11 +56,16 @@
   max-width: 100%;
 }
 
+.bio {
+  padding-left: 175px;
+  padding-right: 159px;
+}
+
 @media (max-width:480px) {
 
   .navbar-nav {
     margin-left: 0% !important;
-    font-size: 10px !important;
+    font-size: 13px !important;
     font-weight: 600;
   }
 }
@@ -75,8 +80,12 @@
   }
   .navbar-nav {
     margin-left: 0%;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 600;
+  }
+  .bio {
+    padding-left: 15px;
+    padding-right: 15px
   }
 }
 

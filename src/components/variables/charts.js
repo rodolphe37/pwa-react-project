@@ -31,7 +31,7 @@ const Chart = () => {
 
   console.log('dataCharts from charts page:', dataCharts)
   const [hoverData, setHoverData] = useState(null);
-  const [chartOptions, setChartOptions] = useState({
+  const [chartOptions] = useState({
     xAxis: {
       categories: ['2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020'],
     },

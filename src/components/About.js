@@ -26,10 +26,11 @@ const About = (props) => {
       {
         mode === 'offline' ? <div className=" alert alert-danger" role="alert">You are in Offline mode or some issue with connection</div> : null
       }
-      <h1>About me</h1>
+      <br />
+      <h1 style={{ fontSize: "30px" }}>About me</h1>
       <img className="rounded-img" src="https://www.rodolphe-augusto.fr/static/media/perso-5b.9e8d203d.png" alt="avatar" />
       <div key={id}>
-        <span>School what i doing : <a href="https://github.com/WildCodeSchool" target="new"><img className="school-img" src={`https://avatars2.githubusercontent.com/u/8874047?s=60&v=4`} alt="school organization" /></a> </span><br />
+        <span>School where I went : <a href="https://github.com/WildCodeSchool" target="new"><img className="school-img" src={`https://avatars2.githubusercontent.com/u/8874047?s=60&v=4`} alt="school organization" /></a> </span><br />
         <span>My Location : {location}</span><br />
         <div>
           <p>Followers : {followers}</p>
@@ -37,8 +38,7 @@ const About = (props) => {
         <span>My Portfolio link : <a href={blog} target="new">rodolphe-augusto.fr</a></span>
         <br />
         <br />
-        <p>My Bio : <br />{bio}</p>
-        <br />
+        <p className="bio">My Bio : <br />{bio}</p>
         <sup>Last Activity on my repositories :<br /> <Moment style={{ color: 'red' }} locale="fr">{updated_at}</Moment></sup>
         <br />
       </div>
