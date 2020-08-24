@@ -24,7 +24,6 @@ const Home = (props) => {
   const { id, public_repos, public_gists, html_url, login, created_at, updated_at, followers, received_events_url, starred_url } = info
   return (
     <div className="linear-gradient">
-      {/* <img className="back-img" src={require('../assets/images/good-weather.jpg')} alt="background" />*/}
       {
         mode === 'offline' ? <div className=" alert alert-danger" role="alert">You are in Offline mode or some issue with connection</div> : null
       }

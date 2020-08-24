@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Moment from 'react-moment';
 
-const Home = (props) => {
+const About = (props) => {
   const [about, setAbout] = useState([])
   const [mode, setMode] = useState('online')
 
@@ -20,10 +20,9 @@ const Home = (props) => {
     })
   }, [])
 
-  const { id, organizations_url, location, blog, login, bio, updated_at, followers, received_events_url, starred_url } = about
+  const { id, location, blog, bio, updated_at, followers } = about
   return (
     <div className="linear-gradient">
-      {/* <img className="back-img" src={require('../assets/images/good-weather.jpg')} alt="background" />*/}
       {
         mode === 'offline' ? <div className=" alert alert-danger" role="alert">You are in Offline mode or some issue with connection</div> : null
       }
@@ -47,4 +46,4 @@ const Home = (props) => {
   )
 }
 
-export default Home
+export default About
