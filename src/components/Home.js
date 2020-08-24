@@ -35,11 +35,12 @@ const Home = (props) => {
       <div key={id}>
         <span>Number of public Repos : {public_repos}</span><br />
         <span>Number of public Gists : {public_gists}</span><br />
-        <hr />
+        <br />
         <sup>Created at : <Moment style={{ color: 'blue' }} locale="fr">{created_at}</Moment></sup>
         <br />
       </div>
       <br />
+      <hr />
       <div className="footer">
         <Footer />
       </div>
