@@ -1,14 +1,50 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
+import Moment from 'react-moment';
 
+const Home = (props) => {
+  const [about, setAbout] = useState([])
+  const [mode, setMode] = useState('online')
 
-const About = () => {
+  useEffect(() => {
+    const url = "https://api.github.com/users/rodolphe37"
+    fetch(url).then((res) => {
+      res.json().then((resultat) => {
+        console.warn(resultat)
+        setAbout(resultat)
+        localStorage.setItem('about', JSON.stringify(resultat))
+      })
+    }).catch(err => {
+      setMode('offline')
+      let collection = localStorage.getItem('about');
+      setAbout(JSON.parse(collection))
+    })
+  }, [])
 
-
+  const { id, organizations_url, location, blog, login, bio, updated_at, followers, received_events_url, starred_url } = about
   return (
-    <div>
-      <h2>About Page</h2>
+    <div className="linear-gradient">
+      {/* <img className="back-img" src={require('../assets/images/good-weather.jpg')} alt="background" />*/}
+      {
+        mode === 'offline' ? <div className=" alert alert-danger" role="alert">You are in Offline mode or some issue with connection</div> : null
+      }
+      <h1>About me</h1>
+      <img className="rounded-img" src="https://www.rodolphe-augusto.fr/static/media/perso-5b.9e8d203d.png" alt="avatar" />
+      <div key={id}>
+        <span>School what i doing : <a href="https://github.com/WildCodeSchool" target="new"><img className="school-img" src={`https://avatars2.githubusercontent.com/u/8874047?s=60&v=4`} alt="school organization" /></a> </span><br />
+        <span>My Location : {location}</span><br />
+        <div>
+          <p>Followers : {followers}</p>
+        </div>
+        <span>My Portfolio link : <a href={blog} target="new">rodolphe-augusto.fr</a></span>
+        <br />
+        <br />
+        <p>My Bio : <br />{bio}</p>
+        <br />
+        <sup>Last Activity on my repositories :<br /> <Moment style={{ color: 'red' }} locale="fr">{updated_at}</Moment></sup>
+        <br />
+      </div>
     </div>
   )
 }
 
-export default About
+export default Home

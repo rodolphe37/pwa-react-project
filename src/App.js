@@ -12,12 +12,12 @@ function App() {
     <div className="App">
       <Router>
         <Navbar bg="primary" variant="dark">
-          <Navbar.Brand href="#home">GitHub Activity</Navbar.Brand>
+          <Navbar.Brand className="brand" href="/">GitHub Activity</Navbar.Brand>
           <Nav className="mr-auto">
             <Link to="/">Home</Link>&emsp;
             <Link to="/about">About</Link>&emsp;
             <Link to="/linechart">Graph</Link>&emsp;
-            <Link to="repository">My Repositories</Link>
+            <Link to="repository">My Repos</Link>
           </Nav>
           <div className="hidden">
             {/*<Form inline >

@@ -14,11 +14,29 @@
   color: #ddd;
 }
 .rounded-img{
-  max-width: 20%;
+  max-width: 50%;
   border-radius: 50%;
   padding: 10px;
 }
 
+.footer-content, .socials {
+  display: flex;
+}
+.titl {
+  font-size: 12px;
+}
+
+.link-footer {
+  font-size: 10px;
+}
+
+.school-img {
+  width: 6% !important;
+}
+
+.brand {
+  font-size: 110% !important;
+}
 /* .back-img {
   position: absolute;
   object-fit: cover;

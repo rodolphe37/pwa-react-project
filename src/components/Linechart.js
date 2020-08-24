@@ -27,7 +27,7 @@ export class Linecharts extends Component {
             datasets: [
               {
                 label: 'Global languages popularity on Github',
-                data: count, name,
+                data: count, year,
                 backgroundColor: [
                   "#3cb371",
                   "#0000FF",
@@ -812,8 +812,10 @@ export class Linecharts extends Component {
         <Line
           data={this.state.Data}
           options={{ maintainAspectRatio: false }} />
-        <Chart />
-        <LanguageChart />
+        <div>
+          <Chart />
+        </div>
+
       </div>
     )
   }
