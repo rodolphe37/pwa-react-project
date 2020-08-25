@@ -23,9 +23,9 @@ const Users = () => {
     })
   }, [])
 
-  const sortedActivities = data.slice().sort((a, b) => b.updated_at - a.updated_at)
+  // const sortedActivities = data.slice().sort((a, b) => b.language - a.language)
   console.log('data list :', data)
-  console.log('Sorted list :', sortedActivities)
+  // console.log('Sorted list :', sortedActivities)
   return (
     <div>
       <div>
@@ -34,7 +34,7 @@ const Users = () => {
         }
       </div>
       <br />
-      <div><b>My Repos Github list</b></div>
+      <div><b>My Repos list</b></div>
       <br />
       <Table striped bordered hover >
         <thead>
@@ -64,7 +64,7 @@ const Users = () => {
         </tbody>
       </Table>
       <br />
-      <div><b>Forked Repos Github list</b></div>
+      <div><b>Forked Repos list</b></div>
       <br />
       <Table striped bordered hover >
         <thead>

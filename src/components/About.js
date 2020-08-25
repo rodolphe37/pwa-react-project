@@ -9,7 +9,7 @@ const About = (props) => {
     const url = "https://api.github.com/users/rodolphe37"
     fetch(url).then((res) => {
       res.json().then((resultat) => {
-        console.warn(resultat)
+        console.log(resultat)
         setAbout(resultat)
         localStorage.setItem('about', JSON.stringify(resultat))
       })
@@ -31,7 +31,7 @@ const About = (props) => {
       <img className="rounded-img" src="https://www.rodolphe-augusto.fr/static/media/perso-5b.9e8d203d.png" alt="avatar" />
       <div key={id}>
         <span>School where I went : <a href="https://github.com/WildCodeSchool" target="new"><img className="school-img" src={`https://avatars2.githubusercontent.com/u/8874047?s=60&v=4`} alt="school organization" /></a> </span><br />
-        <span>My Location : {location}</span><br />
+        <span>My Location : <b>{location}</b></span><br />
         <div>
           <p>Followers : {followers}</p>
         </div>

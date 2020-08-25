@@ -22,12 +22,22 @@
 .footer-content, .socials {
   display: flex;
 }
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 48%;
+}
+
+.codepen-link {
+  margin-left: 5px;
+}
+
 .titl {
   font-size: 12px;
 }
 
 .link-footer {
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .school-img {
@@ -36,6 +46,7 @@
 
 .brand {
   font-size: 110% !important;
+  margin-left: 15px;
 }
 /* .back-img {
   position: absolute;
@@ -57,8 +68,8 @@
 }
 
 .bio {
-  padding-left: 175px;
-  padding-right: 159px;
+  padding-left: 324px;
+  padding-right: 302px;
 }
 
 @media (max-width:480px) {
@@ -86,6 +97,10 @@
   .bio {
     padding-left: 15px;
     padding-right: 15px
+  }
+  .brand {
+    font-size: 105% !important;
+    margin-left: 9px !important;
   }
 }
 

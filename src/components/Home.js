@@ -21,7 +21,7 @@ const Home = (props) => {
     })
   }, [])
 
-  const { id, public_repos, public_gists, html_url, login, created_at } = info
+  const { id, public_repos, public_gists, html_url, name, created_at, login } = info
   return (
     <div className="linear-gradient">
       {
@@ -30,16 +30,16 @@ const Home = (props) => {
       <br />
       <h1 style={{ fontSize: "30px" }}>My Github Account</h1>
       <img className="rounded-img" src="https://avatars3.githubusercontent.com/u/50537655?s=400&u=4901bca59dce00305a18adf5a39201bdc75a7686&v=4" alt="avatar" />
-      <h2><a href={html_url} target="new">{login}</a></h2>
+      <h2><a href={html_url} target="new">{name}</a></h2>
+      <h5>Username : {login}</h5>
       <hr />
       <div key={id}>
-        <span>Number of public Repos : {public_repos}</span><br />
-        <span>Number of public Gists : {public_gists}</span><br />
+        <span>Number of public Repos : <b>{public_repos}</b></span><br />
+        <span>Number of public Gists : <b>{public_gists}</b></span><br />
         <br />
-        <sup>Created at : <Moment style={{ color: 'blue' }} locale="fr">{created_at}</Moment></sup>
+        <sup>Created at : <Moment style={{ color: 'red' }} locale="fr">{created_at}</Moment></sup>
         <br />
       </div>
-      <br />
       <hr />
       <div className="footer">
         <Footer />
