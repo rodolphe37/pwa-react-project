@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import { Line } from 'react-chartjs-2';
-// import Chart from './variables/charts'
 
-export class Linecharts3 extends Component {
+export class PythonChart extends Component {
   constructor(props) {
     super(props);
-    this.state = { Data: {}, color: 'red,green,blue,orange' };
+    this.state = { Data: {} };
   }
   componentDidMount() {
     axios.get(`https://raw.githubusercontent.com/madnight/githut/master/src/data/gh-pull-request.json`)
@@ -20,13 +19,14 @@ export class Linecharts3 extends Component {
           count.push(record.count);
           name.push(record.name)
         });
+        console.log(ipl)
         this.setState({
           Data: {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],
             datasets: [
               {
-                label: name[3],
-                data: [count[3], count[90], count[280], count[555], count[923], count[1352], count[1750], count[2094], count[2415]],
+                label: name[1],
+                data: [count[1], count[89], count[278], count[552], count[920], count[1350], count[1745], count[2089], count[2409]],
                 backgroundColor: [
 
                   "#0000FF",
@@ -53,13 +53,10 @@ export class Linecharts3 extends Component {
         <Line
           data={this.state.Data}
           options={{ maintainAspectRatio: false }} />
-        <div>
-        </div>
-
       </div>
     )
   }
 
 }
 
-export default Linecharts3
+export default PythonChart

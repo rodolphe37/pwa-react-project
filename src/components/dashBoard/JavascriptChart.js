@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import { Line } from 'react-chartjs-2';
-// import Chart from './variables/charts'
 
-export class Linecharts2 extends Component {
+export class JavascriptChart extends Component {
   constructor(props) {
     super(props);
     this.state = { Data: {} };
@@ -20,13 +19,14 @@ export class Linecharts2 extends Component {
           count.push(record.count);
           name.push(record.name)
         });
+        console.log(ipl)
         this.setState({
           Data: {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],
             datasets: [
               {
-                label: name[4],
-                data: [count[4], count[91], count[281], count[554], count[921], count[1351], count[1746], count[2090], count[2410]],
+                label: name[2],
+                data: [count[2], count[88], count[277], count[551], count[919], count[1349], count[1744], count[2088], count[2408]],
                 backgroundColor: [
 
                   "#0000FF",
@@ -53,13 +53,10 @@ export class Linecharts2 extends Component {
         <Line
           data={this.state.Data}
           options={{ maintainAspectRatio: false }} />
-        <div>
-        </div>
-
       </div>
     )
   }
 
 }
 
-export default Linecharts2
+export default JavascriptChart

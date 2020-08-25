@@ -1,20 +1,28 @@
 import React from 'react';
-import Linecharts from './dashBoard/Linechart';
-import Linecharts2 from './dashBoard/Linechart2';
-import Linecharts3 from './dashBoard/Linechart3';
+import JavascriptChart from './dashBoard/JavascriptChart';
+import JavaChart from './dashBoard/JavaChart';
+import PhpChart from './dashBoard/PhpChart';
+import PythonChart from './dashBoard/PythonChart';
+import RubyChart from './dashBoard/RubyChart';
 
 const Dashboard = () => {
   return (
     <>
       <h3 style={{ fontSize: '15px' }}>Global languages popularity on Github (based from pull requests)</h3>
       <div className="javascript">
-        <Linecharts />
+        <JavascriptChart />
+      </div>
+      <div className="python">
+        <PythonChart />
       </div>
       <div className="java">
-        <Linecharts2 />
+        <JavaChart />
+      </div>
+      <div className="ruby">
+        <RubyChart />
       </div>
       <div className="php">
-        <Linecharts3 />
+        <PhpChart />
       </div>
     </>
   )

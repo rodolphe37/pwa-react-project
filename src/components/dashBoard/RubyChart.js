@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import { Line } from 'react-chartjs-2';
 
-export class Linecharts extends Component {
+export class RubyChart extends Component {
   constructor(props) {
     super(props);
     this.state = { Data: {} };
@@ -25,8 +25,8 @@ export class Linecharts extends Component {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],
             datasets: [
               {
-                label: name[2],
-                data: [count[2], count[88], count[277], count[551], count[919], count[1349], count[1744], count[2088], count[2408]],
+                label: name[0],
+                data: [count[0], count[87], count[279], count[553], count[922], count[1353], count[1748], count[2093], count[2413]],
                 backgroundColor: [
 
                   "#0000FF",
@@ -59,4 +59,4 @@ export class Linecharts extends Component {
 
 }
 
-export default Linecharts
+export default RubyChart
