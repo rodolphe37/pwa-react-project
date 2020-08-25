@@ -9,7 +9,6 @@ const About = (props) => {
     const url = "https://api.github.com/users/rodolphe37"
     fetch(url).then((res) => {
       res.json().then((resultat) => {
-        console.log(resultat)
         setAbout(resultat)
         localStorage.setItem('about', JSON.stringify(resultat))
       })

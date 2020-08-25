@@ -10,7 +10,6 @@ const Home = (props) => {
     const url2 = "https://api.github.com/users/rodolphe37"
     fetch(url2).then((res) => {
       res.json().then((resultat) => {
-        console.log(resultat)
         setInfo(resultat)
         localStorage.setItem('home', JSON.stringify(resultat))
       })

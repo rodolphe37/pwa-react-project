@@ -4,6 +4,7 @@ import JavaChart from './dashBoard/JavaChart';
 import PhpChart from './dashBoard/PhpChart';
 import PythonChart from './dashBoard/PythonChart';
 import RubyChart from './dashBoard/RubyChart';
+import CplusPlusChart from './dashBoard/CplusPlusChart';
 
 const Dashboard = () => {
   return (
@@ -23,6 +24,9 @@ const Dashboard = () => {
       </div>
       <div className="php">
         <PhpChart />
+      </div>
+      <div className="c++">
+        <CplusPlusChart />
       </div>
     </>
   )

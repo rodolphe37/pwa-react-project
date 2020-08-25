@@ -19,7 +19,6 @@ export class JavascriptChart extends Component {
           count.push(record.count);
           name.push(record.name)
         });
-        console.log(ipl)
         this.setState({
           Data: {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],

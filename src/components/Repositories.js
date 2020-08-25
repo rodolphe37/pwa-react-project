@@ -12,7 +12,6 @@ const Users = () => {
     const url = "https://api.github.com/users/rodolphe37/repos?per_page=100"
     fetch(url).then((response) => {
       response.json().then((result) => {
-        console.log(result)
         setData(result)
         localStorage.setItem('repository', JSON.stringify(result))
       })
@@ -23,9 +22,6 @@ const Users = () => {
     })
   }, [])
 
-  // const sortedActivities = data.slice().sort((a, b) => b.language - a.language)
-  console.log('data list :', data)
-  // console.log('Sorted list :', sortedActivities)
   return (
     <div>
       <div>

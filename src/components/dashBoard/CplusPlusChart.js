@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import { Line } from 'react-chartjs-2';
+// import Chart from './variables/charts'
 
-export class RubyChart extends Component {
+export class CplusPlusChart extends Component {
   constructor(props) {
     super(props);
     this.state = { Data: {} };
@@ -24,8 +25,8 @@ export class RubyChart extends Component {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],
             datasets: [
               {
-                label: name[0],
-                data: [count[0], count[87], count[279], count[553], count[922], count[1353], count[1748], count[2093], count[2413]],
+                label: name[5],
+                data: [count[5], count[93], count[282], count[556], count[925], count[1355], count[1749], count[2092], count[2412]],
                 backgroundColor: [
 
                   "#0000FF",
@@ -52,10 +53,13 @@ export class RubyChart extends Component {
         <Line
           data={this.state.Data}
           options={{ maintainAspectRatio: false }} />
+        <div>
+        </div>
+
       </div>
     )
   }
 
 }
 
-export default RubyChart
+export default CplusPlusChart
