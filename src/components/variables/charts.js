@@ -11,16 +11,7 @@ const Chart = () => {
       response.json().then((result) => {
         setDataCharts(result)
         localStorage.setItem('charts', JSON.stringify(result))
-        const r = result
-        let name = [];
-        let year = [];
-        let count = [];
-        r.forEach(record => {
-          year.push(record.year);
-          count.push(record.count);
-          name.push(record.name)
-        });
-        console.log('Count :', count, 'Name :', name, 'Years :', year)
+
       })
     }).catch(err => {
       setMode('offline')
@@ -29,7 +20,18 @@ const Chart = () => {
     })
   }, [])
 
-  console.log('dataCharts from charts page:', dataCharts)
+  const r = dataCharts
+  let name = [];
+  let year = [];
+  let count = [];
+  r.forEach(record => {
+    year.push(record.year);
+    count.push(record.count);
+    name.push(record.name)
+  });
+  console.log('Count :', count, 'Name :', name, 'Years :', year)
+
+  // console.log('dataCharts from charts page:', dataCharts)
   const [hoverData, setHoverData] = useState(null);
   const [chartOptions] = useState({
     xAxis: {

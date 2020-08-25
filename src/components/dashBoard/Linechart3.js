@@ -2,13 +2,11 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import { Line } from 'react-chartjs-2';
 // import Chart from './variables/charts'
-import Linecharts2 from './dashBoard/Linechart2';
-import Linecharts3 from './dashBoard/Linechart3';
 
-export class Linecharts extends Component {
+export class Linecharts3 extends Component {
   constructor(props) {
     super(props);
-    this.state = { Data: {} };
+    this.state = { Data: {}, color: 'red,green,blue,orange' };
   }
   componentDidMount() {
     axios.get(`https://raw.githubusercontent.com/madnight/githut/master/src/data/gh-pull-request.json`)
@@ -28,8 +26,8 @@ export class Linecharts extends Component {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],
             datasets: [
               {
-                label: [name[2], `count for 2020 :  ${[count[2408]]}`],
-                data: [count[2], count[88], count[277], count[551], count[919], count[1349], count[1744], count[2088], count[2408]],
+                label: [name[3], `count for 2020 :  ${[count[2415]]}`],
+                data: [count[3], count[90], count[280], count[555], count[923], count[1352], count[1750], count[2094], count[2415]],
                 backgroundColor: [
 
                   "#0000FF",
@@ -58,10 +56,6 @@ export class Linecharts extends Component {
           data={this.state.Data}
           options={{ maintainAspectRatio: false }} />
         <div>
-          <Linecharts2 />
-        </div>
-        <div>
-          <Linecharts3 />
         </div>
 
       </div>
@@ -70,4 +64,4 @@ export class Linecharts extends Component {
 
 }
 
-export default Linecharts
+export default Linecharts3
