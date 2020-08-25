@@ -8,7 +8,7 @@ import RubyChart from './dashBoard/RubyChart';
 const Dashboard = () => {
   return (
     <>
-      <h3 style={{ fontSize: '15px' }}>Global languages popularity on Github (based from pull requests)</h3>
+      <h3 style={{ fontSize: '15px' }}>Languages popularity on Github (based from Globals pull requests)</h3>
       <div className="javascript">
         <JavascriptChart />
       </div>
