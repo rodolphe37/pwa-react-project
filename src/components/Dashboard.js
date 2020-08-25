@@ -5,6 +5,7 @@ import PhpChart from './dashBoard/PhpChart';
 import PythonChart from './dashBoard/PythonChart';
 import RubyChart from './dashBoard/RubyChart';
 import CplusPlusChart from './dashBoard/CplusPlusChart';
+import TypescriptChart from './dashBoard/TypescriptChart';
 
 const Dashboard = () => {
   return (
@@ -27,6 +28,9 @@ const Dashboard = () => {
       </div>
       <div className="c++">
         <CplusPlusChart />
+      </div>
+      <div className="tipescript">
+        <TypescriptChart />
       </div>
     </>
   )

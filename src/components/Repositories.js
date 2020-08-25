@@ -46,14 +46,16 @@ const Users = () => {
         <tbody>
           {
             data.map((item) => (
-              item.fork === false ? <tr key={item.id}>
-                <td className="hidden">{idplus++}</td>
-                <td>{item.name}</td>
-                <td><a href={`${item.html_url}`} target="new">Click to Open</a></td>
-                <td className="hidden"><Moment locale="fr">{item.created_at}</Moment></td>
-                <td className="hidden"><Moment locale="fr">{item.updated_at}</Moment></td>
-                <td className="hidden">{item.language}</td>
-              </tr>
+              item.fork === false
+                ?
+                <tr key={item.id}>
+                  <td className="hidden">{idplus++}</td>
+                  <td>{item.name}</td>
+                  <td><a href={`${item.html_url}`} target="new">Click to Open</a></td>
+                  <td className="hidden"><Moment locale="fr">{item.created_at}</Moment></td>
+                  <td className="hidden"><Moment locale="fr">{item.updated_at}</Moment></td>
+                  <td className="hidden">{item.language}</td>
+                </tr>
                 : null
             ))
           }
@@ -74,14 +76,16 @@ const Users = () => {
         </thead>
         <tbody>
           {data.map((item) => (
-            item.fork === true ? <tr key={item.id}>
-              <td className="hidden">{idplus++}</td>
-              <td>{item.name}</td>
-              <td><a href={`${item.html_url}`} target="new">Click to Open</a></td>
-              <td className="hidden"><Moment locale="fr">{item.created_at}</Moment></td>
-              <td className="hidden">{item.fork === true ? 'Yes' : ''}</td>
+            item.fork === true
+              ?
+              <tr key={item.id}>
+                <td className="hidden">{idplus++}</td>
+                <td>{item.name}</td>
+                <td><a href={`${item.html_url}`} target="new">Click to Open</a></td>
+                <td className="hidden"><Moment locale="fr">{item.created_at}</Moment></td>
+                <td className="hidden">{item.fork === true ? 'Yes' : ''}</td>
 
-            </tr>
+              </tr>
               : null
           ))}
         </tbody>
