@@ -20,13 +20,12 @@ export class Linecharts3 extends Component {
           count.push(record.count);
           name.push(record.name)
         });
-        console.log(ipl)
         this.setState({
           Data: {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],
             datasets: [
               {
-                label: [name[3], `count for 2020 :  ${[count[2415]]}`],
+                label: name[3],
                 data: [count[3], count[90], count[280], count[555], count[923], count[1352], count[1750], count[2094], count[2415]],
                 backgroundColor: [
 
@@ -49,7 +48,6 @@ export class Linecharts3 extends Component {
 
   }
   render() {
-    console.log('test console :', this.state.Data)
     return (
       <div>
         <Line

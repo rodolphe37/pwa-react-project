@@ -4,8 +4,8 @@ import { Navbar, Nav } from 'react-bootstrap'
 import Home from './components/Home'
 import About from './components/About'
 import Repositories from './components/Repositories'
-import Linechart from './components/Linechart'
 import { Link, Route, BrowserRouter as Router, Switch } from 'react-router-dom'
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <Nav className="mr-auto">
             <Link to="/">Home</Link>&emsp;
             <Link to="/about">About</Link>&emsp;
-            <Link to="/linechart">Graph</Link>&emsp;
+            <Link to="/dashboard">Graph</Link>&emsp;
             <Link to="repository">My Repos</Link>
           </Nav>
           <div className="hidden">
@@ -28,7 +28,7 @@ function App() {
         </Navbar>
         <Switch>
           <Route path='/about' component={About}></Route>
-          <Route path='/linechart' component={Linechart}></Route>
+          <Route path='/dashboard' component={Dashboard}></Route>
           <Route path='/repository' component={Repositories}></Route>
           <Route path='/' component={Home}></Route>
         </Switch>
