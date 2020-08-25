@@ -72,13 +72,17 @@
   padding-right: 302px;
 }
 
-@media (max-width:480px) {
+@media (min-width:280px) and (max-width:650px) {
 
   .navbar-nav {
-    margin-left: 0% !important;
+    margin-left: -6% !important;
     font-size: 13px !important;
     font-weight: 600;
   }
+  .brand {
+    font-size: 86% !important;
+    margin-left: -4px !important;
+}
 }
 
 
@@ -99,8 +103,8 @@
     padding-right: 15px
   }
   .brand {
-    font-size: 105% !important;
-    margin-left: 9px !important;
+    font-size: 105%;
+    margin-left: 9px;
   }
 }
 
