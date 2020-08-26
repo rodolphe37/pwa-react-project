@@ -8,7 +8,7 @@ import CplusPlusChart from './dashBoard/CplusPlusChart';
 import TypescriptChart from './dashBoard/TypescriptChart';
 import HtmlChart from './dashBoard/HtmlChart';
 import HisLanguageChart from './dashBoard/HisLanguageChart'
-import MoreAccuracyHisLanguageChart from './dashBoard/MoreAccuracyHisLanguageChart ';
+// import MoreAccuracyHisLanguageChart from './dashBoard/MoreAccuracyHisLanguageChart ';
 
 const Dashboard = () => {
   return (
@@ -47,9 +47,9 @@ const Dashboard = () => {
       <div className="html">
         <HtmlChart />
       </div>
-      <div className="accuracy">
+      {/*<div className="accuracy">
         <MoreAccuracyHisLanguageChart />
-      </div>
+  </div>*/}
     </>
   )
 }
