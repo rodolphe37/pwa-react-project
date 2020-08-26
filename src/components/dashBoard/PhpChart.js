@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import { Line } from 'react-chartjs-2';
-// import Chart from './variables/charts'
 
 export class PhpChart extends Component {
   constructor(props) {
     super(props);
-    this.state = { Data: {}, color: 'red,green,blue,orange' };
+    this.state = { Data: {} };
   }
   componentDidMount() {
     axios.get(`https://raw.githubusercontent.com/madnight/githut/master/src/data/gh-pull-request.json`)
