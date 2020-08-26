@@ -17,20 +17,24 @@ export class HisLanguageChart extends Component {
           language.push(record.language);
         });
         let langResult = language
+
         langResult.forEach(function (x) { langResult[x] = (langResult[x] || 0) + 1 })
+
         let CSSToString = langResult.CSS.toString()
         let JavaScriptToString = langResult.JavaScript.toString()
         let TypeScriptToString = langResult.TypeScript.toString()
         let HTMLToString = langResult.HTML.toString()
         let VueToString = langResult.Vue.toString()
-        langResult.push(CSSToString, JavaScriptToString, TypeScriptToString, HTMLToString, VueToString)
+        let PHPToString = langResult.PHP.toString()
+        langResult.push(CSSToString, JavaScriptToString, TypeScriptToString, HTMLToString, VueToString, PHPToString)
+
         this.setState({
           Data: {
-            labels: [langResult[1], langResult[20], langResult[14], langResult[74], langResult[90]],
+            labels: [langResult[1], langResult[19], langResult[18], langResult[0], langResult[88], langResult[98]],
             datasets: [
               {
                 label: "languages used on my repository",
-                data: [langResult[101], langResult[102], langResult[103], langResult[100], langResult[104]],
+                data: [langResult[101], langResult[102], langResult[103], langResult[100], langResult[104], langResult[105]],
                 backgroundColor: [
                   'rgba(255, 206, 86, 0.6)',
                   'rgba(54, 162, 235, 0.6)',
