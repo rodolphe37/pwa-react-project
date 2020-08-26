@@ -71,32 +71,53 @@
   padding-left: 324px;
   padding-right: 302px;
 }
+.appear {
+  display: none;
+}
 
 @media (min-width:280px) and (max-width:650px) {
 
   .navbar-nav {
     margin-left: -6% !important;
-    font-size: 13px !important;
+    font-size: 12px !important;
     font-weight: 600;
   }
   .brand {
     font-size: 86% !important;
     margin-left: -4px !important;
-}
-}
-
-
-@media (max-width:840px) {
-  .hidden{
+  }
+  .appear {
+    display: inherit;
+  }
+  .title-sup {
+    font-size: 10px;
+  }
+  .hidden768{
     display: none;
+  }
+}
+
+
+@media (min-widht:652px) and (max-width:840px) {
+  .appear {
+    display: inherit;
+  }
+  .title-sup {
+    font-size: 10px;
   }
   .navbar {
     width: 107%;
   }
   .navbar-nav {
     margin-left: 0%;
-    font-size: 18px;
+    font-size: 18px !important;
     font-weight: 600;
+  }
+}
+
+@media (max-width: 840px) {
+  .hidden{
+    display: none;
   }
   .bio {
     padding-left: 15px;
@@ -108,11 +129,6 @@
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;

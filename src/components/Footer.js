@@ -7,9 +7,8 @@ const Footer = () => {
       <div className="col-6 col-md">
         <h5 className="titl"><b>Developer</b></h5>
         <div className="list-unstyled text-small dev-list">
-          <a className="link-footer" href="https://github.com/rodolphe37" target="new">GitHub</a><br />
           <a className="link-footer" href="https://www.linkedin.com/in/rodolphe-augusto-d%C3%A9veloppeur-full-stack-react-node-js-1a20b759/" target="new">Linkedin</a> / <a className="link-footer" href={pdf} target="new">Cv</a><br />
-          <a className="link-footer codepen-link" href="https://codepen.io/rodcefim" target="new">CodePen</a> / <a className="link-footer codesandbox-link" href="https://codesandbox.io/u/rodolphe37" target="new">CodeSandBox</a>
+          <a className="link-footer codepen-link" href="https://codepen.io/rodcefim" target="new">CodePen</a><span className="hidden768"> / </span> <br className="appear" /> <a className="link-footer codesandbox-link" href="https://codesandbox.io/u/rodolphe37" target="new">CodeSandBox</a>
         </div>
       </div>
       <div className="col-6 col-md">
