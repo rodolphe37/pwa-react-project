@@ -13,7 +13,7 @@ const Dashboard = () => {
   return (
     <>
       <br />
-      <h3 style={{ fontSize: '15px' }}>Languages used on my repository</h3>
+      <h3 style={{ fontSize: '15px' }}>Languages used on my repositories</h3>
       <br className="appear" />
       <sup className="title-sup">These are the most used languages ​​on all of my repositories<br className="appear" /> This, since I created my account  </sup>
       <div className="his-languages">
