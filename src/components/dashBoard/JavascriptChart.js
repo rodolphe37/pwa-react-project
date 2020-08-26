@@ -7,13 +7,6 @@ export class JavascriptChart extends Component {
     super(props);
     this.state = { Data: {} };
   }
-  calculStats() {
-    const { count } = this.state.Data
-    let firstYear = [count[2] + count[28] + count[59] + count[88]]
-    return (
-      console.log(firstYear())
-    )
-  }
 
   componentDidMount() {
     axios.get(`https://raw.githubusercontent.com/madnight/githut/master/src/data/gh-pull-request.json`)
@@ -27,6 +20,7 @@ export class JavascriptChart extends Component {
           count.push(record.count);
           name.push(record.name)
         });
+
         const [firstYear] = [parseInt(count[2]) + parseInt(count[28]) + parseInt(count[59])]
         const [secondYear] = [parseInt(count[88]) + parseInt(count[128]) + parseInt(count[169]) + parseInt(count[223])]
         const [thirdYear] = [parseInt(count[277]) + parseInt(count[338]) + parseInt(count[406]) + parseInt(count[476])]
@@ -36,6 +30,7 @@ export class JavascriptChart extends Component {
         const [seventhYear] = [parseInt(count[1744]) + parseInt(count[1836]) + parseInt(count[1924]) + parseInt(count[2008])]
         const [eighthYear] = [parseInt(count[2088]) + parseInt(count[2168]) + parseInt(count[2244]) + parseInt(count[2329])]
         const [ninthYear] = [parseInt(count[2408]) + parseInt(count[2490])]
+
         this.setState({
           Data: {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],
