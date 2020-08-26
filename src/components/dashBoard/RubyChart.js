@@ -27,17 +27,16 @@ export class RubyChart extends Component {
                 label: name[0],
                 data: [count[0], count[87], count[279], count[553], count[922], count[1353], count[1748], count[2093], count[2413]],
                 backgroundColor: [
-
-                  "#0000FF",
-                  "#9966FF",
-                  "#4C4CFF",
-                  "#00FFFF",
-                  "#f990a7",
-                  "#aad2ed",
-                  "#FF00FF",
-                  "#3cb371",
-                  "Blue",
-                  "Red"
+                  'rgba(246, 36, 89, 0.6)',
+                  'rgba(255, 99, 132, 0.6)',
+                  'rgba(255, 206, 86, 0.6)',
+                  'rgba(75, 192, 192, 0.6)',
+                  'rgba(153, 102, 255, 0.6)',
+                  'rgba(255, 159, 64, 0.6)',
+                  'rgba(255, 99, 132, 0.6)',
+                  'rgba(54, 162, 235, 0.6)',
+                  'rgba(255, 206, 86, 0.6)',
+                  'rgba(75, 192, 192, 0.6)',
                 ]
               }
             ]

@@ -28,17 +28,16 @@ export class PhpChart extends Component {
                 label: name[3],
                 data: [count[3], count[90], count[280], count[555], count[923], count[1352], count[1750], count[2094], count[2415]],
                 backgroundColor: [
-
-                  "#0000FF",
-                  "#9966FF",
-                  "#4C4CFF",
-                  "#00FFFF",
-                  "#f990a7",
-                  "#aad2ed",
-                  "#FF00FF",
-                  "#3cb371",
-                  "Blue",
-                  "Red"
+                  'rgba(255, 148, 120, 0.6)',
+                  'rgba(255, 99, 132, 0.6)',
+                  'rgba(255, 206, 86, 0.6)',
+                  'rgba(255, 99, 132, 0.6)',
+                  'rgba(54, 162, 235, 0.6)',
+                  'rgba(75, 192, 192, 0.6)',
+                  'rgba(255, 159, 64, 0.6)',
+                  'rgba(54, 162, 235, 0.6)',
+                  'rgba(255, 206, 86, 0.6)',
+                  'rgba(75, 192, 192, 0.6)',
                 ]
               }
             ]

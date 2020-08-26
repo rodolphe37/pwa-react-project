@@ -28,17 +28,16 @@ export class CplusPlusChart extends Component {
                 label: name[5],
                 data: [count[5], count[93], count[282], count[556], count[925], count[1355], count[1749], count[2092], count[2412]],
                 backgroundColor: [
-
-                  "#0000FF",
-                  "#9966FF",
-                  "#4C4CFF",
-                  "#00FFFF",
-                  "#f990a7",
-                  "#aad2ed",
-                  "#FF00FF",
-                  "#3cb371",
-                  "Blue",
-                  "Red"
+                  'rgba(78, 205, 196, 0.6)',
+                  'rgba(255, 99, 132, 0.6)',
+                  'rgba(255, 206, 86, 0.6)',
+                  'rgba(255, 99, 132, 0.6)',
+                  'rgba(54, 162, 235, 0.6)',
+                  'rgba(75, 192, 192, 0.6)',
+                  'rgba(255, 159, 64, 0.6)',
+                  'rgba(54, 162, 235, 0.6)',
+                  'rgba(255, 206, 86, 0.6)',
+                  'rgba(75, 192, 192, 0.6)',
                 ]
               }
             ]

@@ -29,16 +29,16 @@ export class PythonChart extends Component {
                 data: [count[1], count[89], count[278], count[552], count[920], count[1350], count[1745], count[2089], count[2409]],
                 backgroundColor: [
 
-                  "#0000FF",
-                  "#9966FF",
-                  "#4C4CFF",
-                  "#00FFFF",
-                  "#f990a7",
-                  "#aad2ed",
-                  "#FF00FF",
-                  "#3cb371",
-                  "Blue",
-                  "Red"
+                  'rgba(54, 162, 235, 0.6)',
+                  'rgba(255, 99, 132, 0.6)',
+                  'rgba(255, 206, 86, 0.6)',
+                  'rgba(255, 99, 132, 0.6)',
+                  'rgba(54, 162, 235, 0.6)',
+                  'rgba(75, 192, 192, 0.6)',
+                  'rgba(255, 159, 64, 0.6)',
+                  'rgba(54, 162, 235, 0.6)',
+                  'rgba(255, 206, 86, 0.6)',
+                  'rgba(75, 192, 192, 0.6)',
                 ]
               }
             ]

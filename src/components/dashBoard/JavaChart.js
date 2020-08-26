@@ -29,16 +29,16 @@ export class JavaChart extends Component {
                 data: [count[4], count[91], count[281], count[554], count[921], count[1351], count[1746], count[2090], count[2410]],
                 backgroundColor: [
 
-                  "#0000FF",
-                  "#9966FF",
-                  "#4C4CFF",
-                  "#00FFFF",
-                  "#f990a7",
-                  "#aad2ed",
-                  "#FF00FF",
-                  "#3cb371",
-                  "Blue",
-                  "Red"
+                  'rgba(153, 102, 255, 0.6)',
+                  'rgba(255, 99, 132, 0.6)',
+                  'rgba(255, 206, 86, 0.6)',
+                  'rgba(255, 99, 132, 0.6)',
+                  'rgba(54, 162, 235, 0.6)',
+                  'rgba(75, 192, 192, 0.6)',
+                  'rgba(255, 159, 64, 0.6)',
+                  'rgba(54, 162, 235, 0.6)',
+                  'rgba(255, 206, 86, 0.6)',
+                  'rgba(75, 192, 192, 0.6)',
                 ]
               }
             ]
