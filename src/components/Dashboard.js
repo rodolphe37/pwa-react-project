@@ -6,6 +6,7 @@ import PythonChart from './dashBoard/PythonChart';
 import RubyChart from './dashBoard/RubyChart';
 import CplusPlusChart from './dashBoard/CplusPlusChart';
 import TypescriptChart from './dashBoard/TypescriptChart';
+import HtmlChart from './dashBoard/HtmlChart';
 
 const Dashboard = () => {
   return (
@@ -31,6 +32,9 @@ const Dashboard = () => {
       </div>
       <div className="tipescript">
         <TypescriptChart />
+      </div>
+      <div className="html">
+        <HtmlChart />
       </div>
     </>
   )
