@@ -15,6 +15,7 @@ export class PhpChart extends Component {
         let name = [];
         let year = [];
         let count = [];
+
         ipl.forEach(record => {
           year.push(record.year);
           count.push(record.count);
