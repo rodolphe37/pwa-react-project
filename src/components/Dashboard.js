@@ -12,6 +12,7 @@ const Dashboard = () => {
   return (
     <>
       <h3 style={{ fontSize: '15px' }}>Languages popularity on Github (based from Globals pull requests)</h3>
+      <sup>For the year 2012 only 3 quarters (last 9 months), as well as for the year 2020 only 2 quarters (first 6 month) are counted! </sup>
       <div className="javascript">
         <JavascriptChart />
       </div>
