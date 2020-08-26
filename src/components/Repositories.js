@@ -6,7 +6,7 @@ import 'moment/locale/fr';
 const Users = () => {
   const [data, setData] = useState([])
   const [mode, setMode] = useState('online')
-  let idplus = []
+  let idplus = [1]
 
   useEffect(() => {
     const url = "https://api.github.com/users/rodolphe37/repos?per_page=100"
