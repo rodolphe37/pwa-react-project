@@ -10,7 +10,7 @@ this.addEventListener("install", (event) => {
         '/',
         '/about',
         '/home',
-        '/linechart',
+        '/dashboard',
         '/repository'
       ])
     })
