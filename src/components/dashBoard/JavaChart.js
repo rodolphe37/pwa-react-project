@@ -20,13 +20,24 @@ export class JavaChart extends Component {
           count.push(record.count);
           name.push(record.name)
         });
+
+        const [firstYear] = [parseInt(count[4]) + parseInt(count[32]) + parseInt(count[61])]
+        const [secondYear] = [parseInt(count[91]) + parseInt(count[131]) + parseInt(count[173]) + parseInt(count[227])]
+        const [thirdYear] = [parseInt(count[281]) + parseInt(count[342]) + parseInt(count[410]) + parseInt(count[479])]
+        const [fourthYear] = [parseInt(count[554]) + parseInt(count[643]) + parseInt(count[728]) + parseInt(count[818])]
+        const [fifthYear] = [parseInt(count[921]) + parseInt(count[1030]) + parseInt(count[1138]) + parseInt(count[1240])]
+        const [sixthYear] = [parseInt(count[1351]) + parseInt(count[1456]) + parseInt(count[1559]) + parseInt(count[1654])]
+        const [seventhYear] = [parseInt(count[1746]) + parseInt(count[1838]) + parseInt(count[1926]) + parseInt(count[2010])]
+        const [eighthYear] = [parseInt(count[2090]) + parseInt(count[2170]) + parseInt(count[2246]) + parseInt(count[2331])]
+        const [ninthYear] = [parseInt(count[2410]) + parseInt(count[2492])]
+
         this.setState({
           Data: {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],
             datasets: [
               {
                 label: name[4],
-                data: [count[4], count[91], count[281], count[554], count[921], count[1351], count[1746], count[2090], count[2410]],
+                data: [firstYear, secondYear, thirdYear, fourthYear, fifthYear, sixthYear, seventhYear, eighthYear, ninthYear],
                 backgroundColor: [
 
                   'rgba(153, 102, 255, 0.6)',
