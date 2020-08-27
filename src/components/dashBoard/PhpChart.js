@@ -61,6 +61,7 @@ export class PhpChart extends Component {
 
   }
   render() {
+    localStorage.setItem('php', JSON.stringify(this.state.Data))
     return (
       <div>
         <Line

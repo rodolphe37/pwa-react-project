@@ -62,6 +62,7 @@ export class KotlinChart extends Component {
 
   }
   render() {
+    localStorage.setItem('kotlin', JSON.stringify(this.state.Data))
     return (
       <div>
         <Line

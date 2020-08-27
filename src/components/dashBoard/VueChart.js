@@ -62,6 +62,7 @@ export class VueChart extends Component {
 
   }
   render() {
+    localStorage.setItem('vue', JSON.stringify(this.state.Data))
     return (
       <div>
         <Line

@@ -62,6 +62,7 @@ export class DartChart extends Component {
 
   }
   render() {
+    localStorage.setItem('dart', JSON.stringify(this.state.Data))
     return (
       <div>
         <Line

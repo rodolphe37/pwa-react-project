@@ -62,6 +62,7 @@ export class TypescriptChart extends Component {
 
   }
   render() {
+    localStorage.setItem('typescript', JSON.stringify(this.state.Data))
     return (
       <div>
         <Line

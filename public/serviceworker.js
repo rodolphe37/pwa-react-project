@@ -11,7 +11,21 @@ this.addEventListener("install", (event) => {
         '/about',
         '/home',
         '/dashboard',
-        '/repository'
+        '/repository',
+        '/javascript',
+        '/vue',
+        '/typescript',
+        '/swift',
+        '/python',
+        '/ruby',
+        '/php',
+        '/kotlin',
+        '/java',
+        '/html',
+        '/hisLanguages',
+        '/dart',
+        '/css',
+        '/c++'
       ])
     })
   )

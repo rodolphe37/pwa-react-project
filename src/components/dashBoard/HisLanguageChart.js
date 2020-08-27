@@ -19,7 +19,6 @@ export class HisLanguageChart extends Component {
         let langResult = language
 
         langResult.forEach(function (x) { langResult[x] = (langResult[x] || 0) + 1 })
-
         let CSSToString = langResult.CSS.toString()
         let JavaScriptToString = langResult.JavaScript.toString()
         let TypeScriptToString = langResult.TypeScript.toString()
@@ -52,6 +51,7 @@ export class HisLanguageChart extends Component {
 
   }
   render() {
+    localStorage.setItem('hisLanguages', JSON.stringify(this.state.Data))
     return (
       <div>
         <Bar

@@ -62,6 +62,7 @@ export class PythonChart extends Component {
 
   }
   render() {
+    localStorage.setItem('python', JSON.stringify(this.state.Data))
     return (
       <div>
         <Line

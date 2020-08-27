@@ -20,7 +20,7 @@ export class JavascriptChart extends Component {
           year.push(record.year);
           count.push(record.count);
           name.push(record.name)
-        });
+        })
 
         const [firstYear] = [parseInt(count[2]) + parseInt(count[28]) + parseInt(count[59])]
         const [secondYear] = [parseInt(count[88]) + parseInt(count[128]) + parseInt(count[169]) + parseInt(count[223])]
@@ -62,6 +62,7 @@ export class JavascriptChart extends Component {
       })
   }
   render() {
+    localStorage.setItem('javascript', JSON.stringify(this.state.Data))
     return (
       <div>
         <Line

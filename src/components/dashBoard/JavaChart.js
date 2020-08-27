@@ -62,6 +62,7 @@ export class JavaChart extends Component {
 
   }
   render() {
+    localStorage.setItem('java', JSON.stringify(this.state.Data))
     return (
       <div>
         <Line

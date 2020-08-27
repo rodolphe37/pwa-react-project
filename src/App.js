@@ -6,6 +6,20 @@ import About from './components/About'
 import Repositories from './components/Repositories'
 import { Link, Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 import Dashboard from './components/Dashboard';
+import JavascriptChart from './components/dashBoard/JavascriptChart'
+import SwiftChart from './components/dashBoard/SwiftChart';
+import VueChart from './components/dashBoard/VueChart';
+import TypescriptChart from './components/dashBoard/TypescriptChart';
+import PythonChart from './components/dashBoard/PythonChart';
+import RubyChart from './components/dashBoard/RubyChart';
+import PhpChart from './components/dashBoard/PhpChart';
+import KotlinChart from './components/dashBoard/KotlinChart';
+import JavaChart from './components/dashBoard/JavaChart';
+import HtmlChart from './components/dashBoard/HtmlChart';
+import HisLanguageChart from './components/dashBoard/HisLanguageChart';
+import DartChart from './components/dashBoard/DartChart';
+import CssChart from './components/dashBoard/CssChart';
+import CplusPlusChart from './components/dashBoard/CplusPlusChart';
 
 function App() {
   return (
@@ -31,6 +45,20 @@ function App() {
           <Route path='/dashboard' component={Dashboard}></Route>
           <Route path='/repository' component={Repositories}></Route>
           <Route path='/' component={Home}></Route>
+          <Route path='/javascript' component={JavascriptChart}></Route>
+          <Route path='/vue' component={VueChart}></Route>
+          <Route path='/typescript' component={TypescriptChart}></Route>
+          <Route path='/swift' component={SwiftChart}></Route>
+          <Route path='/python' component={PythonChart}></Route>
+          <Route path='/ruby' component={RubyChart}></Route>
+          <Route path='/php' component={PhpChart}></Route>
+          <Route path='/kotlin' component={KotlinChart}></Route>
+          <Route path='/java' component={JavaChart}></Route>
+          <Route path='/html' component={HtmlChart}></Route>
+          <Route path='/hisLanguages' component={HisLanguageChart}></Route>
+          <Route path='/dart' component={DartChart}></Route>
+          <Route path='/css' component={CssChart}></Route>
+          <Route path='/c++' component={CplusPlusChart}></Route>
         </Switch>
       </Router>
     </div>

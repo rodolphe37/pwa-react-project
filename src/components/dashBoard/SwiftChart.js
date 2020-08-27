@@ -62,6 +62,7 @@ export class SwiftChart extends Component {
 
   }
   render() {
+    localStorage.setItem('swift', JSON.stringify(this.state.Data))
     return (
       <div>
         <Line

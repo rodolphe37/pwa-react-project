@@ -61,6 +61,7 @@ export class CplusPlusChart extends Component {
 
   }
   render() {
+    localStorage.setItem('C++', JSON.stringify(this.state.Data))
     return (
       <div>
         <Line

@@ -62,6 +62,7 @@ export class CssChart extends Component {
 
   }
   render() {
+    localStorage.setItem('CSS', JSON.stringify(this.state.Data))
     return (
       <div>
         <Line

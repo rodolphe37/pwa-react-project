@@ -62,6 +62,7 @@ export class HtmlChart extends Component {
 
   }
   render() {
+    localStorage.setItem('html', JSON.stringify(this.state.Data))
     return (
       <div>
         <Line
