@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import { Line } from 'react-chartjs-2';
 
-export class JavaChart extends Component {
+export class DartChart extends Component {
   constructor(props) {
     super(props);
     this.state = { Data: {} };
@@ -21,15 +21,15 @@ export class JavaChart extends Component {
           name.push(record.name)
         });
 
-        const [firstYear] = [parseInt(count[4]) + parseInt(count[32]) + parseInt(count[61])]
-        const [secondYear] = [parseInt(count[91]) + parseInt(count[131]) + parseInt(count[173]) + parseInt(count[227])]
-        const [thirdYear] = [parseInt(count[281]) + parseInt(count[342]) + parseInt(count[410]) + parseInt(count[479])]
-        const [fourthYear] = [parseInt(count[554]) + parseInt(count[643]) + parseInt(count[728]) + parseInt(count[818])]
-        const [fifthYear] = [parseInt(count[921]) + parseInt(count[1030]) + parseInt(count[1138]) + parseInt(count[1240])]
-        const [sixthYear] = [parseInt(count[1351]) + parseInt(count[1456]) + parseInt(count[1559]) + parseInt(count[1654])]
-        const [seventhYear] = [parseInt(count[1746]) + parseInt(count[1838]) + parseInt(count[1926]) + parseInt(count[2010])]
-        const [eighthYear] = [parseInt(count[2090]) + parseInt(count[2170]) + parseInt(count[2246]) + parseInt(count[2331])]
-        const [ninthYear] = [parseInt(count[2410]) + parseInt(count[2492])]
+        const [firstYear] = [parseInt("0")]
+        const [secondYear] = [parseInt("0") + parseInt(count[156]) + parseInt(count[196]) + parseInt(count[250])]
+        const [thirdYear] = [parseInt(count[303]) + parseInt(count[365]) + parseInt(count[435]) + parseInt(count[508])]
+        const [fourthYear] = [parseInt(count[582]) + parseInt(count[672]) + parseInt(count[764]) + parseInt(count[856])]
+        const [fifthYear] = [parseInt(count[960]) + parseInt(count[1068]) + parseInt(count[1177]) + parseInt(count[1276])]
+        const [sixthYear] = [parseInt(count[1386]) + parseInt(count[1493]) + parseInt(count[1594]) + parseInt(count[1684])]
+        const [seventhYear] = [parseInt(count[1774]) + parseInt(count[1863]) + parseInt(count[1953]) + parseInt(count[2041])]
+        const [eighthYear] = [parseInt(count[2112]) + parseInt(count[2190]) + parseInt(count[2260]) + parseInt(count[2345])]
+        const [ninthYear] = [parseInt(count[2426]) + parseInt(count[2509])]
 
         const total = [firstYear + secondYear + thirdYear + fourthYear + fifthYear + sixthYear + seventhYear + eighthYear + ninthYear]
         result.push(total)
@@ -39,11 +39,11 @@ export class JavaChart extends Component {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],
             datasets: [
               {
-                label: `Total count : ${result}, ${name[4]}`,
+                label: `Total count : ${result}, ${name[156]}`,
                 data: [firstYear, secondYear, thirdYear, fourthYear, fifthYear, sixthYear, seventhYear, eighthYear, ninthYear],
                 backgroundColor: [
 
-                  'rgba(153, 102, 255, 0.6)',
+                  'rgba(200, 247, 197, 0.6)',
                   'rgba(255, 99, 132, 0.6)',
                   'rgba(255, 206, 86, 0.6)',
                   'rgba(255, 99, 132, 0.6)',
@@ -76,4 +76,4 @@ export class JavaChart extends Component {
 
 }
 
-export default JavaChart
+export default DartChart

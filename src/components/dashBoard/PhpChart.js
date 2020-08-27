@@ -14,7 +14,7 @@ export class PhpChart extends Component {
         let name = [];
         let year = [];
         let count = [];
-
+        let result = [];
         ipl.forEach(record => {
           year.push(record.year);
           count.push(record.count);
@@ -31,12 +31,15 @@ export class PhpChart extends Component {
         const [eighthYear] = [parseInt(count[2094]) + parseInt(count[2174]) + parseInt(count[2251]) + parseInt(count[2336])]
         const [ninthYear] = [parseInt(count[2415]) + parseInt(count[2497])]
 
+        const total = [firstYear + secondYear + thirdYear + fourthYear + fifthYear + sixthYear + seventhYear + eighthYear + ninthYear]
+        result.push(total)
+
         this.setState({
           Data: {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],
             datasets: [
               {
-                label: name[3],
+                label: `Total count : ${result}, ${name[3]}`,
                 data: [firstYear, secondYear, thirdYear, fourthYear, fifthYear, sixthYear, seventhYear, eighthYear, ninthYear],
                 backgroundColor: [
                   'rgba(255, 148, 120, 0.6)',

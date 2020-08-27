@@ -14,6 +14,7 @@ export class TypescriptChart extends Component {
         let name = [];
         let year = [];
         let count = [];
+        let result = [];
         ipl.forEach(record => {
           year.push(record.year);
           count.push(record.count);
@@ -30,12 +31,15 @@ export class TypescriptChart extends Component {
         const [eighthYear] = [parseInt(count[2095]) + parseInt(count[2175]) + parseInt(count[2249]) + parseInt(count[2335])]
         const [ninthYear] = [parseInt(count[2414]) + parseInt(count[2495])]
 
+        const total = [firstYear + secondYear + thirdYear + fourthYear + fifthYear + sixthYear + seventhYear + eighthYear + ninthYear]
+        result.push(total)
+
         this.setState({
           Data: {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],
             datasets: [
               {
-                label: name[27],
+                label: `Total count : ${result}, ${name[27]}`,
                 data: [firstYear, secondYear, thirdYear, fourthYear, fifthYear, sixthYear, seventhYear, eighthYear, ninthYear],
                 backgroundColor: [
                   'rgba(241, 130, 141,0.6)',

@@ -14,6 +14,7 @@ export class RubyChart extends Component {
         let name = [];
         let year = [];
         let count = [];
+        let result = []
         ipl.forEach(record => {
           year.push(record.year);
           count.push(record.count);
@@ -30,12 +31,15 @@ export class RubyChart extends Component {
         const [eighthYear] = [parseInt(count[2093]) + parseInt(count[2173]) + parseInt(count[2250]) + parseInt(count[2334])]
         const [ninthYear] = [parseInt(count[2413]) + parseInt(count[2496])]
 
+        const total = [firstYear + secondYear + thirdYear + fourthYear + fifthYear + sixthYear + seventhYear + eighthYear + ninthYear]
+        result.push(total)
+
         this.setState({
           Data: {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],
             datasets: [
               {
-                label: name[0],
+                label: `Total count : ${result}, ${name[0]}`,
                 data: [firstYear, secondYear, thirdYear, fourthYear, fifthYear, sixthYear, seventhYear, eighthYear, ninthYear],
                 backgroundColor: [
                   'rgba(246, 36, 89, 0.6)',

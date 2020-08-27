@@ -14,6 +14,7 @@ export class CssChart extends Component {
         let name = [];
         let year = [];
         let count = [];
+        let result = [];
         ipl.forEach(record => {
           year.push(record.year);
           count.push(record.count);
@@ -30,12 +31,15 @@ export class CssChart extends Component {
         const [eighthYear] = [parseInt(count[2100]) + parseInt(count[2180]) + parseInt(count[2257]) + parseInt(count[2342])]
         const [ninthYear] = [parseInt(count[2421]) + parseInt(count[2503])]
 
+        const total = [firstYear + secondYear + thirdYear + fourthYear + fifthYear + sixthYear + seventhYear + eighthYear + ninthYear]
+        result.push(total)
+
         this.setState({
           Data: {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],
             datasets: [
               {
-                label: name[16],
+                label: `Total count : ${result}, ${name[16]}`,
                 data: [firstYear, secondYear, thirdYear, fourthYear, fifthYear, sixthYear, seventhYear, eighthYear, ninthYear],
                 backgroundColor: [
                   'rgba(63, 195, 128, 0.6)',

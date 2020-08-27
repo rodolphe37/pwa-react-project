@@ -9,6 +9,10 @@ import TypescriptChart from './dashBoard/TypescriptChart';
 import HtmlChart from './dashBoard/HtmlChart';
 import HisLanguageChart from './dashBoard/HisLanguageChart'
 import CssChart from './dashBoard/CssChart';
+import DartChart from './dashBoard/DartChart';
+import SwiftChart from './dashBoard/SwiftChart';
+import KotlinChart from './dashBoard/KotlinChart'
+import VueChart from './dashBoard/VueChart';
 
 const Dashboard = () => {
   return (
@@ -48,6 +52,18 @@ const Dashboard = () => {
       </div>
       <div className="css">
         <CssChart />
+      </div>
+      <div className="swift">
+        <SwiftChart />
+      </div>
+      <div className="kotlin">
+        <KotlinChart />
+      </div>
+      <div className="dart">
+        <DartChart />
+      </div>
+      <div className="vue">
+        <VueChart />
       </div>
     </>
   )

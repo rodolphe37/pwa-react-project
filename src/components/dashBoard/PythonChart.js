@@ -14,12 +14,13 @@ export class PythonChart extends Component {
         let name = [];
         let year = [];
         let count = [];
+        let result = [];
         ipl.forEach(record => {
           year.push(record.year);
           count.push(record.count);
           name.push(record.name)
         });
-        console.log(ipl)
+
         const [firstYear] = [parseInt(count[1]) + parseInt(count[29]) + parseInt(count[58])]
         const [secondYear] = [parseInt(count[89]) + parseInt(count[127]) + parseInt(count[170]) + parseInt(count[224])]
         const [thirdYear] = [parseInt(count[278]) + parseInt(count[339]) + parseInt(count[407]) + parseInt(count[477])]
@@ -29,12 +30,16 @@ export class PythonChart extends Component {
         const [seventhYear] = [parseInt(count[1745]) + parseInt(count[1837]) + parseInt(count[1925]) + parseInt(count[2009])]
         const [eighthYear] = [parseInt(count[2089]) + parseInt(count[2169]) + parseInt(count[2245]) + parseInt(count[2330])]
         const [ninthYear] = [parseInt(count[2409]) + parseInt(count[2491])]
+
+        const total = [firstYear + secondYear + thirdYear + fourthYear + fifthYear + sixthYear + seventhYear + eighthYear + ninthYear]
+        result.push(total)
+
         this.setState({
           Data: {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],
             datasets: [
               {
-                label: name[1],
+                label: `Total count : ${result}, ${name[1]}`,
                 data: [firstYear, secondYear, thirdYear, fourthYear, fifthYear, sixthYear, seventhYear, eighthYear, ninthYear],
                 backgroundColor: [
 

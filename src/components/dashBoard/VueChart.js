@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import { Line } from 'react-chartjs-2';
 
-export class JavaChart extends Component {
+export class VueChart extends Component {
   constructor(props) {
     super(props);
     this.state = { Data: {} };
@@ -21,15 +21,15 @@ export class JavaChart extends Component {
           name.push(record.name)
         });
 
-        const [firstYear] = [parseInt(count[4]) + parseInt(count[32]) + parseInt(count[61])]
-        const [secondYear] = [parseInt(count[91]) + parseInt(count[131]) + parseInt(count[173]) + parseInt(count[227])]
-        const [thirdYear] = [parseInt(count[281]) + parseInt(count[342]) + parseInt(count[410]) + parseInt(count[479])]
-        const [fourthYear] = [parseInt(count[554]) + parseInt(count[643]) + parseInt(count[728]) + parseInt(count[818])]
-        const [fifthYear] = [parseInt(count[921]) + parseInt(count[1030]) + parseInt(count[1138]) + parseInt(count[1240])]
-        const [sixthYear] = [parseInt(count[1351]) + parseInt(count[1456]) + parseInt(count[1559]) + parseInt(count[1654])]
-        const [seventhYear] = [parseInt(count[1746]) + parseInt(count[1838]) + parseInt(count[1926]) + parseInt(count[2010])]
-        const [eighthYear] = [parseInt(count[2090]) + parseInt(count[2170]) + parseInt(count[2246]) + parseInt(count[2331])]
-        const [ninthYear] = [parseInt(count[2410]) + parseInt(count[2492])]
+        const [firstYear] = [parseInt("0")]
+        const [secondYear] = [parseInt("0")]
+        const [thirdYear] = [parseInt("0")]
+        const [fourthYear] = [parseInt("0")]
+        const [fifthYear] = [parseInt(count[1016]) + parseInt(count[1098]) + parseInt(count[1184]) + parseInt(count[1270])]
+        const [sixthYear] = [parseInt(count[1382]) + parseInt(count[1486]) + parseInt(count[1593]) + parseInt(count[1683])]
+        const [seventhYear] = [parseInt(count[1766]) + parseInt(count[1862]) + parseInt(count[1950]) + parseInt(count[2036])]
+        const [eighthYear] = [parseInt(count[2113]) + parseInt(count[2192]) + parseInt(count[2268]) + parseInt(count[2353])]
+        const [ninthYear] = [parseInt(count[2435]) + parseInt(count[2515])]
 
         const total = [firstYear + secondYear + thirdYear + fourthYear + fifthYear + sixthYear + seventhYear + eighthYear + ninthYear]
         result.push(total)
@@ -39,11 +39,11 @@ export class JavaChart extends Component {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],
             datasets: [
               {
-                label: `Total count : ${result}, ${name[4]}`,
+                label: `Total count : ${result}, ${name[1016]} `,
                 data: [firstYear, secondYear, thirdYear, fourthYear, fifthYear, sixthYear, seventhYear, eighthYear, ninthYear],
                 backgroundColor: [
 
-                  'rgba(153, 102, 255, 0.6)',
+                  'rgba(34, 49, 63, 0.6)',
                   'rgba(255, 99, 132, 0.6)',
                   'rgba(255, 206, 86, 0.6)',
                   'rgba(255, 99, 132, 0.6)',
@@ -76,4 +76,4 @@ export class JavaChart extends Component {
 
 }
 
-export default JavaChart
+export default VueChart
