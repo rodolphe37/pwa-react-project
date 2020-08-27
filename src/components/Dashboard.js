@@ -8,6 +8,7 @@ import CplusPlusChart from './dashBoard/CplusPlusChart';
 import TypescriptChart from './dashBoard/TypescriptChart';
 import HtmlChart from './dashBoard/HtmlChart';
 import HisLanguageChart from './dashBoard/HisLanguageChart'
+import CssChart from './dashBoard/CssChart';
 
 const Dashboard = () => {
   return (
@@ -39,11 +40,14 @@ const Dashboard = () => {
       <div className="c++">
         <CplusPlusChart />
       </div>
-      <div className="tipescript">
-        <TypescriptChart />
-      </div>
       <div className="html">
         <HtmlChart />
+      </div>
+      <div className="typescript">
+        <TypescriptChart />
+      </div>
+      <div className="css">
+        <CssChart />
       </div>
     </>
   )
