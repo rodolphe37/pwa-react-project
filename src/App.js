@@ -16,7 +16,7 @@ function App() {
           <Nav className="mr-auto">
             <Link to="/">Home</Link>&emsp;
             <Link to="/about">About</Link>&emsp;
-            <Link to="/dashboard">Graphs</Link>&emsp;
+            <Link to="/dashboard">Charts</Link>&emsp;
             <Link to="repository">My Repos</Link>
           </Nav>
           <div className="hidden">
