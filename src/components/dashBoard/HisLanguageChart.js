@@ -26,10 +26,10 @@ export class HisLanguageChart extends Component {
         let VueToString = langResult.Vue.toString()
         let PHPToString = langResult.PHP.toString()
         langResult.push(CSSToString, JavaScriptToString, TypeScriptToString, HTMLToString, VueToString, PHPToString)
-
+        console.log(langResult)
         this.setState({
           Data: {
-            labels: [langResult[1], langResult[19], langResult[18], langResult[0], langResult[88], langResult[98]],
+            labels: [langResult[1], langResult[19], langResult[18], langResult[0], langResult[88], langResult[99]],
             datasets: [
               {
                 label: "languages used on my repository",
