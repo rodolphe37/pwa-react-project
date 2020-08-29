@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Moment from 'react-moment';
 import Footer from './Footer';
 
 const About = (props) => {
