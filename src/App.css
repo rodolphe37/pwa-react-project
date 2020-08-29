@@ -53,8 +53,8 @@
 }
 
 .bio {
-  padding-left: 324px;
-  padding-right: 302px;
+  padding-left: 143px;
+  padding-right: 157px;
 }
 .appear {
   display: none;
@@ -64,6 +64,12 @@
   border-radius: 10px;
   box-shadow: 1px 2px 3px black;
   height: 199px;
+}
+
+.tools {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
 }
 
 @media (min-width:280px) and (max-width:650px) {

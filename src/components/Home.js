@@ -20,7 +20,7 @@ const Home = (props) => {
     })
   }, [])
 
-  const { id, public_repos, public_gists, html_url, name, created_at, login } = info
+  const { id, public_repos, public_gists, html_url, name, created_at, login, updated_at } = info
   return (
     <div className="linear-gradient">
       {
@@ -34,12 +34,15 @@ const Home = (props) => {
       <hr />
       <div key={id}>
         <span>Number of public Repos : <b>{public_repos}</b></span><br />
-        <span>Number of public Gists : <b>{public_gists}</b></span><br />
+        <span>Number of public Gists : <b>{public_gists}</b></span>
         <br />
-        <sup>Created at : <Moment style={{ color: 'red' }} locale="fr">{created_at}</Moment></sup>
+        <br />
+        <sup>Account created at : <Moment style={{ color: 'red' }} locale="fr">{created_at}</Moment></sup>
         <br />
         <iframe className="stats" title="stats" width="500" height="250" frameBorder="false" src="https://github-readme-stats.vercel.app/api?username=rodolphe37&show_icons=true&hide_border=true" />
       </div>
+      <br />
+      <sup>Last Activity on my repositories :<br /> <Moment style={{ color: 'red' }} locale="fr">{updated_at}</Moment></sup>
       <hr />
       <div className="footer">
         <Footer />
