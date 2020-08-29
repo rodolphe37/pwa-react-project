@@ -37,12 +37,12 @@ const Home = (props) => {
         <span>Number of public Gists : <b>{public_gists}</b></span>
         <br />
         <br />
-        <sup>Account created at : <Moment style={{ color: 'red' }} locale="fr">{created_at}</Moment></sup>
+        <sup>Account created at : <br className="appear" /> <Moment style={{ color: 'red' }} locale=" fr">{created_at}</Moment></sup>
         <br />
-        <iframe className="stats" title="stats" frameBorder="false" src="https://github-readme-stats.vercel.app/api?username=rodolphe37&show_icons=true&hide_border=true" />
+        <iframe className="stats hidden-frame" title="stats" frameBorder="false" src="https://github-readme-stats.vercel.app/api?username=rodolphe37&show_icons=true&hide_border=true" />
       </div>
       <br />
-      <sup>Last Activity on my repositories :<br /> <Moment style={{ color: 'red' }} locale="fr">{updated_at}</Moment></sup>
+      <sup>Last Activity on my repositories :<br className="appear" /> <Moment style={{ color: 'red' }} locale="fr">{updated_at}</Moment></sup>
       <hr />
       <div className="footer">
         <Footer />

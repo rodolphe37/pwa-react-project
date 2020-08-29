@@ -89,6 +89,9 @@
   .school-img {
     width: 6% !important;
   }
+  .hidden-frame{
+    display: none;
+  }
 }
 
 
