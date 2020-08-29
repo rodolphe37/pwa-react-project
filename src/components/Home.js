@@ -38,6 +38,7 @@ const Home = (props) => {
         <br />
         <sup>Created at : <Moment style={{ color: 'red' }} locale="fr">{created_at}</Moment></sup>
         <br />
+        <iframe className="stats" title="stats" width="500" height="250" frameBorder="false" src="https://github-readme-stats.vercel.app/api?username=rodolphe37&show_icons=true&hide_border=true" />
       </div>
       <hr />
       <div className="footer">

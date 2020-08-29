@@ -52,12 +52,18 @@
   max-width: 100%;
 }
 
-.bio {
+/* .bio {
   padding-left: 324px;
   padding-right: 302px;
-}
+} */
 .appear {
   display: none;
+}
+
+.stats {
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px black;
+  height: 199px;
 }
 
 @media (min-width:280px) and (max-width:650px) {
@@ -114,5 +120,10 @@
   .brand {
     font-size: 105%;
     margin-left: 9px;
+  }
+
+  .stats {
+    width:250px !important;
+    height: 100px !important;
   }
 }

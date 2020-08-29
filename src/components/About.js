@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Moment from 'react-moment';
+import Footer from './Footer';
 
 const About = (props) => {
   const [about, setAbout] = useState([])
@@ -29,18 +30,24 @@ const About = (props) => {
       <h1 style={{ fontSize: "30px" }}>About me</h1>
       <img className="rounded-img" src="https://www.rodolphe-augusto.fr/static/media/perso-5b.9e8d203d.png" alt="avatar" />
       <div key={id}>
-        <span>School where I went : <a href="https://github.com/WildCodeSchool" target="new"><img className="school-img" src={`https://avatars2.githubusercontent.com/u/8874047?s=60&v=4`} alt="school organization" /></a> </span><br />
+        <span>organization where I went : <a href="https://github.com/WildCodeSchool" target="new"><img className="school-img" src={`https://avatars2.githubusercontent.com/u/8874047?s=60&v=4`} alt="school organization" /></a> </span><br />
         <span>My Location : <b>{location}</b></span><br />
         <div>
           <p>Followers : {followers}</p>
+          <sup>Last Activity on my repositories :<br /> <Moment style={{ color: 'red' }} locale="fr">{updated_at}</Moment></sup>
         </div>
+        <br />
         <span>My Portfolio link : <a href={blog} target="new">rodolphe-augusto.fr</a></span>
         <br />
         <br />
-        <p className="bio">My Bio : <br />{bio}</p>
-        <sup>Last Activity on my repositories :<br /> <Moment style={{ color: 'red' }} locale="fr">{updated_at}</Moment></sup>
-        <br />
+        <div style={{ textAlign: 'center', padding: '50px' }}>
+          <p className="bio">My Github Resume : <br />{bio}</p></div>
       </div>
+      <hr />
+      <div>
+        <Footer />
+      </div>
+      <br />
     </div>
   )
 }
