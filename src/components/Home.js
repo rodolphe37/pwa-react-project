@@ -39,7 +39,7 @@ const Home = (props) => {
         <br />
         <sup>Account created at : <Moment style={{ color: 'red' }} locale="fr">{created_at}</Moment></sup>
         <br />
-        <iframe className="stats" title="stats" width="500" height="250" frameBorder="false" src="https://github-readme-stats.vercel.app/api?username=rodolphe37&show_icons=true&hide_border=true" />
+        <iframe className="stats" title="stats" frameBorder="false" src="https://github-readme-stats.vercel.app/api?username=rodolphe37&show_icons=true&hide_border=true" />
       </div>
       <br />
       <sup>Last Activity on my repositories :<br /> <Moment style={{ color: 'red' }} locale="fr">{updated_at}</Moment></sup>

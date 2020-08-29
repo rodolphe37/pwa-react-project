@@ -60,12 +60,6 @@
   display: none;
 }
 
-.stats {
-  border-radius: 10px;
-  box-shadow: 1px 2px 3px black;
-  height: 199px;
-}
-
 .tools {
   justify-content: center;
   align-items: center;
@@ -127,9 +121,4 @@
     font-size: 105%;
     margin-left: 9px;
   }
-
-  /* .stats {
-    width:250px !important;
-    height: 100px !important;
-  } */
 }
