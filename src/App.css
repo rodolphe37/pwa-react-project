@@ -167,6 +167,10 @@
     font-size: 18px !important;
     font-weight: 600;
   }
+  a.brand.navbar-brand {
+    font-size: 25px !important;
+    margin-left: 38%!important;
+  }
 }
 
 @media (max-width: 840px) {
@@ -188,10 +192,6 @@
   }
   .hidden-phone {
     display: none !important;
-  }
-  a.brand.navbar-brand {
-    font-size: 25px !important;
-    margin-left: 38%!important;
   }
   .bottom-nav-visible {
     display: inherit;
