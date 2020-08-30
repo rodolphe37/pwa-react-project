@@ -2,14 +2,16 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import { Bar } from 'react-chartjs-2';
 import { withTranslation } from 'react-i18next';
+const { REACT_APP_USERNAME } = process.env
 
 export class HisLanguageChart extends Component {
   constructor(props) {
     super(props);
     this.state = { Data: {} };
+
   }
   componentDidMount() {
-    axios.get(`https://api.github.com/users/rodolphe37/repos?per_page=100`)
+    axios.get(`https://api.github.com/users/${REACT_APP_USERNAME}/repos?per_page=100`)
       .then(res => {
         const ipl = res.data;
         let language = [];

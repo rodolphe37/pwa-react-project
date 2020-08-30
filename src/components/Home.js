@@ -7,10 +7,12 @@ const Home = (props) => {
   const [info, setInfo] = useState([])
   const [mode, setMode] = useState('online')
 
+  const { REACT_APP_USERNAME, REACT_APP_PICTURE_USER } = process.env
+
   const { t } = useTranslation();
 
   useEffect(() => {
-    const url2 = "https://api.github.com/users/rodolphe37"
+    const url2 = `https://api.github.com/users/${REACT_APP_USERNAME}`
     fetch(url2).then((res) => {
       res.json().then((resultat) => {
         setInfo(resultat)
@@ -21,7 +23,7 @@ const Home = (props) => {
       let collection = localStorage.getItem('home');
       setInfo(JSON.parse(collection))
     })
-  }, [])
+  }, [REACT_APP_USERNAME])
 
   const { id, public_repos, public_gists, html_url, name, created_at, login, updated_at } = info
   return (
@@ -30,7 +32,7 @@ const Home = (props) => {
         mode === 'offline' ? <div className=" alert alert-danger" role="alert">{t('alert')}</div> : null
       }
       <h1 style={{ fontSize: "30px" }}>{t('title')}</h1>
-      <img className="rounded-img" src="https://avatars3.githubusercontent.com/u/50537655?s=400&u=4901bca59dce00305a18adf5a39201bdc75a7686&v=4" alt="avatar" />
+      <img className="rounded-img" src={`https://${REACT_APP_PICTURE_USER}`} alt="avatar" />
       <h2><a href={html_url} target="new">{name}</a></h2>
       <h5>{t('username')} : {login}</h5>
       <hr />
@@ -41,7 +43,9 @@ const Home = (props) => {
         <br />
         <sup>{t('created')} : <br className="appear" /> <Moment style={{ color: 'red' }} locale=" fr">{created_at}</Moment></sup>
         <br />
-        <iframe className="stats hidden-frame" title="stats" frameBorder="false" src="https://github-readme-stats.vercel.app/api?username=rodolphe37&show_icons=true&hide_border=true" />
+        <div>
+          <iframe className="stats hidden-frame" title="stats" frameBorder="false" src={`https://github-readme-stats.vercel.app/api?username=${REACT_APP_USERNAME}&show_icons=true&hide_border=true`} />
+        </div>
       </div>
       <br />
       <sup>{t('activity')} :<br className="appear" /> <Moment style={{ color: 'red' }} locale="fr">{updated_at}</Moment></sup>

@@ -6,10 +6,12 @@ const About = (props) => {
   const [about, setAbout] = useState([])
   const [mode, setMode] = useState('online')
 
+  const { REACT_APP_USERNAME } = process.env
+
   const { t } = useTranslation();
 
   useEffect(() => {
-    const url = "https://api.github.com/users/rodolphe37"
+    const url = `https://api.github.com/users/${REACT_APP_USERNAME}`
     fetch(url).then((res) => {
       res.json().then((resultat) => {
         setAbout(resultat)
@@ -30,7 +32,7 @@ const About = (props) => {
       }
       <br />
       <h1 style={{ fontSize: "30px" }}>{t('aboutMe')}</h1>
-      <img className="rounded-img" src="https://www.rodolphe-augusto.fr/static/media/perso-5b.9e8d203d.png" alt="avatar" />
+      <img className="rounded-img" src={require('../assets/images/perso-5b.png')} alt="avatar" />
       <div key={id}>
         <span>{t('organization')} : <a href="https://github.com/WildCodeSchool" target="new"><img className="school-img" src={`https://avatars2.githubusercontent.com/u/8874047?s=60&v=4`} alt="school organization" /></a> </span><br />
         <span>{t('location')} : <b>{location}</b></span><br />

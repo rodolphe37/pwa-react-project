@@ -4,6 +4,8 @@ import Moment from 'react-moment';
 import 'moment/locale/fr';
 import { useTranslation } from 'react-i18next';
 
+const { REACT_APP_USERNAME } = process.env
+
 const Users = () => {
   const [data, setData] = useState([])
   const [mode, setMode] = useState('online')
@@ -11,7 +13,7 @@ const Users = () => {
   const { t } = useTranslation();
 
   useEffect(() => {
-    const url = "https://api.github.com/users/rodolphe37/repos?per_page=100"
+    const url = `https://api.github.com/users/${REACT_APP_USERNAME}/repos?per_page=100`
     fetch(url).then((response) => {
       response.json().then((result) => {
         setData(result)
