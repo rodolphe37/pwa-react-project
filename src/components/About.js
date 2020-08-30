@@ -24,7 +24,9 @@ const About = (props) => {
     REACT_APP_PICTURE_13,
     REACT_APP_PICTURE_14,
     REACT_APP_PICTURE_15,
-    REACT_APP_PICTURE_16
+    REACT_APP_PICTURE_16,
+    REACT_APP_NAME_COPYRIGHT,
+    REACT_APP_YEAR_COPYRIGHT
   } = process.env
 
   const { t } = useTranslation();
@@ -95,7 +97,7 @@ const About = (props) => {
       <div>
         <Footer />
         <div style={{ marginTop: '10px' }}>
-          <small className="d-block mb-3 link-footer brand-footer">Copyright &copy; Rodolphe Augusto 2020</small>
+          <small className="d-block mb-3 link-footer brand-footer">Copyright &copy; {`${REACT_APP_NAME_COPYRIGHT}`} {`${REACT_APP_YEAR_COPYRIGHT}`}</small>
         </div>
       </div>
       <br />

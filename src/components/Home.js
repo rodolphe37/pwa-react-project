@@ -7,7 +7,7 @@ const Home = (props) => {
   const [info, setInfo] = useState([])
   const [mode, setMode] = useState('online')
 
-  const { REACT_APP_USERNAME, REACT_APP_PICTURE_USER } = process.env
+  const { REACT_APP_USERNAME, REACT_APP_PICTURE_USER, REACT_APP_NAME_COPYRIGHT, REACT_APP_YEAR_COPYRIGHT } = process.env
 
   const { t } = useTranslation();
 
@@ -54,7 +54,7 @@ const Home = (props) => {
         <Footer />
       </div>
       <div style={{ marginTop: '10px' }}>
-        <small className="d-block mb-3 link-footer brand-footer">Copyright &copy; Rodolphe Augusto 2020</small>
+        <small className="d-block mb-3 link-footer brand-footer">Copyright &copy; {`${REACT_APP_NAME_COPYRIGHT}`} {`${REACT_APP_YEAR_COPYRIGHT}`}</small>
       </div>
     </div>
   )
