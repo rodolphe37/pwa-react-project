@@ -13,19 +13,21 @@ import DartChart from './dashBoard/DartChart';
 import SwiftChart from './dashBoard/SwiftChart';
 import KotlinChart from './dashBoard/KotlinChart'
 import VueChart from './dashBoard/VueChart';
+import { useTranslation } from 'react-i18next';
 
 const Dashboard = () => {
+  const { t } = useTranslation();
   return (
-    <>
+    <React.Fragment>
       <br />
-      <h3 style={{ fontSize: '15px' }}>Languages used on my repositories</h3>
-      <sup className="title-sup">These are the most used languages ​​on 50 of my repositories</sup>
+      <h3 style={{ fontSize: '15px' }}>{t('languagesRepos')}</h3>
+      <sup className="title-sup" > {t('mostUsed')}</sup>
       <div className="his-languages">
         <HisLanguageChart />
       </div>
       <br />
-      <h3 style={{ fontSize: '15px' }}>Languages popularity on Github <br className="appear" /> (based from Globals pull requests)</h3>
-      <sup className="title-sup">For the year 2012 only 3 quarters (last 9 months), <br className="appear" /> as well as for the year 2020 only 2 quarters (first 6 months) are counted!</sup>
+      <h3 style={{ fontSize: '15px' }}>{t('popularityLanguages')} <br className="appear" /> {t('pullRequests')}</h3>
+      <sup className="title-sup">{t('globalCharts1')} <br className="appear" /> {t('globalCharts2')}</sup>
       <div className="javascript">
         <JavascriptChart />
       </div>
@@ -65,7 +67,7 @@ const Dashboard = () => {
       <div className="vue">
         <VueChart />
       </div>
-    </>
+    </React.Fragment>
   )
 }
 

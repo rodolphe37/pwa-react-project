@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import { Bar } from 'react-chartjs-2';
+import { withTranslation } from 'react-i18next';
 
 export class HisLanguageChart extends Component {
   constructor(props) {
@@ -12,7 +13,7 @@ export class HisLanguageChart extends Component {
       .then(res => {
         const ipl = res.data;
         let language = [];
-
+        const { t } = this.props;
         ipl.forEach(record => {
           language.push(record.language);
         });
@@ -27,12 +28,13 @@ export class HisLanguageChart extends Component {
         let PHPToString = langResult.PHP.toString()
         langResult.push(CSSToString, JavaScriptToString, TypeScriptToString, HTMLToString, VueToString, PHPToString)
         console.log(langResult)
+        localStorage.setItem('hisLanguages', JSON.stringify(this.state.Data))
         this.setState({
           Data: {
             labels: [langResult[1], langResult[19], langResult[18], langResult[0], langResult[88], langResult[99]],
             datasets: [
               {
-                label: "languages used on my repository",
+                label: `${t('hislanguages')}`,
                 data: [langResult[101], langResult[102], langResult[103], langResult[100], langResult[104], langResult[105]],
                 backgroundColor: [
                   'rgba(255, 206, 86, 0.6)',
@@ -51,7 +53,6 @@ export class HisLanguageChart extends Component {
 
   }
   render() {
-    localStorage.setItem('hisLanguages', JSON.stringify(this.state.Data))
     return (
       <div>
         <Bar
@@ -66,4 +67,4 @@ export class HisLanguageChart extends Component {
 
 }
 
-export default HisLanguageChart
+export default withTranslation()(HisLanguageChart)
