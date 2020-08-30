@@ -84,6 +84,38 @@
   margin-left: 21%;
 }
 
+
+.bottom-tab-nav {
+  border-top: solid 1px #EBEBEB;
+}
+
+.nav-link,
+.bottom-nav-link {
+  color: #55575b;
+}
+
+.bottom-nav-link.active {
+  color: #922c88;
+}
+
+.bottom-tab-label {
+  font-size: 12px;
+}
+.fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+  background: black;
+}
+.bottom-nav-visible {
+  display: none;
+}
+.padding-bottom-phone {
+  display: none;
+}
+
 @media (min-width:280px) and (max-width:650px) {
 
   .navbar-nav {
@@ -150,5 +182,27 @@
     display: inline-flex;
     margin-left: 26%;
     margin-top: -13px;
-}
+  }
+  .hidden-phone {
+    display: none !important;
+  }
+  a.brand.navbar-brand {
+    font-size: 25px !important;
+    margin-left: 25% !important;
+  }
+  .bottom-nav-visible {
+    display: inherit;
+    position: fixed;
+    z-index: 1540;
+  }
+  .footer {
+    padding-bottom: 40px;
+  }
+  .fixed-bottom {
+    /* max-width: 96%; */
+    max-height: fit-content;
+  }
+  .padding-bottom-phone {
+    display: inherit;
+  }
 }

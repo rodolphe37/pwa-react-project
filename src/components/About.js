@@ -78,6 +78,10 @@ const About = (props) => {
         </div>
       </div>
       <br />
+      <div className="padding-bottom-phone">
+        <br />
+        <br />
+      </div>
     </div>
   )
 }

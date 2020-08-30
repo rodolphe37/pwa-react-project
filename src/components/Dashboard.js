@@ -67,6 +67,12 @@ const Dashboard = () => {
       <div className="vue">
         <VueChart />
       </div>
+      <div className="padding-bottom-phone">
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
     </React.Fragment>
   )
 }

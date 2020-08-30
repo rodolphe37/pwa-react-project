@@ -92,6 +92,12 @@ const Users = () => {
           ))}
         </tbody>
       </Table>
+      <div className="padding-bottom-phone">
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
     </div>
   )
 }
