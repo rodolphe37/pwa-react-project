@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import { Navbar, Nav } from 'react-bootstrap'
 import Home from './components/Home'
 import About from './components/About'
 import Repositories from './components/Repositories'
@@ -9,7 +8,7 @@ import {
   DropdownToggle,
   DropdownMenu,
 } from 'reactstrap';
-import { Link, Route, BrowserRouter as Router, Switch } from 'react-router-dom'
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 import Dashboard from './components/Dashboard';
 import JavascriptChart from './components/dashBoard/JavascriptChart'
 import SwiftChart from './components/dashBoard/SwiftChart';

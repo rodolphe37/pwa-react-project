@@ -52,9 +52,6 @@ const Home = (props) => {
       <div style={{ marginTop: '10px' }}>
         <small className="d-block mb-3 link-footer brand-footer">Copyright &copy; Rodolphe Augusto 2020</small>
       </div>
-      <div className="padding-bottom-phone">
-        <br />
-      </div>
     </div>
   )
 }
