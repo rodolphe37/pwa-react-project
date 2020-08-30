@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Footer from './Footer';
 import { useTranslation } from 'react-i18next';
 
-const About = (props) => {
+const About = () => {
   const [about, setAbout] = useState([])
   const [mode, setMode] = useState('online')
 
