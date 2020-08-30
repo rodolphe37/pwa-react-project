@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { Table } from 'react-bootstrap';
 import Moment from 'react-moment';
 import 'moment/locale/fr';
+import { useTranslation } from 'react-i18next';
 
 const Users = () => {
   const [data, setData] = useState([])
   const [mode, setMode] = useState('online')
   let idplus = [1]
+  const { t } = useTranslation();
 
   useEffect(() => {
     const url = "https://api.github.com/users/rodolphe37/repos?per_page=100"
@@ -26,21 +28,21 @@ const Users = () => {
     <div>
       <div>
         {
-          mode === 'offline' ? <div className=" alert alert-danger" role="alert">You are in Offline mode or some issue with connection</div> : null
+          mode === 'offline' ? <div className=" alert alert-danger" role="alert">{t('alert')}</div> : null
         }
       </div>
       <br />
-      <div><b>My Repos list</b></div>
+      <div><b>{t('reposList')}</b></div>
       <br />
       <Table striped bordered hover >
         <thead>
           <tr>
             <th className="hidden">Id</th>
-            <th>Name</th>
-            <th>Link</th>
-            <th className="hidden">Created at</th>
-            <th className="hidden">Updated at</th>
-            <th className="hidden">Languages</th>
+            <th>{t('nameRepo')}</th>
+            <th>{t('linkRepo')}</th>
+            <th className="hidden">{t('createdrepos')}</th>
+            <th className="hidden">{t('updatedRops')}</th>
+            <th className="hidden">{t('languagesRepo')}</th>
           </tr>
         </thead>
         <tbody>
@@ -51,7 +53,7 @@ const Users = () => {
                 <tr key={item.id}>
                   <td className="hidden">{idplus++}</td>
                   <td>{item.name}</td>
-                  <td><a href={`${item.html_url}`} target="new">Click to Open</a></td>
+                  <td><a href={`${item.html_url}`} target="new">{t('clickOpen')}</a></td>
                   <td className="hidden"><Moment locale="fr">{item.created_at}</Moment></td>
                   <td className="hidden"><Moment locale="fr">{item.updated_at}</Moment></td>
                   <td className="hidden">{item.language}</td>
@@ -62,16 +64,16 @@ const Users = () => {
         </tbody>
       </Table>
       <br />
-      <div><b>Forked Repos list</b></div>
+      <div><b>{t('forkedRepos')}</b></div>
       <br />
       <Table striped bordered hover >
         <thead>
           <tr>
             <th className="hidden">Id</th>
-            <th>Name</th>
-            <th>Link</th>
-            <th className="hidden">Created</th>
-            <th className="hidden">Forked</th>
+            <th>{t('nameRepo')}</th>
+            <th>{t('linkRepo')}</th>
+            <th className="hidden">{t('createdrepos')}</th>
+            <th className="hidden">{t('boolForked')}</th>
           </tr>
         </thead>
         <tbody>
@@ -81,9 +83,9 @@ const Users = () => {
               <tr key={item.id}>
                 <td className="hidden">{idplus++}</td>
                 <td>{item.name}</td>
-                <td><a href={`${item.html_url}`} target="new">Click to Open</a></td>
+                <td><a href={`${item.html_url}`} target="new">{t('clickOpen')}</a></td>
                 <td className="hidden"><Moment locale="fr">{item.created_at}</Moment></td>
-                <td className="hidden">{item.fork === true ? 'Yes' : ''}</td>
+                <td className="hidden">{item.fork === true ? `${t('yesForked')}` : ''}</td>
 
               </tr>
               : null

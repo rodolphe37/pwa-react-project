@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import { Line } from 'react-chartjs-2';
+import { withTranslation } from 'react-i18next';
 
 export class CplusPlusChart extends Component {
   constructor(props) {
@@ -15,6 +16,7 @@ export class CplusPlusChart extends Component {
         let year = [];
         let count = [];
         let result = [];
+        const { t } = this.props;
         ipl.forEach(record => {
           year.push(record.year);
           count.push(record.count);
@@ -33,13 +35,13 @@ export class CplusPlusChart extends Component {
 
         const total = [firstYear + secondYear + thirdYear + fourthYear + fifthYear + sixthYear + seventhYear + eighthYear + ninthYear]
         result.push(total)
-
+        localStorage.setItem('C++', JSON.stringify(this.state.Data))
         this.setState({
           Data: {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],
             datasets: [
               {
-                label: `Total count : ${result}, ${name[5]}`,
+                label: `${t('count')} : ${result}, ${name[5]}`,
                 data: [firstYear, secondYear, thirdYear, fourthYear, fifthYear, sixthYear, seventhYear, eighthYear, ninthYear],
                 backgroundColor: [
                   'rgba(78, 205, 196, 0.6)',
@@ -61,7 +63,6 @@ export class CplusPlusChart extends Component {
 
   }
   render() {
-    localStorage.setItem('C++', JSON.stringify(this.state.Data))
     return (
       <div>
         <Line
@@ -76,4 +77,4 @@ export class CplusPlusChart extends Component {
 
 }
 
-export default CplusPlusChart
+export default withTranslation()(CplusPlusChart)

@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import swDev from './serviceworkerDev'
+import InfiniteLoopLoader from './components/InfiniteLoopLoader'
+
+
+import "./i18n";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Suspense fallback={<InfiniteLoopLoader />}>
+      <App />
+    </Suspense>
   </React.StrictMode>,
   document.getElementById('root')
 );

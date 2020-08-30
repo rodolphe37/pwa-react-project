@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Footer from './Footer';
+import { useTranslation } from 'react-i18next';
 
 const About = (props) => {
   const [about, setAbout] = useState([])
   const [mode, setMode] = useState('online')
+
+  const { t } = useTranslation();
 
   useEffect(() => {
     const url = "https://api.github.com/users/rodolphe37"
@@ -19,28 +22,28 @@ const About = (props) => {
     })
   }, [])
 
-  const { id, location, blog, bio, followers } = about
+  const { id, location, blog, followers } = about
   return (
     <div className="linear-gradient">
       {
-        mode === 'offline' ? <div className=" alert alert-danger" role="alert">You are in Offline mode or some issue with connection</div> : null
+        mode === 'offline' ? <div className=" alert alert-danger" role="alert">{t('alert')}</div> : null
       }
       <br />
-      <h1 style={{ fontSize: "30px" }}>About me</h1>
+      <h1 style={{ fontSize: "30px" }}>{t('aboutMe')}</h1>
       <img className="rounded-img" src="https://www.rodolphe-augusto.fr/static/media/perso-5b.9e8d203d.png" alt="avatar" />
       <div key={id}>
-        <span>organization where I went : <a href="https://github.com/WildCodeSchool" target="new"><img className="school-img" src={`https://avatars2.githubusercontent.com/u/8874047?s=60&v=4`} alt="school organization" /></a> </span><br />
-        <span>My Location : <b>{location}</b></span><br />
+        <span>{t('organization')} : <a href="https://github.com/WildCodeSchool" target="new"><img className="school-img" src={`https://avatars2.githubusercontent.com/u/8874047?s=60&v=4`} alt="school organization" /></a> </span><br />
+        <span>{t('location')} : <b>{location}</b></span><br />
         <div>
           <p>Followers : {followers}</p>
         </div>
         <br />
-        <span>My Portfolio link : <a href={blog} target="new">rodolphe-augusto.fr</a></span>
+        <span>{t('linkPortfolio')} : <a href={blog} target="new">rodolphe-augusto.fr</a></span>
         <br />
         <div>
           <br />
           <div>
-            <span className="title-tools">Languages and Tools:</span>
+            <span className="title-tools">{t('tools')}:</span>
           </div>
           <br />
           <div className="tools">
@@ -64,7 +67,7 @@ const About = (props) => {
           <img align="center" alt="Terminal" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" />
           </div>
           <div style={{ textAlign: 'center', padding: '25px' }}>
-            <p className="bio">My Github Resume : <br />{bio}</p></div>
+            <p className="bio">{t('bio')} : <br />{t('bioContent')}</p></div>
         </div>
         <hr />
       </div>

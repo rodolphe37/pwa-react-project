@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Moment from 'react-moment';
 import Footer from './Footer';
+import { useTranslation } from 'react-i18next';
 
 const Home = (props) => {
   const [info, setInfo] = useState([])
   const [mode, setMode] = useState('online')
+
+  const { t } = useTranslation();
 
   useEffect(() => {
     const url2 = "https://api.github.com/users/rodolphe37"
@@ -24,25 +27,24 @@ const Home = (props) => {
   return (
     <div className="linear-gradient">
       {
-        mode === 'offline' ? <div className=" alert alert-danger" role="alert">You are in Offline mode or some issue with connection</div> : null
+        mode === 'offline' ? <div className=" alert alert-danger" role="alert">{t('alert')}</div> : null
       }
-      <br />
-      <h1 style={{ fontSize: "30px" }}>My Github Account</h1>
+      <h1 style={{ fontSize: "30px" }}>{t('title')}</h1>
       <img className="rounded-img" src="https://avatars3.githubusercontent.com/u/50537655?s=400&u=4901bca59dce00305a18adf5a39201bdc75a7686&v=4" alt="avatar" />
       <h2><a href={html_url} target="new">{name}</a></h2>
-      <h5>Username : {login}</h5>
+      <h5>{t('username')} : {login}</h5>
       <hr />
       <div key={id}>
-        <span>Number of public Repos : <b>{public_repos}</b></span><br />
-        <span>Number of public Gists : <b>{public_gists}</b></span>
+        <span>{t('publicRepos')} : <b>{public_repos}</b></span><br />
+        <span>{t('publicGists')} : <b>{public_gists}</b></span>
         <br />
         <br />
-        <sup>Account created at : <br className="appear" /> <Moment style={{ color: 'red' }} locale=" fr">{created_at}</Moment></sup>
+        <sup>{t('created')} : <br className="appear" /> <Moment style={{ color: 'red' }} locale=" fr">{created_at}</Moment></sup>
         <br />
         <iframe className="stats hidden-frame" title="stats" frameBorder="false" src="https://github-readme-stats.vercel.app/api?username=rodolphe37&show_icons=true&hide_border=true" />
       </div>
       <br />
-      <sup>Last Activity on my repositories :<br className="appear" /> <Moment style={{ color: 'red' }} locale="fr">{updated_at}</Moment></sup>
+      <sup>{t('activity')} :<br className="appear" /> <Moment style={{ color: 'red' }} locale="fr">{updated_at}</Moment></sup>
       <hr />
       <div className="footer">
         <Footer />

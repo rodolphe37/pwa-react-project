@@ -66,17 +66,38 @@
   padding-bottom: 10px;
 }
 
+.uncontrol-nav {
+  position: absolute;
+}
+.dropdown, .dropleft, .dropright, .dropup {
+  position: relative;
+  background: rgb(196, 196, 201) !important;
+  list-style: none;
+}
+.dropdown-menu.show {
+  display: inline-flex;
+  margin-left: 45%;
+  margin-top: -14px;
+}
+.buttonLanguage {
+  display: inline-flex;
+  margin-left: 23%;
+}
+
 @media (min-width:280px) and (max-width:650px) {
 
   .navbar-nav {
     margin-left: -6% !important;
-    font-size: 12px !important;
+    font-size: 11px !important;
     font-weight: 600;
   }
   .brand {
     font-size: 86% !important;
     margin-left: -4px !important;
   }
+  a.brand.navbar-brand {
+    font-size: 9px !important;
+}
   .appear {
     display: inherit;
   }
@@ -92,6 +113,7 @@
   .hidden-frame{
     display: none;
   }
+
 }
 
 
@@ -124,4 +146,9 @@
     font-size: 105%;
     margin-left: 9px;
   }
+  .dropdown-menu.show {
+    display: inline-flex;
+    margin-left: 26%;
+    margin-top: -13px;
+}
 }
