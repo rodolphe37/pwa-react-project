@@ -4,13 +4,19 @@ import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
   const { t } = useTranslation();
+
+  const {
+    REACT_APP_LINKEDIN_URL,
+    REACT_APP_CODEPEN_LINK,
+    REACT_APP_CODESANDBOX_LINK
+  } = process.env
   return (
     <div className="row footer-content">
       <div className="col-6 col-md">
         <h5 className="titl"><b>{t('footerTitleDev')}</b></h5>
         <div className="list-unstyled text-small dev-list">
-          <a className="link-footer" href="https://www.linkedin.com/in/rodolphe-augusto-d%C3%A9veloppeur-full-stack-react-node-js-1a20b759/" target="new">Linkedin</a> / <a className="link-footer" href={pdf} target="new">Cv</a><br />
-          <a className="link-footer codepen-link" href="https://codepen.io/rodcefim" target="new">CodePen</a><span className="hidden768"> / </span> <br className="appear" /> <a className="link-footer codesandbox-link" href="https://codesandbox.io/u/rodolphe37" target="new">CodeSandBox</a>
+          <a className="link-footer" href={`https://${REACT_APP_LINKEDIN_URL}`} target="new">Linkedin</a> / <a className="link-footer" href={process.env.CV_LINK || pdf} target="new">Cv</a><br />
+          <a className="link-footer codepen-link" href={`https://${REACT_APP_CODEPEN_LINK}`} target="new">CodePen</a><span className="hidden768"> / </span> <br className="appear" /> <a className="link-footer codesandbox-link" href={`https://${REACT_APP_CODESANDBOX_LINK}`} target="new">CodeSandBox</a>
         </div>
       </div>
       <div className="col-6 col-md">
