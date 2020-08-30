@@ -145,6 +145,9 @@
   .hidden-frame{
     display: none;
   }
+  a.brand.navbar-brand {
+    margin-left: 25%!important;
+  }
 
 }
 
@@ -188,7 +191,7 @@
   }
   a.brand.navbar-brand {
     font-size: 25px !important;
-    margin-left: 25% !important;
+    margin-left: 38%!important;
   }
   .bottom-nav-visible {
     display: inherit;
