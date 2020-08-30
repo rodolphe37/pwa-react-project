@@ -81,7 +81,7 @@
 }
 .buttonLanguage {
   display: inline-flex;
-  margin-left: 37%;
+  margin-left: 21%;
 }
 
 @media (min-width:280px) and (max-width:650px) {

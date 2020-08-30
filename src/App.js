@@ -52,14 +52,12 @@ function App() {
             <DropdownToggle className="nav-link port-navbar-link" nav caret>
               {t('translation')}
             </DropdownToggle>
-            <DropdownMenu>
-              <NavItem className="buttonTranslate">
-                <span className="buttonLanguage" style={{ zIndex: '60', cursor: 'pointer' }}>
-                  <span className="tradButtonfr" style={{ marginRight: '15px' }} onClick={() => changeLanguage('fr')}><span role="img" aria-label="france flag">🇨🇵</span></span>
-                  <span className="tradButtonen " onClick={() => changeLanguage('en')}><span role="img" aria-label="england flag">🇬🇧</span></span>
-                  <span className="tradButtonpt " style={{ marginLeft: '15px' }} onClick={() => changeLanguage('pt')}><span role="img" aria-label="Português flag">🇵🇹</span></span>
-                </span>
-              </NavItem>
+            <DropdownMenu className="buttonTranslate">
+              <span className="buttonLanguage" style={{ zIndex: '60', cursor: 'pointer' }}>
+                <span className="tradButtonfr" style={{ marginRight: '15px' }} onClick={() => changeLanguage('fr')}><span role="img" aria-label="france flag">🇨🇵</span></span>
+                <span className="tradButtonen " onClick={() => changeLanguage('en')}><span role="img" aria-label="england flag">🇬🇧</span></span>
+                <span className="tradButtonpt " style={{ marginLeft: '15px' }} onClick={() => changeLanguage('pt')}><span role="img" aria-label="Português flag">🇵🇹</span></span>
+              </span>
             </DropdownMenu>
           </UncontrolledDropdown>
         </div>
