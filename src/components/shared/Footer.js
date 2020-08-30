@@ -1,5 +1,5 @@
 import React from 'react';
-import pdf from '../assets/pdf/cv-developpeur.pdf'
+import pdf from '../../assets/pdf/cv-developpeur.pdf'
 import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
