@@ -127,9 +127,6 @@
     font-size: 86% !important;
     margin-left: -4px !important;
   }
-  a.brand.navbar-brand {
-    font-size: 9px !important;
-}
   .appear {
     display: inherit;
   }
@@ -146,13 +143,13 @@
     display: none;
   }
   a.brand.navbar-brand {
-    margin-left: 25%!important;
+    margin-left: 26%!important;
   }
 
 }
 
 
-@media (min-widht:652px) and (max-width:840px) {
+@media (min-widht:649px) and (max-width:840px) {
   .appear {
     display: inherit;
   }
@@ -169,7 +166,6 @@
   }
   a.brand.navbar-brand {
     font-size: 25px !important;
-    margin-left: 38%!important;
   }
 }
 
@@ -202,10 +198,12 @@
     padding-bottom: 40px;
   }
   .fixed-bottom {
-    /* max-width: 96%; */
     max-height: fit-content;
   }
   .padding-bottom-phone {
     display: inherit;
+  }
+  a.brand.navbar-brand {
+    font-size: 25px !important;
   }
 }
