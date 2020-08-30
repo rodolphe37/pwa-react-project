@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Moment from 'react-moment';
-import Footer from './Footer';
+import Footer from './shared/Footer';
 import { useTranslation } from 'react-i18next';
 
 const Home = (props) => {
