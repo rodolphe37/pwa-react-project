@@ -135,7 +135,7 @@
   margin-top: 3%;
 }
 .perso-stats2  {
-  margin-right: 21%;
+  margin-right: 15%;
 }
 
 
@@ -304,11 +304,23 @@
     align-items: flex-start;
     margin-left: -6%;
   }
+  .mr-auto.hidden-phone.navbar-nav {
+    width: 108%;
 }
-@media (min-width:1020px) and (max-width:1025px) {
+}
+
+@media (min-width:802px) and (max-width:1020px) {
+  .perso-stats2 {
+    margin-top: 0 !important;
+  }
+  .octicon {
+    margin-left: -63%;
+}
+}
+@media (min-width:1020px) and (max-width:1021px) {
   .navbar-expand .navbar-nav {
     margin-right: 0 !important;
-    margin-left: -45%;
+    /* margin-left: -45%; */
     font-size: 25px;
   }
   .perso-stats {
@@ -318,4 +330,23 @@
   .perso-stats2 {
     margin-right: 7%;
 }
+}
+
+@media (min-width:1022px) and (max-width:1152px) {
+  .perso-stats {
+    margin-left: 6%;
+  }
+  .mr-auto.hidden-phone.navbar-nav {
+    width: 83%;
+  }
+}
+
+@media (min-width:1440px) and (max-width:1920px) {
+  .perso-stats {
+    margin-left: 29%;
+    margin-top: 3%;
+  }
+  .perso-stats2 {
+    margin-right: 28%;
+  }
 }
