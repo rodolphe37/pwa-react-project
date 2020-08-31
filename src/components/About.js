@@ -10,6 +10,7 @@ const About = (props) => {
     REACT_APP_USERNAME,
     REACT_APP_AVATAR_PICTURE,
     REACT_APP_NAME_PICTURE_1,
+    REACT_APP_PORTFOLIO_NAME,
     REACT_APP_PICTURE_1,
     REACT_APP_PICTURE_2,
     REACT_APP_PICTURE_3,
@@ -62,7 +63,7 @@ const About = (props) => {
           <p>Followers : {followers}</p>
         </div>
         <br />
-        <span>{t('linkPortfolio')} : <a href={blog} target="new">rodolphe-augusto.fr</a></span>
+        <span>{t('linkPortfolio')} : <a href={blog} target="new">{REACT_APP_PORTFOLIO_NAME}</a></span>
         <br />
         <div>
           <br />
