@@ -305,6 +305,7 @@ REACT_APP_YEAR_COPYRIGHT=
 ```
 
 **Last modification you can doing!**
+
 some texts must be modified in the translation files directly
 
 ***Explanation:***
@@ -323,7 +324,7 @@ The text you will must modifying is at the variable named "bioContent" at line  
 
 **for footer section (Developer & Illustrator)**
 
-- You can change the name of the sections by going to the same file (translation.json) in each of the folders located in the "locales" folder.
+- You can change the name of the sections by going to the same files (translation.json) in each of the folders located in the "locales" folder.
 The text you will must modifying is at they variables named "footerTitleDev" and "footerTitleIllustr" at line  8 and 9
 
 ```bash
