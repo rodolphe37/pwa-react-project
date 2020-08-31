@@ -206,6 +206,15 @@
 }
 }
 
+@media (min-width:540px) and (max-width:767px) {
+  perso-stats {
+    margin-left: 14%;
+  }
+  .perso-stats2 {
+    margin-right: 25%;
+  }
+}
+
 
 @media (min-widht:649px) and (max-width:840px) {
   .appear {
