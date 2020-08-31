@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0a1a0b3f-9542-4602-b572-d6fd9d600a17/deploy-status)](https://app.netlify.com/sites/my-github-pwa/deploys)
+[![Website](https://i.imgur.com/xSu6S5v.png)](https://rodolphe-augusto.fr)
 # My GitHub "open Sources" project
 
 **Progressive Web App created with React.js**
