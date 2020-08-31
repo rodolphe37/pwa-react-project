@@ -164,10 +164,46 @@
   a.brand.navbar-brand {
     margin-left: 26%!important;
   }
+}
+@media (width:320px) {
+  .w-100 {
+    font-size: 12px;
+}
+}
+@media (max-width:325px) {
   .perso-stats {
-    width:335px
+    /* margin-left: -4%;
+    margin-top: 3%; */
+    width: 290px;
   }
-
+}
+@media (width:375px) {
+  .perso-stats {
+    width: 346px;
+}
+}
+@media (min-width:411px) and (max-width:414px) {
+  .perso-stats {
+    width: 364px !important;
+    margin-right: 13% !important;
+  }
+  .perso-stats2 {
+    margin-right: 13% !important;
+  }
+}
+@media(width:360px) {
+  .perso-stats {
+    width: 290px !important;
+  }
+}
+@media (width:540px){
+  .perso-stats {
+    margin-left: 22% !important;
+    width: 380px;
+  }
+  .perso-stats2 {
+    margin-right: 22% !important;
+}
 }
 
 
@@ -232,7 +268,7 @@
     margin-right: inherit;
   }
   .perso-stats {
-    margin-left: 6%;
+    margin-left: 8%;
     margin-top: 3%;
   }
   .perso-stats2  {
@@ -244,4 +280,33 @@
     margin-left: -27%
   }
 
+}
+@media (min-width:768px) and (max-width:1020px) {
+  .perso-stats {
+    margin-left: -1% !important;
+    margin-top: 3% !important;
+  }
+  .perso-stats2 {
+    margin-right: 0%;
+    margin-top: -29%;
+  }
+  .octicon {
+    max-width: 32%;
+    align-items: flex-start;
+    margin-left: -6%;
+  }
+}
+@media (min-width:1020px) and (max-width:1025px) {
+  .navbar-expand .navbar-nav {
+    margin-right: 0 !important;
+    margin-left: -45%;
+    font-size: 25px;
+  }
+  .perso-stats {
+    margin-left: 1%;
+    margin-top: 3%;
+  }
+  .perso-stats2 {
+    margin-right: 7%;
+}
 }
