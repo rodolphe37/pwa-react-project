@@ -165,7 +165,12 @@
   a.brand.navbar-brand {
     margin-left: 26%!important;
   }
+  .sup-chart {
+    width: 80%;
+  }
 }
+
+
 @media (width:320px) {
   .w-100 {
     font-size: 12px;
@@ -344,7 +349,7 @@
 
 @media (min-width:1440px) and (max-width:1920px) {
   .perso-stats {
-    margin-left: 29%;
+    margin-left: 21%;
     margin-top: 3%;
   }
   .perso-stats2 {

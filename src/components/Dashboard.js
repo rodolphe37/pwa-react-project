@@ -23,7 +23,7 @@ const Dashboard = () => {
     <React.Fragment>
       <br />
       <h3 style={{ fontSize: '15px' }}>{t('languagesRepos')}</h3>
-      <sup className="title-sup" > {t('mostUsed')}</sup>
+      <sup className="title-sup" > {t('mostUsed')} <br className="appear" />{t('mostUsed2')}</sup>
       <HisPersonalStatsGithub />
       {/*<h3 style={{ fontSize: '15px' }}>{t('languagesRepos')}</h3>
       <sup className="title-sup" > {t('mostUsed')}</sup>
