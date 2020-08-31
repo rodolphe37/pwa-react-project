@@ -7,7 +7,7 @@
 **Progressive Web App created with React.js**
 
 
-***Github My Profil PWA***
+***Github My Profile PWA***
 <img align="right" height="130px" alt="rodolphe37 Github Stats" src="https://imgur.com/y5S62AN.jpg" />
 
 
@@ -231,7 +231,7 @@ The .env.local file like this (copy this example if you want seeing my ASCCII fa
 #                                                        ........''......
 
 
-#Github My Profil APP (Progressive web app)
+#Github My Profile APP (Progressive web app)
 #FULL PERSONNALISATION OF THE APPLICATION HERE!!!
 
 
