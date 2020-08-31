@@ -7,7 +7,7 @@ import RubyChart from './dashBoard/RubyChart';
 import CplusPlusChart from './dashBoard/CplusPlusChart';
 import TypescriptChart from './dashBoard/TypescriptChart';
 import HtmlChart from './dashBoard/HtmlChart';
-import HisLanguageChart from './dashBoard/HisLanguageChart'
+// import HisLanguageChart from './dashBoard/HisLanguageChart'
 import CssChart from './dashBoard/CssChart';
 import DartChart from './dashBoard/DartChart';
 import SwiftChart from './dashBoard/SwiftChart';
@@ -17,19 +17,31 @@ import { useTranslation } from 'react-i18next';
 
 const Dashboard = () => {
   const { t } = useTranslation();
+  const { REACT_APP_USERNAME } = process.env
   return (
     <React.Fragment>
       <br />
       <h3 style={{ fontSize: '15px' }}>{t('languagesRepos')}</h3>
       <sup className="title-sup" > {t('mostUsed')}</sup>
       <div className="his-languages">
-        <HisLanguageChart />
+        <img className="perso-stats" align="left" alt="rodolphe37 Github Stats" src={`https://github-readme-stats.vercel.app/api?username=${REACT_APP_USERNAME}&show_icons=true&hide_border=true`} />
+        <img className="perso-stats2" align="right" width="300px" alt="rodolphe37 Github Stats" src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${REACT_APP_USERNAME}&hide_border=true`} />
       </div>
+      {/*<h3 style={{ fontSize: '15px' }}>{t('languagesRepos')}</h3>
+      <sup className="title-sup" > {t('mostUsed')}</sup>
+      <div className="his-languages">
+        <HisLanguageChart />
+  </div>*/}
       <br />
-      <h3 style={{ fontSize: '15px' }}>{t('popularityLanguages')} <br className="appear" /> {t('pullRequests')}</h3>
-      <sup className="title-sup">{t('globalCharts1')} <br className="appear" /> {t('globalCharts2')}</sup>
-      <div className="javascript">
-        <JavascriptChart />
+      <div>
+        <div className="pull-requests">
+          <h3 style={{ fontSize: '15px' }}>{t('popularityLanguages')} <br className="appear" /> {t('pullRequests')}</h3>
+          <sup className="title-sup">{t('globalCharts1')} <br className="appear" /> {t('globalCharts2')}</sup>
+        </div>
+
+        <div className="javascript">
+          <JavascriptChart />
+        </div>
       </div>
       <div className="python">
         <PythonChart />

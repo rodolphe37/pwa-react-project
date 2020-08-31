@@ -9,6 +9,7 @@ const About = (props) => {
   const {
     REACT_APP_USERNAME,
     REACT_APP_AVATAR_PICTURE,
+    REACT_APP_NAME_PICTURE_1,
     REACT_APP_PICTURE_1,
     REACT_APP_PICTURE_2,
     REACT_APP_PICTURE_3,
@@ -70,20 +71,20 @@ const About = (props) => {
           </div>
           <br />
           <div className="tools">
-            <img align="center" alt="Visual Studio Code" width="26px" src={`https://${REACT_APP_PICTURE_1}`} />&ensp;
+            <img align="center" alt={`${REACT_APP_NAME_PICTURE_1}`} width="26px" src={`https://${REACT_APP_PICTURE_1}`} />&ensp;
             <img align="center" alt="HTML5" width="26px" src={`https://${REACT_APP_PICTURE_2}`} />&ensp;
             <img align="center" alt="CSS3" width="26px" src={`https://${REACT_APP_PICTURE_3}`} />&ensp;
             <img align="center" alt="Sass" width="26px" src={`https://${REACT_APP_PICTURE_4}`} />&ensp;
             <img align="center" alt="JavaScript" width="26px" src={`https://${REACT_APP_PICTURE_5}`} />&ensp;
             <img align="center" alt="React" width="26px" src={`https://${REACT_APP_PICTURE_6}`} />&ensp;
-            <img align="center" alt="Gatsby" width="26px" src={`https://${REACT_APP_PICTURE_7}`} />&ensp;
+            <img align="center" alt="Next" width="26px" src={`https://${REACT_APP_PICTURE_7}`} />&ensp;
             <img align="center" alt="GraphQL" width="26px" src={`https://${REACT_APP_PICTURE_8}`} />&ensp;
           </div>
           <div className="tools">
             <img align="center" alt="Node.js" width="26px" src={`https://${REACT_APP_PICTURE_9}`} />&ensp;
           <img align="center" alt="Deno" width="26px" src={`https://${REACT_APP_PICTURE_10}`} />&ensp;
           <img align="center" alt="SQL" width="26px" src={`https://${REACT_APP_PICTURE_11}`} />&ensp;
-          <img align="center" alt="MySQL" width="26px" src={`https://${REACT_APP_PICTURE_12}`} />&ensp;
+          <img align="center" alt="Electron" width="26px" src={`https://${REACT_APP_PICTURE_12}`} />&ensp;
           <img align="center" alt="MongoDB" width="26px" src={`https://${REACT_APP_PICTURE_13}`} />&ensp;
           <img align="center" alt="Git" width="26px" src={`https://${REACT_APP_PICTURE_14}`} />&ensp;
           <img align="center" alt="GitHub" width="26px" src={`https://${REACT_APP_PICTURE_15}`} />&ensp;

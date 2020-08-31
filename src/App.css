@@ -1,7 +1,12 @@
 .App {
   text-align: center;
 }
-
+.navbar-expand .navbar-nav {
+  flex-direction: row;
+  margin-right: 23% !important;
+  margin-left: -25%;
+  font-size: 24px;
+}
 .navbar a {
   color: #ffffff;
 }
@@ -37,6 +42,11 @@
 
 .school-img {
   width: 3%;
+}
+
+.octicon {
+  max-width: 25%;
+  margin-left: -53%;
 }
 
 .brand {
@@ -84,7 +94,6 @@
   margin-left: 21%;
 }
 
-
 .bottom-tab-nav {
   border-top: solid 1px #EBEBEB;
 }
@@ -115,9 +124,20 @@
 .padding-bottom-phone {
   display: none;
 }
-/* .top-langs {
-  margin-top: -6%;
-} */
+.pull-requests {
+  display: inline-block;
+  margin-top: 25px;
+  margin-left: 382px;
+  margin-right: 22%;
+}
+.perso-stats {
+  margin-left: 17%;
+  margin-top: 3%;
+}
+.perso-stats2  {
+  margin-right: 21%;
+}
+
 
 @media (min-width:280px) and (max-width:650px) {
 
@@ -125,10 +145,6 @@
     margin-left: -6% !important;
     font-size: 11px !important;
     font-weight: 600;
-  }
-  .brand {
-    font-size: 86% !important;
-    margin-left: -4px !important;
   }
   .appear {
     display: inherit;
@@ -147,6 +163,9 @@
   }
   a.brand.navbar-brand {
     margin-left: 26%!important;
+  }
+  .perso-stats {
+    width:335px
   }
 
 }
@@ -167,8 +186,8 @@
     font-size: 18px !important;
     font-weight: 600;
   }
-  a.brand.navbar-brand {
-    font-size: 25px !important;
+  .perso-stats {
+    width:425px
   }
 }
 
@@ -206,7 +225,23 @@
   .padding-bottom-phone {
     display: inherit;
   }
-  a.brand.navbar-brand {
-    font-size: 25px !important;
+  .pull-requests {
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: inherit;
+    margin-right: inherit;
   }
+  .perso-stats {
+    margin-left: 6%;
+    margin-top: 3%;
+  }
+  .perso-stats2  {
+    margin-right: 8%;
+  }
+  .octicon {
+    max-width: 75%;
+    align-items: flex-start;
+    margin-left: -27%
+  }
+
 }
