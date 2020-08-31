@@ -85,13 +85,6 @@ Link to the demo : https://my-github-pwa.netlify.app/
 
 ---
 
-### Offline Mode
-
-
-![!Offline](offline.jpg)
-
----
-
 ### Full Mutilingual support
 
 **3 languages supported**
@@ -108,6 +101,11 @@ Link to the demo : https://my-github-pwa.netlify.app/
 ***Portuguese Version 🇵🇹***
 ![Pt](demo-2.jpg)
 
+---
+
+### Offline Mode
+
+![!Offline](offline.jpg)
 
 ---
 
