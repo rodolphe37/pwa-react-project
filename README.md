@@ -91,7 +91,7 @@ Link to the demo : https://my-github-pwa.netlify.app/
 ![Fr](demo-8.jpg)
 
 ***English Version 🇬🇧***
-![En](demo-5.jpg)
+![En](demo-7.jpg)
 
 ***Portuguese Version 🇵🇹***
 ![Pt](demo-2.jpg)
