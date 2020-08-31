@@ -148,7 +148,7 @@ $ npm i or $ npm install
 
 **Create one .env file at the root of the application**
 
-The .env file like this (copy this example if you want seeing my ASCCII face :smirk:) :
+The .env.local file like this (copy this example if you want seeing my ASCCII face :smirk:) :
 
 
 
