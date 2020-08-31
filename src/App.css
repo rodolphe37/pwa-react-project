@@ -207,7 +207,7 @@
 }
 
 @media (min-width:540px) and (max-width:767px) {
-  perso-stats {
+  .perso-stats {
     margin-left: 14%;
   }
   .perso-stats2 {
