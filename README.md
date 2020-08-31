@@ -1,4 +1,4 @@
-# "open Sources" project - Progressive Web App
+# My GitHub "open Sources" project - Progressive Web App
 
 
 ***Github My Profil PWA***
@@ -66,7 +66,7 @@ Link to the demo : https://my-github-pwa.netlify.app/
 
 ### Pictures Demo
 
-**Acceuil Page**
+**Home Page**
 ![Accueil](demo-7.jpg)
 
 **About Page**
@@ -113,7 +113,7 @@ Link to the demo : https://my-github-pwa.netlify.app/
 
 ## Start project
 
-***Fork this repository or :***
+***Fork or clone directly this repository (or download as well as you want):***
 
 ```bash
 
