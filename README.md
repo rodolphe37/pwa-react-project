@@ -35,6 +35,8 @@
 
 - [Pictures](#pictures-demo)
 
+- [Offline](#offline-mode)
+
 
 [Start Project](#start-project)
 
@@ -80,6 +82,13 @@ Link to the demo : https://my-github-pwa.netlify.app/
 
 **Repositories List Page**
 ![ReposList](demo-4.jpg)
+
+---
+
+### Offline Mode
+
+
+![!Offline](offline.jpg)
 
 ---
 
