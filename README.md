@@ -142,7 +142,7 @@ The .env file like this (copy this example if you want seeing my ASCCII face :sm
 
 #PROJECT OPEN SOURCE UNDER CREATIVE COMMONS LICENSE (CC BY-NC-SA) - CREATED BY RODOLPHE AUGUSTO
 
-#For more info about this project, visit this address : https://github.com/rodolphe37/pwa-react-project
+#For more info about this project, visit this address : https://github.com/rodolphe37/pwa-react-project or contact me at rodolphe.a@gmail.com
 
 #                                                                     ......
 #                                                               .',:looddddooc,.'''...
@@ -365,7 +365,7 @@ $ npm start
 
 ---
 
-## Un petit mots de l'auteur
+## A few words from the author
 
 
 Enjoy the World :smirk:
@@ -379,10 +379,10 @@ Creative Commons
 
 CC BY-NC-SA
 
-**Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions**
+**Attribution - No Commercial Use - Sharing under the Same Conditions**
 
-[Voir le Résumé Explicatif](https://creativecommons.org/licenses/by-nc-sa/4.0/) | [Voir le Code Juridique](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
+[See the Explanatory Summary](https://creativecommons.org/licenses/by-nc-sa/4.0/) | [See the Legal Code](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
 
-**Cette licence permet aux autres de remixer, d'adapter et de s'appuyer sur votre travail à des fins non commerciales, tant qu'ils vous créditent et octroient des licences pour leurs nouvelles créations selon les mêmes conditions.**
+**This license allows others to remix, adapt, and build on your work for non-commercial purposes, as long as they credit you and license their new creations on the same terms.**
 
 ---
