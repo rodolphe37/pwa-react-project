@@ -4,6 +4,7 @@
 
 
 ***Github My Profil PWA***
+<img align="right" height="130px" alt="rodolphe37 Github Stats" src="https://imgur.com/y5S62AN.jpg" />
 
 
 ---
@@ -144,7 +145,9 @@ The .env file like this (copy this example if you want seeing my ASCCII face :sm
 
 #PROJECT OPEN SOURCE UNDER CREATIVE COMMONS LICENSE (CC BY-NC-SA) - CREATED BY RODOLPHE AUGUSTO
 
-#For more info about this project, visit this address : https://github.com/rodolphe37/pwa-react-project or contact me at rodolphe.a@gmail.com
+#For more info about this project, visit this address : https://github.com/rodolphe37/pwa-react-project
+#or my portfolio at https://rodolphe-augusto.fr
+#or contact me at rodolphe.a@gmail.com
 
 #                                                                     ......
 #                                                               .',:looddddooc,.'''...
@@ -314,7 +317,7 @@ some texts must be modified in the translation files directly
 
 ***for "My Github bio" in about page***
 
-- Go to "Public/locales/" folder, the are 3 folders, one named "en" (for english texts), one named "fr" (for french texts) and another named "pt" (for Portugues texts)
+- Go to "public/locales/" folder, the are 3 folders, one named "en" (for english texts), one named "fr" (for french texts) and another named "pt" (for Portugues texts)
 The text you will must modifying is at the variable named "bioContent" at line  24
 
 ```bash
