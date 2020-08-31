@@ -1,4 +1,6 @@
-# My GitHub "open Sources" project - Progressive Web App
+# My GitHub "open Sources" project
+
+**Progressive Web App created with React.js**
 
 
 ***Github My Profil PWA***
@@ -113,7 +115,7 @@ Link to the demo : https://my-github-pwa.netlify.app/
 
 ## Start project
 
-***Fork or clone directly this repository (or download as well as you want):***
+***Fork or clone directly this repository (or download, as well as you want):***
 
 ```bash
 
@@ -308,9 +310,9 @@ REACT_APP_YEAR_COPYRIGHT=
 
 some texts must be modified in the translation files directly
 
-***Explanation:***
+**Explanation:**
 
-for "My Github bio" in about page
+***for "My Github bio" in about page***
 
 - Go to "Public/locales/" folder, the are 3 folders, one named "en" (for english texts), one named "fr" (for french texts) and another named "pt" (for Portugues texts)
 The text you will must modifying is at the variable named "bioContent" at line  24
@@ -322,7 +324,7 @@ The text you will must modifying is at the variable named "bioContent" at line  
 
 ```
 
-**for footer section (Developer & Illustrator)**
+***for footer section (Developer & Illustrator)***
 
 - You can change the name of the sections by going to the same files (translation.json) in each of the folders located in the "locales" folder.
 The text you will must modifying is at they variables named "footerTitleDev" and "footerTitleIllustr" at line  8 and 9
