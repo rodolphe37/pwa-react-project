@@ -3,7 +3,7 @@
 }
 .navbar-expand .navbar-nav {
   flex-direction: row;
-  margin-right: 23% !important;
+  /* margin-right: 23% !important; */
   margin-left: -25%;
   font-size: 24px;
 }
