@@ -232,6 +232,7 @@ $ npm i or $ npm install
 #Github My Profile APP (Progressive web app)
 #FULL PERSONNALISATION OF THE APPLICATION HERE!!!
 
+#first = remove (example) from this file name (it must be named only (.env.local)
 
 #HOME PAGE & REPOSITORIES INFO
 
@@ -255,7 +256,7 @@ REACT_APP_PORTFOLIO_NAME=
 
 #LANGUAGES & TOOLS SECTION
 
-#enter images url of tools & languages you are used (without https://)
+#enter images url of tools & languages you are used (without https://) (Only 8 images is enough, images 9 to 16 are optional )
 REACT_APP_PICTURE_1=
 REACT_APP_PICTURE_2=
 REACT_APP_PICTURE_3=
@@ -283,9 +284,12 @@ REACT_APP_LINK1_NAME=
 ##enter your link 1 here (without https://)
 REACT_APP_LINK1_URL=
 
+#( if there is neither a link nor a pdf file, then it does not appear on the screen )
 #enter your name link 2 (pdf file) CV for example here
-REACT_APP_NAME_PDF=
-#enter your link 2 (without https://) - (if empty then is take a pdf file (pdf-file.pdf) in ./src/assets/pdf folder by default)
+REACT_APP_NAME_PDF=Cv
+
+#enter your link 2 (without https://)
+# (if empty then is take a pdf file (pdf-file.pdf) in ./src/assets/pdf folder by default)
 REACT_APP_PDF_LINK=
 
 #enter your name link 3 here
@@ -315,6 +319,7 @@ REACT_APP_YEAR_COPYRIGHT=
 
 # AND THAT'S ALL...
 # ENJOY THE WORLD
+
 
 ```
 

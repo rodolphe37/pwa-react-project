@@ -87,7 +87,7 @@ const About = (props) => {
                               src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg"
                               alt="github icon"
                               width="25px"
-                              style={{ backgroundColor: 'blue', borderRadius: '50%', border: '1px solid red' }}
+                              style={{ backgroundColor: 'orange', borderRadius: '50%', border: '1px solid red' }}
                             />
                             <p>Followers : {followers}</p>
                           </span>
