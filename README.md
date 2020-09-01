@@ -393,14 +393,14 @@ Enjoy the World :smirk:
 
 Special thanks :
 
-- to Anurag Hazra for "github personal stats widgets"
+- to Anurag Hazra for "github personal stats widgets" :
 https://github.com/anuraghazra/github-readme-stats
 
-- to Anton Komarev for the "profile views counter"
+- to Anton Komarev for the "profile views counter" :
 https://github.com/antonkomarev/github-profile-views-counter
 
 and
-- to Fabian Beuke for data from pull requests made on Github
+- to Fabian Beuke for data from pull requests made on Github :
 https://github.com/madnight/githut
 
 
