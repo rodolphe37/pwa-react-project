@@ -1,8 +1,7 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 
 const HisPersonalStatsGithub = () => {
-  const { t } = useTranslation();
+
   const { REACT_APP_USERNAME } = process.env
   return (
     <div className="his-languages">

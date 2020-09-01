@@ -382,8 +382,15 @@ $ npm start
 
 ## A few words from the author
 
-
 Enjoy the World :smirk:
+
+## Special thank's
+
+Special thanks to Anurag Hazra for "github personal stats widgets"
+https://github.com/anuraghazra/github-readme-stats
+
+and to Anton Komarev for the "profile views counter"
+https://github.com/antonkomarev/github-profile-views-counter
 
 ## :sparkling_heart: Supporter le project
 
@@ -397,14 +404,6 @@ However, if you are using this project and are happy with it or just want to enc
 
 Thank you! :heart:
 
-
-## Special thank's
-
-Special thanks to Anurag Hazra for "github personal stats widgets"
-https://github.com/anuraghazra/github-readme-stats
-
-and to Anton Komarev for the "profile views counter"
-https://github.com/antonkomarev/github-profile-views-counter
 
 ## License
 
