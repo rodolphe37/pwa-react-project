@@ -146,7 +146,7 @@ $ npm i or $ npm install
 
 ### Customization of the application
 
-**Rename the env.local.example file at the root application to .env.local only** :smirk: :
+**Rename the env.local.example file at the root application to .env.local only and put your own values** :smirk: :
 
 
 
