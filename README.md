@@ -68,7 +68,7 @@ Link to the demo : https://my-github-pwa.netlify.app/
 ### Movie Demo
 
 
-![!Demogif](demo.gif)
+![!Demogif](demo/demo.gif)
 
 
 ---
@@ -76,31 +76,31 @@ Link to the demo : https://my-github-pwa.netlify.app/
 ### Pictures Demo
 
 **Home Page**
-![Accueil](demo-7.jpg)
+![Accueil](demo/demo-7.jpg)
 
 **About Page**
-![About](demo-6.jpg)
+![About](demo/demo-6.jpg)
 
 **Charts Page**
-![Charts](demo-5.jpg)
+![Charts](demo/demo-5.jpg)
 
 **Repositories List Page**
-![ReposList](demo-4.jpg)
+![ReposList](demo/demo-4.jpg)
 
 ---
 
 ### Full Mutilingual support
 
 **3 languages supported**
-![Multi](multilingue.jpg)
+![Multi](demo/multilingue.jpg)
 
 ---
 
 ***French Version 🇨🇵***
-![Fr](demo-8.jpg)
+![Fr](demo/demo-8.jpg)
 
 ***English Version 🇬🇧***
-![En](demo-7.jpg)
+![En](demo/demo-7.jpg)
 
 ***Portuguese Version 🇵🇹***
 ![Pt](demo-2.jpg)
@@ -109,7 +109,7 @@ Link to the demo : https://my-github-pwa.netlify.app/
 
 ### Offline Mode
 
-![!Offline](offline.jpg)
+![!Offline](demo/offline.jpg)
 
 ---
 
