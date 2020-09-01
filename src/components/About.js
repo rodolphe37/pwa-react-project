@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Footer from './shared/Footer';
 import { useTranslation } from 'react-i18next';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const About = (props) => {
   const [about, setAbout] = useState([])
