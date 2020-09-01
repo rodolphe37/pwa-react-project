@@ -7,7 +7,6 @@ import RubyChart from './dashBoard/RubyChart';
 import CplusPlusChart from './dashBoard/CplusPlusChart';
 import TypescriptChart from './dashBoard/TypescriptChart';
 import HtmlChart from './dashBoard/HtmlChart';
-// import HisLanguageChart from './dashBoard/HisLanguageChart'
 import CssChart from './dashBoard/CssChart';
 import DartChart from './dashBoard/DartChart';
 import SwiftChart from './dashBoard/SwiftChart';
@@ -25,18 +24,12 @@ const Dashboard = () => {
       <h3 style={{ fontSize: '15px' }}>{t('languagesRepos')}</h3>
       <sup className="title-sup" > {t('mostUsed')} <br className="appear" />{t('mostUsed2')}</sup>
       <HisPersonalStatsGithub />
-      {/*<h3 style={{ fontSize: '15px' }}>{t('languagesRepos')}</h3>
-      <sup className="title-sup" > {t('mostUsed')}</sup>
-      <div className="his-languages">
-        <HisLanguageChart />
-  </div>*/}
       <br />
       <div>
         <div className="pull-requests">
           <h3 style={{ fontSize: '15px' }}>{t('popularityLanguages')} <br className="appear" /> {t('pullRequests')}</h3>
           <sup className="title-sup">{t('globalCharts1')} <br className="appear" /> {t('globalCharts2')}</sup>
         </div>
-
         <div className="javascript">
           <JavascriptChart />
         </div>

@@ -82,14 +82,14 @@ const About = (props) => {
             <img align="center" alt="GraphQL" width="26px" src={`https://${REACT_APP_PICTURE_8}`} />&ensp;
           </div>
           <div className="tools">
-            <img align="center" alt="Node.js" width="26px" src={`https://${REACT_APP_PICTURE_9}`} />&ensp;
-          <img align="center" alt="Deno" width="26px" src={`https://${REACT_APP_PICTURE_10}`} />&ensp;
-          <img align="center" alt="SQL" width="26px" src={`https://${REACT_APP_PICTURE_11}`} />&ensp;
-          <img align="center" alt="Electron" width="26px" src={`https://${REACT_APP_PICTURE_12}`} />&ensp;
-          <img align="center" alt="MongoDB" width="26px" src={`https://${REACT_APP_PICTURE_13}`} />&ensp;
-          <img align="center" alt="Git" width="26px" src={`https://${REACT_APP_PICTURE_14}`} />&ensp;
-          <img align="center" alt="GitHub" width="26px" src={`https://${REACT_APP_PICTURE_15}`} />&ensp;
-          <img align="center" alt="Terminal" width="26px" src={`https://${REACT_APP_PICTURE_16}`} />
+            <img align="center" alt="Node.js" width="26px" src={`https://${REACT_APP_PICTURE_9}` || null} />&ensp;
+          <img align="center" alt="Deno" width="26px" src={`https://${REACT_APP_PICTURE_10}` || null} />&ensp;
+          <img align="center" alt="SQL" width="26px" src={`https://${REACT_APP_PICTURE_11}` || null} />&ensp;
+          <img align="center" alt="Electron" width="26px" src={`https://${REACT_APP_PICTURE_12}` || null} />&ensp;
+          <img align="center" alt="MongoDB" width="26px" src={`https://${REACT_APP_PICTURE_13}` || null} />&ensp;
+          <img align="center" alt="Git" width="26px" src={`https://${REACT_APP_PICTURE_14}` || null} />&ensp;
+          <img align="center" alt="GitHub" width="26px" src={`https://${REACT_APP_PICTURE_15}` || null} />&ensp;
+          <img align="center" alt="Terminal" width="26px" src={`https://${REACT_APP_PICTURE_16}` || null} />
           </div>
           <div style={{ textAlign: 'center', padding: '25px' }}>
             <p className="bio">{t('bio')} : <br />{t('bioContent')}</p></div>

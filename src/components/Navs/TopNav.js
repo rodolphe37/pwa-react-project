@@ -7,8 +7,11 @@ const TopNav = () => {
   const { t } = useTranslation();
   return (
     <Navbar bg="primary" variant="dark">
-      <Navbar.Brand className="brand" href="/">
-        <img className="octicon octicon-mark-github v-align-middle" src={require('../../assets/images/GitHub-profil.png')} alt="github-logo" /></Navbar.Brand>&emsp;
+      <Navbar.Brand className="brand">
+        <div href="/">
+          <img className="octicon octicon-mark-github v-align-middle" src={require('../../assets/images/GitHub-profil.png')} alt="github-logo" />
+        </div>
+      </Navbar.Brand>&emsp;
       <Nav className="mr-auto hidden-phone">
         <Link to="/">{t('homeTitle')}</Link>&emsp;
     <Link to="/about">{t('about')}</Link>&emsp;

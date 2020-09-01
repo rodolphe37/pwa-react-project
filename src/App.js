@@ -20,12 +20,10 @@ import PhpChart from './components/dashBoard/PhpChart';
 import KotlinChart from './components/dashBoard/KotlinChart';
 import JavaChart from './components/dashBoard/JavaChart';
 import HtmlChart from './components/dashBoard/HtmlChart';
-import HisLanguageChart from './components/dashBoard/HisLanguageChart';
 import DartChart from './components/dashBoard/DartChart';
 import CssChart from './components/dashBoard/CssChart';
 import CplusPlusChart from './components/dashBoard/CplusPlusChart';
 import { useTranslation } from 'react-i18next';
-// import TopNav from './components/Navs/TopNav';
 import Navigation from './components/Navs/Navigation';
 import TopNav from './components/Navs/TopNav';
 
@@ -70,7 +68,6 @@ function App() {
           <Route path='/kotlin' component={KotlinChart}></Route>
           <Route path='/java' component={JavaChart}></Route>
           <Route path='/html' component={HtmlChart}></Route>
-          <Route path='/hisLanguages' component={HisLanguageChart}></Route>
           <Route path='/dart' component={DartChart}></Route>
           <Route path='/css' component={CssChart}></Route>
           <Route path='/c++' component={CplusPlusChart}></Route>

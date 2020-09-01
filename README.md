@@ -318,7 +318,7 @@ REACT_APP_YEAR_COPYRIGHT=
 
 ```
 
-**Last modification you can doing!**
+**Last modification you can do!**
 
 some texts must be modified in the translation files directly
 

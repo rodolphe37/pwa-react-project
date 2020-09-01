@@ -3,6 +3,7 @@ import Moment from 'react-moment';
 import Footer from './shared/Footer';
 import { useTranslation } from 'react-i18next';
 
+
 const Home = (props) => {
   const [info, setInfo] = useState([])
   const [mode, setMode] = useState('online')
