@@ -390,7 +390,7 @@ Enjoy the World :smirk:
 
 Creative Commons
 
-![logoCC](88x31.png)
+![logoCC](demo/88x31.png)
 
 CC BY-NC-SA
 
