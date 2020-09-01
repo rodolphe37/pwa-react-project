@@ -167,6 +167,10 @@
   .sup-chart {
     width: 80%;
   }
+  .card {
+    width: 39% !important;
+    margin-top: 20px;
+  }
 }
 
 
@@ -311,7 +315,11 @@
   }
   .mr-auto.hidden-phone.navbar-nav {
     width: 108%;
+  }
+  .card {
+    width: 19% !important;
 }
+
 }
 
 @media (min-width:802px) and (max-width:1020px) {
@@ -343,6 +351,11 @@
   }
   .mr-auto.hidden-phone.navbar-nav {
     width: 83%;
+  }
+
+  .card {
+  width: 14%;
+  padding-top: 15px;
   }
 }
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Footer from './shared/Footer';
 import { useTranslation } from 'react-i18next';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const About = (props) => {
   const [about, setAbout] = useState([])
@@ -47,7 +48,8 @@ const About = (props) => {
     })
   }, [REACT_APP_USERNAME])
 
-  const { id, location, blog, followers, company } = about
+
+  const { id, location, blog, followers, company, following } = about
   return (
     <div className="linear-gradient">
       {
@@ -68,8 +70,56 @@ const About = (props) => {
             ''
         }
         <span>{t('location')} : <b>{location}</b></span><br />
-        <div>
-          <p>Followers : {followers}</p>
+
+        <div className="follow">
+          <div style={{ width: 'auto', display: 'flex' }}>
+            <hr />
+            {
+              following && followers !== null
+                ? <React.Fragment>
+                  <div className="card"
+                    style={{ width: '10%', paddingTop: '15px', borderRadius: '8%', boxShadow: '1px 2px 2px black', backgroundColor: 'revert' }}>
+                    {
+                      followers !== null
+                        ?
+                        <React.Fragment>
+                          <span>
+                            <img
+                              src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg"
+                              alt="github icon"
+                              width="25px"
+                              style={{ backgroundColor: 'blue', borderRadius: '50%', border: '1px solid red' }}
+                            />
+                            <p>Followers : {followers}</p>
+                          </span>
+                        </React.Fragment>
+                        :
+                        ''
+                    }
+                    {
+                      following !== null
+                        ?
+                        <React.Fragment>
+                          <span>
+                            <img
+                              src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg"
+                              alt="github icon"
+                              width="25px"
+                              style={{ backgroundColor: 'red', borderRadius: '50%', border: '1px solid blue' }}
+                            />
+                            <p>Following : {following}</p>
+                          </span>
+                        </React.Fragment>
+                        :
+                        ''
+                    }
+                  </div>
+                </React.Fragment>
+                :
+                ''
+            }
+            <hr />
+          </div>
         </div>
         <br />
         <span>{t('linkPortfolio')} : <a href={blog} target="new">{REACT_APP_PORTFOLIO_NAME}</a></span>
