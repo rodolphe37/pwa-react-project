@@ -87,7 +87,7 @@ const About = (props) => {
                               src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg"
                               alt="github icon"
                               width="25px"
-                              style={{ backgroundColor: 'orange', borderRadius: '50%', border: '1px solid red' }}
+                              style={{ backgroundColor: '#ffa500', borderRadius: '50%', border: '1px solid #56ff00' }}
                             />
                             <p>Followers : {followers}</p>
                           </span>
@@ -104,7 +104,7 @@ const About = (props) => {
                               src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg"
                               alt="github icon"
                               width="25px"
-                              style={{ backgroundColor: 'red', borderRadius: '50%', border: '1px solid blue' }}
+                              style={{ backgroundColor: '#56ff00', borderRadius: '50%', border: '1px solid #ffa500' }}
                             />
                             <p>Following : {following}</p>
                           </span>
