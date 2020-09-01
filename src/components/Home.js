@@ -42,7 +42,13 @@ const Home = (props) => {
       <hr />
       <div key={id}>
         <span>{t('publicRepos')} : <b>{public_repos}</b></span><br />
-        <span>{t('publicGists')} : <b>{public_gists}</b></span>
+        {
+          public_gists !== null
+            ?
+            <React.Fragment><span>{t('publicGists')} : <b>{public_gists}</b></span></React.Fragment>
+            :
+            ''
+        }
         <br />
         <br />
         <sup>{t('created')} : <br className="appear" /> <Moment style={{ color: 'red' }} locale=" fr">{created_at}</Moment></sup>

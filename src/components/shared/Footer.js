@@ -9,6 +9,7 @@ const Footer = () => {
     REACT_APP_LINK1_NAME,
     REACT_APP_LINK1_URL,
     REACT_APP_NAME_PDF,
+    REACT_APP_PDF_LINK,
     REACT_APP_LINK3_NAME,
     REACT_APP_LINK3_URL,
     REACT_APP_LINK4_NAME,
@@ -21,7 +22,15 @@ const Footer = () => {
       <div className="col-6 col-md">
         <h5 className="titl"><b>{t('footerTitleDev')}</b></h5>
         <div className="list-unstyled text-small dev-list">
-          <a className="link-footer" href={`https://${REACT_APP_LINK1_URL}`} target="new">{REACT_APP_LINK1_NAME}</a> / <a className="link-footer" href={process.env.REACT_APP_PDF_LINK || pdf} target="new">{REACT_APP_NAME_PDF}</a><br />
+          <a className="link-footer" href={`https://${REACT_APP_LINK1_URL}`} target="new">{REACT_APP_LINK1_NAME}</a>
+          {
+            REACT_APP_NAME_PDF && REACT_APP_PDF_LINK !== null
+              ?
+              <React.Fragment> / <a className="link-footer" href={REACT_APP_PDF_LINK || pdf} target="new">{REACT_APP_NAME_PDF}</a></React.Fragment>
+              :
+              ''
+          }
+          <br />
           <a className="link-footer codepen-link" href={`https://${REACT_APP_LINK3_URL}`} target="new">{REACT_APP_LINK3_NAME}</a><span className="hidden768"> / </span> <br className="appear" /> <a className="link-footer codesandbox-link" href={`https://${REACT_APP_LINK4_URL}`} target="new">{REACT_APP_LINK4_NAME}</a>
         </div>
       </div>

@@ -57,7 +57,7 @@ const About = (props) => {
       <h1 style={{ fontSize: "30px" }}>{t('aboutMe')}</h1>
       <img className="rounded-img" src={`https://${REACT_APP_AVATAR_PICTURE}`} alt="avatar" />
       <div key={id}>
-        <span>{t('organization')} : {company}</span><br />
+        {company !== null ? <React.Fragment><span>{t('organization')} : {company}</span><br /></React.Fragment> : ''}
         <span>{t('location')} : <b>{location}</b></span><br />
         <div>
           <p>Followers : {followers}</p>
