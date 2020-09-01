@@ -26,7 +26,9 @@ const Footer = () => {
           {
             REACT_APP_NAME_PDF && REACT_APP_PDF_LINK !== null
               ?
-              <React.Fragment> / <a className="link-footer" href={REACT_APP_PDF_LINK || pdf} target="new">{REACT_APP_NAME_PDF}</a></React.Fragment>
+              <React.Fragment>
+                / <a className="link-footer" href={REACT_APP_PDF_LINK || pdf} target="new">{REACT_APP_NAME_PDF}</a>
+              </React.Fragment>
               :
               ''
           }

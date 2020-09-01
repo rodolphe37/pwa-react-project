@@ -45,7 +45,10 @@ const Home = (props) => {
         {
           public_gists !== null
             ?
-            <React.Fragment><span>{t('publicGists')} : <b>{public_gists}</b></span></React.Fragment>
+            <React.Fragment>
+              <span>{t('publicGists')} : <b>{public_gists}</b>
+              </span>
+            </React.Fragment>
             :
             ''
         }
