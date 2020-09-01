@@ -392,7 +392,8 @@ https://github.com/anuraghazra/github-readme-stats
 and to Anton Komarev for the "profile views counter"
 https://github.com/antonkomarev/github-profile-views-counter
 
-## :sparkling_heart: Supporter le project
+
+## :sparkling_heart: Support the project
 
 I put almost everything open-source I can, and try to accommodate anyone who needs help using these projects. Obviously,
 this takes time. You can use this service for free.
