@@ -39,5 +39,7 @@
   "clickOpen": "Clique para abrir",
   "forkedRepos": "Lista de Repos Forkado",
   "boolForked": "Forkado",
-  "yesForked": "Sim"
+  "yesForked": "Sim",
+  "Pview1": "VISTA",
+  "Pview2": "DE PERFIL"
 }
