@@ -146,9 +146,9 @@ $ npm i or $ npm install
 
 ### Customization of the application
 
-**Create one .env file at the root of the application or rename the env.local.example file at the root application to .env.local only**
+**Rename the env.local.example file at the root application to .env.local only**
 
-The .env.local file like this if you want seeing my ASCII face :smirk: :
+:smirk: :
 
 
 
