@@ -35,8 +35,9 @@ const Home = (props) => {
       <img className="rounded-img" src={`https://${REACT_APP_PICTURE_USER}`} alt="avatar" />
       <h2><a href={html_url} target="new">{name}</a></h2>
       <h5>{t('username')} : {login}</h5>
-      <br />
-      <img className="perso-stats2" align="right" width="300px" alt="My Github Languages most used" src={`https://komarev.com/ghpvc/?username=${REACT_APP_USERNAME}&label=PROFILE+VIEWS`} />
+      <div>
+        <img className="view-profile" align="center" width="100px" alt="My Github Languages most used" src={`https://komarev.com/ghpvc/?username=${REACT_APP_USERNAME}&label=PROFILE+VIEWS`} />
+      </div>
       <hr />
       <div key={id}>
         <span>{t('publicRepos')} : <b>{public_repos}</b></span><br />
