@@ -36,7 +36,7 @@ const Home = (props) => {
       <h2><a href={html_url} target="new">{name}</a></h2>
       <h5>{t('username')} : {login}</h5>
       <div>
-        <img className="view-profile" align="center" width="100px" alt="My Github Languages most used" src={`https://komarev.com/ghpvc/?username=${REACT_APP_USERNAME}&label=${t('Pview1')}+${t('Pview2')}`} />
+        <img className="view-profile" align="center" width="150px" alt="My Github Languages most used" src={`https://komarev.com/ghpvc/?username=${REACT_APP_USERNAME}&label=${t('Pview1')}+${t('Pview2')}`} />
       </div>
       <hr />
       <div key={id}>
