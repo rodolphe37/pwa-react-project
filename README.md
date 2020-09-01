@@ -405,7 +405,7 @@ this takes time. You can use this service for free.
 
 However, if you are using this project and are happy with it or just want to encourage me to keep creating, there are a few ways to do it: -
 
-- Give appropriate credit when using Github My Profile, with a link to My Github account or my portfolio address :D
+- Give appropriate credit when using "Github My Profile App", with a link to My Github account or my portfolio address :D
 - Put a star and share the project :rocket:
 
 Thank you! :heart:
