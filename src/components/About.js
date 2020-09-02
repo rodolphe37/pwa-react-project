@@ -68,13 +68,25 @@ const About = (props) => {
             :
             ''
         }
-        <span>{t('location')} : <b>{location}</b></span><br />
+        {location !== null
+          ?
+          <React.Fragment>
+            <span>{t('location')} :&nbsp;
+          <b>
+                {location}
+              </b>
+            </span>
+            <br />
+          </React.Fragment>
+          :
+          ''
+        }
 
         <div className="follow">
           <div style={{ width: 'auto', display: 'flex' }}>
             <hr />
             {
-              following && followers !== null
+              following && followers !== 0
                 ? <React.Fragment>
                   <div className="card"
                     style={{ width: '10%', marginTop: '15px', borderRadius: '8%', boxShadow: '1px 2px 2px black', backgroundColor: 'revert' }}>
@@ -98,7 +110,7 @@ const About = (props) => {
                         ''
                     }
                     {
-                      following !== null
+                      following !== 0
                         ?
                         <React.Fragment>
                           <div className="card-header">
@@ -125,12 +137,15 @@ const About = (props) => {
           </div>
         </div>
         <br />
-        <span>{t('linkPortfolio')} : <a href={blog} target="new">{REACT_APP_PORTFOLIO_NAME}</a></span>
-        <br />
+        {REACT_APP_PORTFOLIO_NAME === '' ? '' :
+          <div>
+            <span>{t('linkPortfolio')} : </span><a href={blog} target="new">{REACT_APP_PORTFOLIO_NAME}</a>
+            <br />
+          </div>}
         <div>
           <br />
           <div>
-            <span className="title-tools">{t('tools')}:</span>
+            <span className="title-tools">{t('tools')}&nbsp;:</span>
           </div>
           <br />
           <div className="tools">
