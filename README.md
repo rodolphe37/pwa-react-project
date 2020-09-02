@@ -103,7 +103,7 @@ Link to the demo : https://my-github-pwa.netlify.app/
 ![En](demo/demo-7.jpg)
 
 ***Portuguese Version 🇵🇹***
-![Pt](demo/demo-2.jpg)
+![Pt](demo/demo-1.jpg)
 
 ---
 
