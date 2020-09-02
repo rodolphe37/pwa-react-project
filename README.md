@@ -33,13 +33,15 @@
 
 [Demo](#demo)
 
--  [LiveDemo](#live-demo)
+-  [Live-Demo](#live-demo)
 
 -  [Movie](#movie-demo)
 
 - [Pictures](#pictures-demo)
 
 - [Offline](#offline-mode)
+
+- [Cross-Plateform-Demo](#cross-plateform-app)
 
 
 [Start Project](#start-project)
@@ -110,6 +112,19 @@ Link to the demo : https://my-github-pwa.netlify.app/
 ### Offline Mode
 
 ![!Offline](demo/offline.jpg)
+
+---
+
+### Cross Plateform App
+
+***Windows 10 Version***
+![Fr](demo/gitwin.jpg)
+
+***Mac Catalina Version***
+![En](demo/gitmac.jpg)
+
+***Ubuntu 19.10 Version***
+![Pt](demo/github19.jpg)
 
 ---
 
