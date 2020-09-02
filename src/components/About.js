@@ -77,20 +77,22 @@ const About = (props) => {
               following && followers !== null
                 ? <React.Fragment>
                   <div className="card"
-                    style={{ width: '10%', paddingTop: '15px', borderRadius: '8%', boxShadow: '1px 2px 2px black', backgroundColor: 'revert' }}>
+                    style={{ width: '10%', marginTop: '15px', borderRadius: '8%', boxShadow: '1px 2px 2px black', backgroundColor: 'revert' }}>
                     {
                       followers !== null
                         ?
                         <React.Fragment>
-                          <span>
-                            <img
-                              src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg"
-                              alt="github icon"
-                              width="25px"
-                              style={{ backgroundColor: '#ffa500', borderRadius: '50%', border: '1px solid #56ff00' }}
-                            />
-                            <p>Followers : {followers}</p>
-                          </span>
+                          <div className="card-header">
+                            <span className="card-img-top">
+                              <img
+                                src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg"
+                                alt="github icon"
+                                width="25px"
+                                style={{ backgroundColor: '#ffa500', borderRadius: '50%', border: '1px solid #56ff00' }}
+                              />
+                              <p>Followers : {followers}</p>
+                            </span>
+                          </div>
                         </React.Fragment>
                         :
                         ''
@@ -99,15 +101,17 @@ const About = (props) => {
                       following !== null
                         ?
                         <React.Fragment>
-                          <span>
-                            <img
-                              src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg"
-                              alt="github icon"
-                              width="25px"
-                              style={{ backgroundColor: '#56ff00', borderRadius: '50%', border: '1px solid #ffa500' }}
-                            />
-                            <p>Following : {following}</p>
-                          </span>
+                          <div className="card-header">
+                            <span className="card-img-top">
+                              <img
+                                src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg"
+                                alt="github icon"
+                                width="25px"
+                                style={{ backgroundColor: '#56ff00', borderRadius: '50%', border: '1px solid #ffa500' }}
+                              />
+                              <p>Following : {following}</p>
+                            </span>
+                          </div>
                         </React.Fragment>
                         :
                         ''

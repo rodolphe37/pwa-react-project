@@ -318,7 +318,12 @@
   }
   .card {
     width: 19% !important;
-}
+  }
+
+.card-header {
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
 
 }
 
