@@ -124,7 +124,7 @@ Link to the demo : https://my-github-pwa.netlify.app/
 ![En](demo/gitmac.png)
 
 ***Ubuntu 19.10 Version***
-![Pt](demo/github19.png)
+![Pt](demo/gitub19.png)
 
 ---
 
