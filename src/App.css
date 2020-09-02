@@ -363,6 +363,11 @@
   padding-top: 15px;
   }
 }
+@media (width:1154px) {
+  .card {
+    width: 17% !important;
+}
+}
 
 @media (min-width:1440px) and (max-width:1920px) {
   .perso-stats {
