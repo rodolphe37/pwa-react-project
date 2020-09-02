@@ -121,10 +121,10 @@ Link to the demo : https://my-github-pwa.netlify.app/
 ![Fr](demo/gitwin.jpg)
 
 ***Mac Catalina Version***
-![En](demo/gitmac.jpg)
+![En](demo/gitmac.png)
 
 ***Ubuntu 19.10 Version***
-![Pt](demo/github19.jpg)
+![Pt](demo/github19.png)
 
 ---
 
