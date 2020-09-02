@@ -138,6 +138,23 @@
   margin-right: 15%;
 }
 
+.card-about {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: inherit !important;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  /* border: 1px solid rgba(0,0,0,.125); */
+  border-radius: .25rem;
+}
+
 
 @media (min-width:280px) and (max-width:650px) {
 
@@ -170,6 +187,7 @@
   .card {
     width: 39% !important;
     margin-top: 20px;
+    flex-direction: column !important;
   }
 }
 
@@ -318,6 +336,7 @@
   }
   .card {
     width: 19% !important;
+    flex-direction: column !important;
   }
 
 .card-header {
@@ -361,6 +380,7 @@
   .card {
   width: 14%;
   padding-top: 15px;
+  flex-direction: column !important;
   }
 }
 @media (width:1154px) {
@@ -376,5 +396,8 @@
   }
   .perso-stats2 {
     margin-right: 28%;
+  }
+  .card {
+    width: 13.8% !important;
   }
 }

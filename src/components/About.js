@@ -82,18 +82,17 @@ const About = (props) => {
         }
 
         <div className="follow">
-          <div style={{ width: 'auto', display: 'flex' }}>
-            <hr />
+          <div style={{ width: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             {
               following && followers !== 0
                 ? <React.Fragment>
                   <div className="card"
-                    style={{ width: '10%', marginTop: '15px', borderRadius: '8%', boxShadow: '1px 2px 2px black', backgroundColor: 'revert' }}>
+                    style={{ width: '16%', marginTop: '15px', borderRadius: '7px', backgroundColor: 'rgb(228 228 231)', flexDirection: 'inherit !important' }}>
                     {
                       followers !== 0
                         ?
                         <React.Fragment>
-                          <div className="card-header">
+                          <div className="card-header" style={{ borderBottom: 'inherit !important', borderTop: '1px solid rgba(0,0,0,.125)' }}>
                             <span className="card-img-top">
                               <img
                                 src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg"
@@ -112,7 +111,7 @@ const About = (props) => {
                       following !== 0
                         ?
                         <React.Fragment>
-                          <div className="card-header">
+                          <div className="card-header" style={{ borderBottom: 'none !important', borderTop: '1px solid rgba(0,0,0,.125)' }}>
                             <span className="card-img-top">
                               <img
                                 src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg"
@@ -132,7 +131,6 @@ const About = (props) => {
                 :
                 ''
             }
-            <hr />
           </div>
         </div>
         <br />
@@ -177,7 +175,6 @@ const About = (props) => {
           <div style={{ textAlign: 'center', padding: '25px' }}>
             <p className="bio">{t('bio')} : <br />{t('bioContent')}</p></div>
         </div>
-        <hr />
       </div>
       <div>
         <Footer />
