@@ -9,7 +9,6 @@ const About = (props) => {
   const {
     REACT_APP_USERNAME,
     REACT_APP_AVATAR_PICTURE,
-    REACT_APP_NAME_PICTURE_1,
     REACT_APP_PORTFOLIO_NAME,
     REACT_APP_PICTURE_1,
     REACT_APP_PICTURE_2,
@@ -72,7 +71,7 @@ const About = (props) => {
           ?
           <React.Fragment>
             <span>{t('location')} :&nbsp;
-          <b>
+              <b>
                 {location}
               </b>
             </span>
@@ -91,7 +90,7 @@ const About = (props) => {
                   <div className="card"
                     style={{ width: '10%', marginTop: '15px', borderRadius: '8%', boxShadow: '1px 2px 2px black', backgroundColor: 'revert' }}>
                     {
-                      followers !== null
+                      followers !== 0
                         ?
                         <React.Fragment>
                           <div className="card-header">
@@ -137,11 +136,18 @@ const About = (props) => {
           </div>
         </div>
         <br />
-        {REACT_APP_PORTFOLIO_NAME === '' ? '' :
+        {REACT_APP_PORTFOLIO_NAME === ''
+          ?
+          ''
+          :
           <div>
-            <span>{t('linkPortfolio')} : </span><a href={blog} target="new">{REACT_APP_PORTFOLIO_NAME}</a>
+            <span>{t('linkPortfolio')} : </span>
+            <a href={blog} target="new">
+              {REACT_APP_PORTFOLIO_NAME}
+            </a>
             <br />
-          </div>}
+          </div>
+        }
         <div>
           <br />
           <div>
@@ -149,7 +155,7 @@ const About = (props) => {
           </div>
           <br />
           <div className="tools">
-            <img align="center" alt={`${REACT_APP_NAME_PICTURE_1}`} width="26px" src={`https://${REACT_APP_PICTURE_1}`} />&ensp;
+            <img align="center" alt="Visual Studio Code" width="26px" src={`https://${REACT_APP_PICTURE_1}`} />&ensp;
             <img align="center" alt="HTML5" width="26px" src={`https://${REACT_APP_PICTURE_2}`} />&ensp;
             <img align="center" alt="CSS3" width="26px" src={`https://${REACT_APP_PICTURE_3}`} />&ensp;
             <img align="center" alt="Sass" width="26px" src={`https://${REACT_APP_PICTURE_4}`} />&ensp;
