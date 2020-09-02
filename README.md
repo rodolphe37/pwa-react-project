@@ -23,8 +23,8 @@
 
 - Ubuntu 18.04 et 19.10
 
-- Samsung Mobile phones (Note 2, A40)
-- Iphone 6
+- Samsung Mobile phones (Note 9, A40, A51)
+- Iphone 6 ,7, 8
 
 ---
 
@@ -399,7 +399,6 @@ https://github.com/anuraghazra/github-readme-stats
 - to Anton Komarev for the "profile views counter" :
 https://github.com/antonkomarev/github-profile-views-counter
 
-and
 - to Fabian Beuke for data from pull requests made on Github :
 https://github.com/madnight/githut
 
