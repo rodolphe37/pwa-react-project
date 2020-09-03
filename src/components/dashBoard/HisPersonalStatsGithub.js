@@ -7,7 +7,7 @@ const HisPersonalStatsGithub = () => {
   const { REACT_APP_USERNAME } = process.env
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 1900)
+    setTimeout(() => setLoading(false), 1500)
   }, [])
 
   return (
