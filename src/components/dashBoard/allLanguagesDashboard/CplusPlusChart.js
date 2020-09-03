@@ -8,7 +8,6 @@ export class CplusPlusChart extends Component {
     super(props);
     this.state = {
       Data: {},
-      Mode: "online",
       DashBoard: []
     };
   }
@@ -64,10 +63,6 @@ export class CplusPlusChart extends Component {
             ]
           }
         });
-      }).catch(err => {
-        this.setState.Mode('offline')
-        let collectionDashboard = localStorage.getItem('DashBoard')
-        this.setState(this.state.DashBoard(JSON.parse(collectionDashboard)))
       })
 
   }
