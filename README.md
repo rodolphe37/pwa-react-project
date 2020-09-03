@@ -8,7 +8,7 @@
 **Progressive Web App created with React.js**
 
 
-***Github My Profile PWA***
+***Github My Profile PWA (V1.3.0)***
 <img align="right" height="130px" alt="rodolphe37 Github Stats" src="https://imgur.com/y5S62AN.jpg" />
 
 
@@ -169,11 +169,10 @@ $ npm i or $ npm install
 
 ```bash
 
-#PROJECT OPEN SOURCE UNDER CREATIVE COMMONS LICENSE (CC BY-NC-SA) - CREATED BY RODOLPHE AUGUSTO
+#OPEN SOURCES PROJECT UNDER CREATIVE COMMONS LICENSE (CC BY-NC-SA) - CREATED BY RODOLPHE AUGUSTO
 
 #For more info about this project, visit this address : https://github.com/rodolphe37/pwa-react-project
-#or my portfolio at https://rodolphe-augusto.fr
-#or contact me at rodolphe.a@gmail.com
+#or contact me on my portfolio at https://rodolphe-augusto.fr
 
 #                                                                     ......
 #                                                               .',:looddddooc,.'''...
@@ -254,18 +253,20 @@ $ npm i or $ npm install
 #enter your username github
 REACT_APP_USERNAME=
 
-#enter your picture profil url (without https:// or https://www)
+#enter your profile picture url (without https:// or https://www)
 REACT_APP_PICTURE_USER=
 
 
 #ABOUT PAGE
 
-#Copy the link to your portfolio logo, or any other links picture in image hosting solutions like imgur or other (without https:// or https://www)
+#Copy the link to your portfolio logo
+#or any other links picture in image hosting solutions like imgur or other (without https:// or https://www)
 REACT_APP_AVATAR_PICTURE=
 
 #PORTFOLIO LINK
 
-#enter your portfolio name only (Portfolio address is fetching direct form your github profil)
+#enter your portfolio name only
+#(Portfolio address is fetching direct form your github profile)
 #if you leave the name blank, then no link appears on the screen
 REACT_APP_PORTFOLIO_NAME=
 
@@ -291,16 +292,19 @@ REACT_APP_PICTURE_14=
 REACT_APP_PICTURE_15=
 REACT_APP_PICTURE_16=
 
+#BIOGRAPHY SECTION
+
 #If you want bio text content appear or not
 #If your choice is "i want" then, put 'yes' otherwise put 'no'
 REACT_APP_APPEAR_OPTION_BIO= ''
+
 
 #FOOTER
 
 #Developer section footer
 
 #enter your name link 1 here
-REACT_APP_LINK1_NAME=mon Linkedin
+REACT_APP_LINK1_NAME=
 ##enter your link 1 here (without https:// or https://www)
 REACT_APP_LINK1_URL=
 
@@ -323,7 +327,8 @@ REACT_APP_LINK4_URL=
 
 #Illustrator section footer
 
-#if you dont put anything, then it does not appear on the screen
+#if you dont put anything, then that does not appear on the screen
+
 #enter your store address 1 here (without https:// or https://www)
 REACT_APP_ADDRESS_STORE_1_URL=
 #enter your store address 2 here (without https:// or https://www)
@@ -339,6 +344,7 @@ REACT_APP_YEAR_COPYRIGHT=
 
 # AND THAT'S ALL...
 # ENJOY THE WORLD
+
 
 ```
 
