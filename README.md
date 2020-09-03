@@ -8,7 +8,7 @@
 **Progressive Web App created with React.js**
 
 
-***Github My Profile PWA (V1.3)***
+***Github My Profile PWA (V1.4)***
 <img align="right" height="130px" alt="rodolphe37 Github Stats" src="https://imgur.com/y5S62AN.jpg" />
 
 
