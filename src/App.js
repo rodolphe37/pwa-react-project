@@ -10,19 +10,19 @@ import {
 } from 'reactstrap';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 import Dashboard from './components/Dashboard';
-import JavascriptChart from './components/dashBoard/JavascriptChart'
-import SwiftChart from './components/dashBoard/SwiftChart';
-import VueChart from './components/dashBoard/VueChart';
-import TypescriptChart from './components/dashBoard/TypescriptChart';
-import PythonChart from './components/dashBoard/PythonChart';
-import RubyChart from './components/dashBoard/RubyChart';
-import PhpChart from './components/dashBoard/PhpChart';
-import KotlinChart from './components/dashBoard/KotlinChart';
-import JavaChart from './components/dashBoard/JavaChart';
-import HtmlChart from './components/dashBoard/HtmlChart';
-import DartChart from './components/dashBoard/DartChart';
-import CssChart from './components/dashBoard/CssChart';
-import CplusPlusChart from './components/dashBoard/CplusPlusChart';
+import JavascriptChart from './components/dashBoard/allLanguagesDashboard/JavascriptChart'
+import SwiftChart from './components/dashBoard/allLanguagesDashboard/SwiftChart';
+import VueChart from './components/dashBoard/allLanguagesDashboard/VueChart';
+import TypescriptChart from './components/dashBoard/allLanguagesDashboard/TypescriptChart';
+import PythonChart from './components/dashBoard/allLanguagesDashboard/PythonChart';
+import RubyChart from './components/dashBoard/allLanguagesDashboard/RubyChart';
+import PhpChart from './components/dashBoard/allLanguagesDashboard/PhpChart';
+import KotlinChart from './components/dashBoard/allLanguagesDashboard/KotlinChart';
+import JavaChart from './components/dashBoard/allLanguagesDashboard/JavaChart';
+import HtmlChart from './components/dashBoard/allLanguagesDashboard/HtmlChart';
+import DartChart from './components/dashBoard/allLanguagesDashboard/DartChart';
+import CssChart from './components/dashBoard/allLanguagesDashboard/CssChart';
+import CplusPlusChart from './components/dashBoard/allLanguagesDashboard/CplusPlusChart';
 import { useTranslation } from 'react-i18next';
 import Navigation from './components/Navs/Navigation';
 import TopNav from './components/Navs/TopNav';

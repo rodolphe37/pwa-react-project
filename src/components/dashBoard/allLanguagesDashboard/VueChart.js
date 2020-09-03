@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Line } from 'react-chartjs-2';
 import { withTranslation } from 'react-i18next';
 
-export class HtmlChart extends Component {
+export class VueChart extends Component {
   constructor(props) {
     super(props);
     this.state = { Data: {} };
@@ -23,29 +23,29 @@ export class HtmlChart extends Component {
           name.push(record.name)
         });
 
-        const [firstYear] = [parseInt(count[11]) + parseInt(count[39]) + parseInt(count[67])]
-        const [secondYear] = [parseInt(count[96]) + parseInt(count[136]) + parseInt(count[176]) + parseInt(count[230])]
-        const [thirdYear] = [parseInt(count[284]) + parseInt(count[345]) + parseInt(count[413]) + parseInt(count[483])]
-        const [fourthYear] = [parseInt(count[557]) + parseInt(count[647]) + parseInt(count[732]) + parseInt(count[822])]
-        const [fifthYear] = [parseInt(count[924]) + parseInt(count[1034]) + parseInt(count[1143]) + parseInt(count[1245])]
-        const [sixthYear] = [parseInt(count[1356]) + parseInt(count[1461]) + parseInt(count[1564]) + parseInt(count[1660])]
-        const [seventhYear] = [parseInt(count[1752]) + parseInt(count[1845]) + parseInt(count[1934]) + parseInt(count[2018])]
-        const [eighthYear] = [parseInt(count[2098]) + parseInt(count[2178]) + parseInt(count[2254]) + parseInt(count[2339])]
-        const [ninthYear] = [parseInt(count[2418]) + parseInt(count[2500])]
+        const [firstYear] = [parseInt("0")]
+        const [secondYear] = [parseInt("0")]
+        const [thirdYear] = [parseInt("0")]
+        const [fourthYear] = [parseInt("0")]
+        const [fifthYear] = [parseInt(count[1016]) + parseInt(count[1098]) + parseInt(count[1184]) + parseInt(count[1270])]
+        const [sixthYear] = [parseInt(count[1382]) + parseInt(count[1486]) + parseInt(count[1593]) + parseInt(count[1683])]
+        const [seventhYear] = [parseInt(count[1766]) + parseInt(count[1862]) + parseInt(count[1950]) + parseInt(count[2036])]
+        const [eighthYear] = [parseInt(count[2113]) + parseInt(count[2192]) + parseInt(count[2268]) + parseInt(count[2353])]
+        const [ninthYear] = [parseInt(count[2435]) + parseInt(count[2515])]
 
         const total = [firstYear + secondYear + thirdYear + fourthYear + fifthYear + sixthYear + seventhYear + eighthYear + ninthYear]
         result.push(total)
-        localStorage.setItem('html', JSON.stringify(this.state.Data))
+        localStorage.setItem('vue', JSON.stringify(total))
         this.setState({
           Data: {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],
             datasets: [
               {
-                label: `${t('count')} : ${result}, ${name[11]}`,
+                label: `${t('count')} : ${result}, ${name[1016]} `,
                 data: [firstYear, secondYear, thirdYear, fourthYear, fifthYear, sixthYear, seventhYear, eighthYear, ninthYear],
                 backgroundColor: [
 
-                  'rgba(107, 185, 240, 0.6)',
+                  'rgba(34, 49, 63, 0.6)',
                   'rgba(255, 99, 132, 0.6)',
                   'rgba(255, 206, 86, 0.6)',
                   'rgba(255, 99, 132, 0.6)',
@@ -69,10 +69,13 @@ export class HtmlChart extends Component {
         <Line
           data={this.state.Data}
           options={{ maintainAspectRatio: false }} />
+        <div>
+        </div>
+
       </div>
     )
   }
 
 }
 
-export default withTranslation()(HtmlChart)
+export default withTranslation()(VueChart)
