@@ -207,6 +207,7 @@
 @media (width:375px) {
   .perso-stats {
     width: 346px;
+    margin-left: 3% !important;
 }
 }
 @media (min-width:411px) and (max-width:414px) {
@@ -221,6 +222,7 @@
 @media(width:360px) {
   .perso-stats {
     width: 317px !important;
+    margin-left: 3% !important;
   }
 }
 @media (width:540px){
@@ -230,7 +232,14 @@
   }
   .perso-stats2 {
     margin-right: 22% !important;
+  }
 }
+
+@media (max-width: 414px) and (min-width: 411px){
+.perso-stats {
+    width: 364px !important;
+    margin-left: 11% !important;
+  }
 }
 
 @media (min-width:540px) and (max-width:767px) {
@@ -304,7 +313,7 @@
     margin-right: inherit;
   }
   .perso-stats {
-    margin-left: 8%;
+    margin-left: -1%;
     margin-top: 3%;
   }
   .perso-stats2  {
@@ -319,11 +328,11 @@
 }
 @media (min-width:768px) and (max-width:1020px) {
   .perso-stats {
-    margin-left: -1% !important;
     margin-top: 3% !important;
+    margin-left: 57px;
   }
   .perso-stats2 {
-    margin-right: 0%;
+    margin-right: 5%;
     margin-top: -29%;
   }
   .octicon {
@@ -386,17 +395,22 @@
 @media (width:1154px) {
   .card {
     width: 17% !important;
-}
+  }
 }
 
+@media (min-widht:1440px) and (max-width:1439px) {
+  .perso-stats2 {
+    margin-right: 23%;
+}
+}
 @media (min-width:1440px) and (max-width:1920px) {
   .perso-stats {
     margin-left: 21%;
     margin-top: 3%;
   }
-  .perso-stats2 {
+  /* .perso-stats2 {
     margin-right: 28%;
-  }
+  } */
   .card {
     width: 13.8% !important;
   }
