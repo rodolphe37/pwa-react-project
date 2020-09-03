@@ -41,7 +41,7 @@
 
 - [Pictures](#pictures-demo)
 
-  - [Offline](#offline-mode)
+  - [Offline-mode](#offline-mode)
 
   - [Cross-Plateform-Demo](#cross-plateform-app)
 
@@ -308,7 +308,7 @@ REACT_APP_LINK1_NAME=
 ##enter your link 1 here (without https:// or https://www)
 REACT_APP_LINK1_URL=
 
-#if there is neither a links nor names, then the full section does not appear on the screen
+#if there is neither a links nor names, then the 3 links & names does not appear on the screen
 
 #( if there is neither a link nor name, then this does not appear on the screen )
 #enter your name link 2 (pdf file) CV for example here
@@ -331,7 +331,7 @@ REACT_APP_LINK4_URL=
 
 #Illustrator section footer
 
-#if you dont put anything, then that does not appear on the screen
+#if you dont put anything, then all of the section does not appear on the screen
 
 #enter your store address 1 here (without https:// or https://www)
 REACT_APP_ADDRESS_STORE_1_URL=
