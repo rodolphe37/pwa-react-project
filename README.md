@@ -353,18 +353,19 @@ REACT_APP_YEAR_COPYRIGHT=
 
 ```
 
-**Last modification you can do!**
+**Lasts modification you must doing!**
 
 some texts must be modified in the translation files directly
 
 **Explanation:**
 
-***for "My Github bio" in about page***
+***for "My Github bio" in about page (If you have decided to make it appear)***
 
 - Go to "public/locales/" folder, the are 3 folders, one named "en" (for english texts), one named "fr" (for french texts) and another named "pt" (for Portugues texts)
 The text you will must modifying is at the variable named "bioContent" at line  24
 
 ```bash
+#If you have decided not to display the bio content, you can ignore this change
 
 #file translation.json in each folder (en - fr - pt)
 "bioContent": "Write your text here",
@@ -380,6 +381,8 @@ The text you will must modifying is at they variables named "footerTitleDev" and
 
 #file translation.json in each folder (en - fr - pt)
 "footerTitleDev": "Your name section 1 here",
+
+#If you decided not to show the second section, you can ignore this change
 "footerTitleIllustr": "Your name section 2 here",
 
 ```
@@ -388,6 +391,7 @@ The text you will must modifying is at they variables named "footerTitleDev" and
 - The text you will must modifying is at they variables named "storeIllustr1" and "storeIllustr2" at line  10 and 11
 
 ```bash
+#If you have decided not to display the second section, you can ignore this change too
 
 #file translation.json in each folder (en - fr - pt)
 "storeIllustr1": "Your store name 1",
@@ -407,7 +411,6 @@ $ npm start
   enjoy!!!
 
 ---
-
 
 ## Author
 
