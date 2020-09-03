@@ -26,6 +26,7 @@ const About = (props) => {
     REACT_APP_PICTURE_14,
     REACT_APP_PICTURE_15,
     REACT_APP_PICTURE_16,
+    REACT_APP_APPEAR_OPTION_BIO,
     REACT_APP_NAME_COPYRIGHT,
     REACT_APP_YEAR_COPYRIGHT
   } = process.env
@@ -164,20 +165,27 @@ const About = (props) => {
             <img align="center" alt="GraphQL" width="26px" src={`https://${REACT_APP_PICTURE_8}`} />&ensp;
           </div>
           <div className="tools">
-            <img align="center" alt="Node.js" width="26px" src={`https://${REACT_APP_PICTURE_9}` || null} />&ensp;
-          <img align="center" alt="Deno" width="26px" src={`https://${REACT_APP_PICTURE_10}` || null} />&ensp;
-          <img align="center" alt="SQL" width="26px" src={`https://${REACT_APP_PICTURE_11}` || null} />&ensp;
-          <img align="center" alt="Electron" width="26px" src={`https://${REACT_APP_PICTURE_12}` || null} />&ensp;
-          <img align="center" alt="MongoDB" width="26px" src={`https://${REACT_APP_PICTURE_13}` || null} />&ensp;
-          <img align="center" alt="Git" width="26px" src={`https://${REACT_APP_PICTURE_14}` || null} />&ensp;
-          <img align="center" alt="GitHub" width="26px" src={`https://${REACT_APP_PICTURE_15}` || null} />&ensp;
-          <img align="center" alt="Terminal" width="26px" src={`https://${REACT_APP_PICTURE_16}` || null} />
+            {REACT_APP_PICTURE_9 === '' ? '' : <React.Fragment><img align="center" alt="Node.js" width="26px" src={`https://${REACT_APP_PICTURE_9}`} />&ensp;</React.Fragment>}
+            {REACT_APP_PICTURE_10 === '' ? '' : <React.Fragment><img align="center" alt="Node.js" width="26px" src={`https://${REACT_APP_PICTURE_10}`} />&ensp;</React.Fragment>}
+            {REACT_APP_PICTURE_11 === '' ? '' : <React.Fragment><img align="center" alt="Node.js" width="26px" src={`https://${REACT_APP_PICTURE_11}`} />&ensp;</React.Fragment>}
+            {REACT_APP_PICTURE_12 === '' ? '' : <React.Fragment><img align="center" alt="Node.js" width="26px" src={`https://${REACT_APP_PICTURE_12}`} />&ensp;</React.Fragment>}
+            {REACT_APP_PICTURE_13 === '' ? '' : <React.Fragment><img align="center" alt="Node.js" width="26px" src={`https://${REACT_APP_PICTURE_13}`} />&ensp;</React.Fragment>}
+            {REACT_APP_PICTURE_14 === '' ? '' : <React.Fragment><img align="center" alt="Node.js" width="26px" src={`https://${REACT_APP_PICTURE_14}`} />&ensp;</React.Fragment>}
+            {REACT_APP_PICTURE_15 === '' ? '' : <React.Fragment><img align="center" alt="Node.js" width="26px" src={`https://${REACT_APP_PICTURE_15}`} />&ensp;</React.Fragment>}
+            {REACT_APP_PICTURE_16 === '' ? '' : <React.Fragment><img align="center" alt="Node.js" width="26px" src={`https://${REACT_APP_PICTURE_16}`} />&ensp;</React.Fragment>}
           </div>
-          <div style={{ textAlign: 'center', padding: '25px' }}>
-            <p className="bio">{t('bio')} : <br />{t('bioContent')}</p></div>
+          {REACT_APP_APPEAR_OPTION_BIO === 'no'
+            ?
+            ''
+            :
+            <div style={{ textAlign: 'center', padding: '25px' }}>
+              <p className="bio">{t('bio')} : <br />{t('bioContent')}</p>
+            </div>
+          }
         </div>
       </div>
       <div>
+        <hr />
         <Footer />
         <div style={{ marginTop: '10px' }}>
           <small className="d-block mb-3 link-footer brand-footer">Copyright &copy; {`${REACT_APP_NAME_COPYRIGHT}`} {`${REACT_APP_YEAR_COPYRIGHT}`}</small>
