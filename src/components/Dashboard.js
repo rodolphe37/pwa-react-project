@@ -19,16 +19,28 @@ const Dashboard = () => {
         <React.Fragment>
           <br />
           <h3 style={{ fontSize: '15px' }}>{t('languagesRepos')}</h3>
-          <sup className="title-sup" > {t('mostUsed')} <br className="appear" />{t('mostUsed2')}</sup>
+          <sup className="title-sup" > {t('mostUsed')}
+            <br className="appear" />
+            {t('mostUsed2')}
+          </sup>
           <HisPersonalStatsGithub />
           <br />
           <div className="pull-requests">
-            <h3 style={{ fontSize: '15px' }}>{t('popularityLanguages')} <br className="appear" /> {t('pullRequests')}</h3>
-            <sup className="title-sup">{t('globalCharts1')} <br className="appear" /> {t('globalCharts2')}</sup>
+            <h3 style={{ fontSize: '15px' }}>{t('popularityLanguages')}
+              <br className="appear" />
+              {t('pullRequests')}
+            </h3>
+            <sup className="title-sup">
+              {t('globalCharts1')}
+              <br className="appear" />
+              {t('globalCharts2')}
+            </sup>
           </div>
           <AllLanguagesDashboard />
         </React.Fragment>
-        : <InfiniteLoopLoader />}
+        :
+        <InfiniteLoopLoader />
+      }
     </div>
   )
 }

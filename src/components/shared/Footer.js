@@ -18,6 +18,7 @@ const Footer = () => {
   } = process.env
   return (
     <div className="row footer-content">
+      <hr />
       <div className="col-6 col-md">
         <h5 className="titl">
           <b>{t('footerTitleDev')}</b>
@@ -44,7 +45,7 @@ const Footer = () => {
             href={`https://${REACT_APP_LINK3_URL}`}
             target="new">{REACT_APP_LINK3_NAME}
           </a>
-          <span className="hidden768"> / </span>
+          {REACT_APP_LINK4_NAME && REACT_APP_LINK4_URL !== null ? <span className="hidden768"> / </span> : ''}
           <br className="appear" />
           <a
             className="link-footer codesandbox-link"
@@ -53,27 +54,33 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="col-6 col-md">
-        <h5 className="titl">
-          <b>
-            {t('footerTitleIllustr')}
-          </b>
-        </h5>
-        <div className="list-unstyled text-small">
-          <a
-            href={`https://${REACT_APP_ADDRESS_STORE_1_URL}`}
-            target="new"
-            className="link-footer">
-            {t('storeIllustr1')}
-          </a>
-          <br />
-          <a
-            href={`https://${REACT_APP_ADDRESS_STORE_2_URL}`}
-            target="new"
-            className="link-footer">{t('storeIllustr2')}
-          </a>
-        </div>
-      </div>
+      {
+        REACT_APP_ADDRESS_STORE_1_URL && REACT_APP_ADDRESS_STORE_2_URL !== null
+          ?
+          <div className="col-6 col-md">
+            <h5 className="titl">
+              <b>
+                {t('footerTitleIllustr')}
+              </b>
+            </h5>
+            <div className="list-unstyled text-small">
+              <a
+                href={`https://${REACT_APP_ADDRESS_STORE_1_URL}`}
+                target="new"
+                className="link-footer">
+                {t('storeIllustr1')}
+              </a>
+              <br />
+              <a
+                href={`https://${REACT_APP_ADDRESS_STORE_2_URL}`}
+                target="new"
+                className="link-footer">{t('storeIllustr2')}
+              </a>
+            </div>
+          </div>
+          :
+          ''
+      }
     </div>
   )
 }
