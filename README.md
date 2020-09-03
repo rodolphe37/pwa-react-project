@@ -8,7 +8,7 @@
 **Progressive Web App created with React.js**
 
 
-***Github My Profile PWA (V1.3.0)***
+***Github My Profile PWA (V1.3)***
 <img align="right" height="130px" alt="rodolphe37 Github Stats" src="https://imgur.com/y5S62AN.jpg" />
 
 
@@ -246,7 +246,7 @@ $ npm i or $ npm install
 
 #FULL PERSONNALISATION OF THE APPLICATION HERE!!!
 
-#first = remove (example) from this file name (it must be named only (.env.local)
+#first = remov (example) from this file name (it must be named only (.env.local)
 
 #HOME PAGE & REPOSITORIES INFO
 
@@ -308,17 +308,21 @@ REACT_APP_LINK1_NAME=
 ##enter your link 1 here (without https:// or https://www)
 REACT_APP_LINK1_URL=
 
-#( if there is neither a link nor name of file, then it does not appear on the screen )
+#if there is neither a links nor names, then the full section does not appear on the screen
+
+#( if there is neither a link nor name, then this does not appear on the screen )
 #enter your name link 2 (pdf file) CV for example here
 REACT_APP_NAME_PDF=
 #enter your link 2 (without https:// or https://www)
 REACT_APP_PDF_LINK=
 
+#( if there is neither a link nor name, then this does not appear on the screen )
 #enter your name link 3 here
 REACT_APP_LINK3_NAME=
 #enter your link 3 here (without https:// or https://www)
 REACT_APP_LINK3_URL=
 
+#( if there is neither a link nor name, then this does not appear on the screen )
 #enter your name link 4 here
 REACT_APP_LINK4_NAME=
 #enter your link 4 here (without https:// or https://www)
@@ -344,6 +348,7 @@ REACT_APP_YEAR_COPYRIGHT=
 
 # AND THAT'S ALL...
 # ENJOY THE WORLD
+
 
 
 ```

@@ -64,18 +64,31 @@ const Footer = () => {
               </b>
             </h5>
             <div className="list-unstyled text-small">
-              <a
-                href={`https://${REACT_APP_ADDRESS_STORE_1_URL}`}
-                target="new"
-                className="link-footer">
-                {t('storeIllustr1')}
-              </a>
+              {
+                REACT_APP_ADDRESS_STORE_1_URL !== null
+                  ?
+                  <React.Fragment>
+                    <a
+                      href={`https://${REACT_APP_ADDRESS_STORE_1_URL}`}
+                      target="new"
+                      className="link-footer">
+                      {t('storeIllustr1')}
+                    </a>
+                  </React.Fragment>
+                  : ''
+              }
               <br />
-              <a
-                href={`https://${REACT_APP_ADDRESS_STORE_2_URL}`}
-                target="new"
-                className="link-footer">{t('storeIllustr2')}
-              </a>
+              {REACT_APP_ADDRESS_STORE_2_URL !== null
+                ?
+                <React.Fragment>
+                  <a
+                    href={`https://${REACT_APP_ADDRESS_STORE_2_URL}`}
+                    target="new"
+                    className="link-footer">{t('storeIllustr2')}
+                  </a>
+                </React.Fragment>
+                : ''
+              }
             </div>
           </div>
           :
