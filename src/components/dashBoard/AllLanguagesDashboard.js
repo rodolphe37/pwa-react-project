@@ -20,7 +20,7 @@ const AllLanguagesDashboard = () => {
   const { t } = useTranslation();
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 1900)
+    setTimeout(() => setLoading(false), 1400)
   }, [])
   return (
     <React.Fragment>
