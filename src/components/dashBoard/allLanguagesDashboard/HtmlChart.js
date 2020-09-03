@@ -1,4 +1,4 @@
-import React, { Component, Suspense } from 'react'
+import React, { Component } from 'react'
 import axios from 'axios';
 import { Line } from 'react-chartjs-2';
 import { withTranslation } from 'react-i18next';
