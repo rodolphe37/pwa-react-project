@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Line } from 'react-chartjs-2';
 import { withTranslation } from 'react-i18next';
 
-export class KotlinChart extends Component {
+export class PhpChart extends Component {
   constructor(props) {
     super(props);
     this.state = { Data: {} };
@@ -23,29 +23,28 @@ export class KotlinChart extends Component {
           name.push(record.name)
         });
 
-        const [firstYear] = [parseInt("0")]
-        const [secondYear] = [parseInt("0")]
-        const [thirdYear] = [parseInt("0") + parseInt("0") + parseInt(count[454]) + parseInt(count[505])]
-        const [fourthYear] = [parseInt(count[591]) + parseInt(count[682]) + parseInt(count[772]) + parseInt(count[852])]
-        const [fifthYear] = [parseInt(count[955]) + parseInt(count[1063]) + parseInt(count[1167]) + parseInt(count[1272])]
-        const [sixthYear] = [parseInt(count[1381]) + parseInt(count[1481]) + parseInt(count[1584]) + parseInt(count[1676])]
-        const [seventhYear] = [parseInt(count[1762]) + parseInt(count[1853]) + parseInt(count[1941]) + parseInt(count[2025])]
-        const [eighthYear] = [parseInt(count[2104]) + parseInt(count[2184]) + parseInt(count[2261]) + parseInt(count[2346])]
-        const [ninthYear] = [parseInt(count[2425]) + parseInt(count[2508])]
+        const [firstYear] = [parseInt(count[3]) + parseInt(count[31]) + parseInt(count[60])]
+        const [secondYear] = [parseInt(count[90]) + parseInt(count[130]) + parseInt(count[172]) + parseInt(count[226])]
+        const [thirdYear] = [parseInt(count[280]) + parseInt(count[341]) + parseInt(count[409]) + parseInt(count[480])]
+        const [fourthYear] = [parseInt(count[555]) + parseInt(count[645]) + parseInt(count[730]) + parseInt(count[820])]
+        const [fifthYear] = [parseInt(count[923]) + parseInt(count[1031]) + parseInt(count[1139]) + parseInt(count[1241])]
+        const [sixthYear] = [parseInt(count[1352]) + parseInt(count[1457]) + parseInt(count[1562]) + parseInt(count[1656])]
+        const [seventhYear] = [parseInt(count[1750]) + parseInt(count[1842]) + parseInt(count[1930]) + parseInt(count[2014])]
+        const [eighthYear] = [parseInt(count[2094]) + parseInt(count[2174]) + parseInt(count[2251]) + parseInt(count[2336])]
+        const [ninthYear] = [parseInt(count[2415]) + parseInt(count[2497])]
 
         const total = [firstYear + secondYear + thirdYear + fourthYear + fifthYear + sixthYear + seventhYear + eighthYear + ninthYear]
         result.push(total)
-        localStorage.setItem('kotlin', JSON.stringify(this.state.Data))
+        localStorage.setItem('php', JSON.stringify(total))
         this.setState({
           Data: {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],
             datasets: [
               {
-                label: `${t('count')} : ${result}, ${name[454]}`,
+                label: `${t('count')} : ${result}, ${name[3]}`,
                 data: [firstYear, secondYear, thirdYear, fourthYear, fifthYear, sixthYear, seventhYear, eighthYear, ninthYear],
                 backgroundColor: [
-
-                  'rgba(77, 19, 209, 0.6)',
+                  'rgba(255, 148, 120, 0.6)',
                   'rgba(255, 99, 132, 0.6)',
                   'rgba(255, 206, 86, 0.6)',
                   'rgba(255, 99, 132, 0.6)',
@@ -78,4 +77,4 @@ export class KotlinChart extends Component {
 
 }
 
-export default withTranslation()(KotlinChart)
+export default withTranslation()(PhpChart)

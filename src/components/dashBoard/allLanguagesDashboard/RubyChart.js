@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Line } from 'react-chartjs-2';
 import { withTranslation } from 'react-i18next';
 
-export class DartChart extends Component {
+export class RubyChart extends Component {
   constructor(props) {
     super(props);
     this.state = { Data: {} };
@@ -15,7 +15,7 @@ export class DartChart extends Component {
         let name = [];
         let year = [];
         let count = [];
-        let result = [];
+        let result = []
         const { t } = this.props;
         ipl.forEach(record => {
           year.push(record.year);
@@ -23,35 +23,34 @@ export class DartChart extends Component {
           name.push(record.name)
         });
 
-        const [firstYear] = [parseInt("0")]
-        const [secondYear] = [parseInt("0") + parseInt(count[156]) + parseInt(count[196]) + parseInt(count[250])]
-        const [thirdYear] = [parseInt(count[303]) + parseInt(count[365]) + parseInt(count[435]) + parseInt(count[508])]
-        const [fourthYear] = [parseInt(count[582]) + parseInt(count[672]) + parseInt(count[764]) + parseInt(count[856])]
-        const [fifthYear] = [parseInt(count[960]) + parseInt(count[1068]) + parseInt(count[1177]) + parseInt(count[1276])]
-        const [sixthYear] = [parseInt(count[1386]) + parseInt(count[1493]) + parseInt(count[1594]) + parseInt(count[1684])]
-        const [seventhYear] = [parseInt(count[1774]) + parseInt(count[1863]) + parseInt(count[1953]) + parseInt(count[2041])]
-        const [eighthYear] = [parseInt(count[2112]) + parseInt(count[2190]) + parseInt(count[2260]) + parseInt(count[2345])]
-        const [ninthYear] = [parseInt(count[2426]) + parseInt(count[2509])]
+        const [firstYear] = [parseInt(count[0]) + parseInt(count[30]) + parseInt(count[57])]
+        const [secondYear] = [parseInt(count[87]) + parseInt(count[129]) + parseInt(count[171]) + parseInt(count[225])]
+        const [thirdYear] = [parseInt(count[279]) + parseInt(count[340]) + parseInt(count[408]) + parseInt(count[478])]
+        const [fourthYear] = [parseInt(count[553]) + parseInt(count[644]) + parseInt(count[729]) + parseInt(count[819])]
+        const [fifthYear] = [parseInt(count[922]) + parseInt(count[1032]) + parseInt(count[1140]) + parseInt(count[1242])]
+        const [sixthYear] = [parseInt(count[1353]) + parseInt(count[1458]) + parseInt(count[1560]) + parseInt(count[1655])]
+        const [seventhYear] = [parseInt(count[1748]) + parseInt(count[1841]) + parseInt(count[1929]) + parseInt(count[2013])]
+        const [eighthYear] = [parseInt(count[2093]) + parseInt(count[2173]) + parseInt(count[2250]) + parseInt(count[2334])]
+        const [ninthYear] = [parseInt(count[2413]) + parseInt(count[2496])]
 
         const total = [firstYear + secondYear + thirdYear + fourthYear + fifthYear + sixthYear + seventhYear + eighthYear + ninthYear]
         result.push(total)
-        localStorage.setItem('dart', JSON.stringify(this.state.Data))
+        localStorage.setItem('ruby', JSON.stringify(total))
         this.setState({
           Data: {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],
             datasets: [
               {
-                label: `${t('count')} : ${result}, ${name[156]}`,
+                label: `${t('count')} : ${result}, ${name[0]}`,
                 data: [firstYear, secondYear, thirdYear, fourthYear, fifthYear, sixthYear, seventhYear, eighthYear, ninthYear],
                 backgroundColor: [
-
-                  'rgba(200, 247, 197, 0.6)',
+                  'rgba(246, 36, 89, 0.6)',
                   'rgba(255, 99, 132, 0.6)',
                   'rgba(255, 206, 86, 0.6)',
-                  'rgba(255, 99, 132, 0.6)',
-                  'rgba(54, 162, 235, 0.6)',
                   'rgba(75, 192, 192, 0.6)',
+                  'rgba(153, 102, 255, 0.6)',
                   'rgba(255, 159, 64, 0.6)',
+                  'rgba(255, 99, 132, 0.6)',
                   'rgba(54, 162, 235, 0.6)',
                   'rgba(255, 206, 86, 0.6)',
                   'rgba(75, 192, 192, 0.6)',
@@ -69,13 +68,10 @@ export class DartChart extends Component {
         <Line
           data={this.state.Data}
           options={{ maintainAspectRatio: false }} />
-        <div>
-        </div>
-
       </div>
     )
   }
 
 }
 
-export default withTranslation()(DartChart)
+export default withTranslation()(RubyChart)

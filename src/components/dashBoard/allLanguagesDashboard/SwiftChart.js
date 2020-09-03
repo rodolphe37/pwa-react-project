@@ -35,7 +35,7 @@ export class SwiftChart extends Component {
 
         const total = [firstYear + secondYear + thirdYear + fourthYear + fifthYear + sixthYear + seventhYear + eighthYear + ninthYear]
         result.push(total)
-        localStorage.setItem('swift', JSON.stringify(this.state.Data))
+        localStorage.setItem('swift', JSON.stringify(total))
         this.setState({
           Data: {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],

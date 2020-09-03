@@ -1,7 +1,6 @@
 [![Website](https://i.imgur.com/xSu6S5v.png)](https://rodolphe-augusto.fr)
 ---
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0a1a0b3f-9542-4602-b572-d6fd9d600a17/deploy-status)](https://app.netlify.com/sites/my-github-pwa/deploys)
-
 [![pas](https://img.shields.io/static/v1?&message=ProgressiveApp.Store&color=74b9ff&style=flat&label=Follow%20PWA%20My%20Github%20at)](https://progressiveapp.store/pwa/PWA-My-Github)
 
 # My GitHub "open Sources" project
@@ -23,11 +22,11 @@
 
 - Mac osx Catalina
 
-- Ubuntu 18.04, 19.10 et 20.04
+- Ubuntu 18.04, 19.10 & 20.04
 
-- Samsung Mobile phones (Note 9, A40, A51)
+- Samsung Mobile phones (Note 9, A40 & A51)
 
-- Iphone 6 ,7, 8
+- Iphone 6, 7 & 8
 
 ---
 

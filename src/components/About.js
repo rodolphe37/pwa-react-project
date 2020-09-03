@@ -134,17 +134,18 @@ const About = (props) => {
           </div>
         </div>
         <br />
-        {REACT_APP_PORTFOLIO_NAME === ''
-          ?
-          ''
-          :
-          <div>
-            <span>{t('linkPortfolio')} : </span>
-            <a href={blog} target="new">
-              {REACT_APP_PORTFOLIO_NAME}
-            </a>
-            <br />
-          </div>
+        {
+          REACT_APP_PORTFOLIO_NAME === ''
+            ?
+            ''
+            :
+            <div>
+              <span>{t('linkPortfolio')} : </span>
+              <a href={blog} target="new">
+                {REACT_APP_PORTFOLIO_NAME}
+              </a>
+              <br />
+            </div>
         }
         <div>
           <br />

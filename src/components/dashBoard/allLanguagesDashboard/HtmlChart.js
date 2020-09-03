@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Line } from 'react-chartjs-2';
 import { withTranslation } from 'react-i18next';
 
-export class JavaChart extends Component {
+export class HtmlChart extends Component {
   constructor(props) {
     super(props);
     this.state = { Data: {} };
@@ -23,29 +23,29 @@ export class JavaChart extends Component {
           name.push(record.name)
         });
 
-        const [firstYear] = [parseInt(count[4]) + parseInt(count[32]) + parseInt(count[61])]
-        const [secondYear] = [parseInt(count[91]) + parseInt(count[131]) + parseInt(count[173]) + parseInt(count[227])]
-        const [thirdYear] = [parseInt(count[281]) + parseInt(count[342]) + parseInt(count[410]) + parseInt(count[479])]
-        const [fourthYear] = [parseInt(count[554]) + parseInt(count[643]) + parseInt(count[728]) + parseInt(count[818])]
-        const [fifthYear] = [parseInt(count[921]) + parseInt(count[1030]) + parseInt(count[1138]) + parseInt(count[1240])]
-        const [sixthYear] = [parseInt(count[1351]) + parseInt(count[1456]) + parseInt(count[1559]) + parseInt(count[1654])]
-        const [seventhYear] = [parseInt(count[1746]) + parseInt(count[1838]) + parseInt(count[1926]) + parseInt(count[2010])]
-        const [eighthYear] = [parseInt(count[2090]) + parseInt(count[2170]) + parseInt(count[2246]) + parseInt(count[2331])]
-        const [ninthYear] = [parseInt(count[2410]) + parseInt(count[2492])]
+        const [firstYear] = [parseInt(count[11]) + parseInt(count[39]) + parseInt(count[67])]
+        const [secondYear] = [parseInt(count[96]) + parseInt(count[136]) + parseInt(count[176]) + parseInt(count[230])]
+        const [thirdYear] = [parseInt(count[284]) + parseInt(count[345]) + parseInt(count[413]) + parseInt(count[483])]
+        const [fourthYear] = [parseInt(count[557]) + parseInt(count[647]) + parseInt(count[732]) + parseInt(count[822])]
+        const [fifthYear] = [parseInt(count[924]) + parseInt(count[1034]) + parseInt(count[1143]) + parseInt(count[1245])]
+        const [sixthYear] = [parseInt(count[1356]) + parseInt(count[1461]) + parseInt(count[1564]) + parseInt(count[1660])]
+        const [seventhYear] = [parseInt(count[1752]) + parseInt(count[1845]) + parseInt(count[1934]) + parseInt(count[2018])]
+        const [eighthYear] = [parseInt(count[2098]) + parseInt(count[2178]) + parseInt(count[2254]) + parseInt(count[2339])]
+        const [ninthYear] = [parseInt(count[2418]) + parseInt(count[2500])]
 
         const total = [firstYear + secondYear + thirdYear + fourthYear + fifthYear + sixthYear + seventhYear + eighthYear + ninthYear]
         result.push(total)
-        localStorage.setItem('java', JSON.stringify(this.state.Data))
+        localStorage.setItem('html', JSON.stringify(total))
         this.setState({
           Data: {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],
             datasets: [
               {
-                label: `${t('count')} : ${result}, ${name[4]}`,
+                label: `${t('count')} : ${result}, ${name[11]}`,
                 data: [firstYear, secondYear, thirdYear, fourthYear, fifthYear, sixthYear, seventhYear, eighthYear, ninthYear],
                 backgroundColor: [
 
-                  'rgba(153, 102, 255, 0.6)',
+                  'rgba(107, 185, 240, 0.6)',
                   'rgba(255, 99, 132, 0.6)',
                   'rgba(255, 206, 86, 0.6)',
                   'rgba(255, 99, 132, 0.6)',
@@ -69,13 +69,10 @@ export class JavaChart extends Component {
         <Line
           data={this.state.Data}
           options={{ maintainAspectRatio: false }} />
-        <div>
-        </div>
-
       </div>
     )
   }
 
 }
 
-export default withTranslation()(JavaChart)
+export default withTranslation()(HtmlChart)
