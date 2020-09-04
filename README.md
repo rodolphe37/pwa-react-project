@@ -37,6 +37,8 @@
 
 -  [Live-Demo](#live-demo)
 
+-  [Media-devices-Demo](#media-devices-demo)
+
 -  [Movie](#movie-demo)
 
 - [Pictures](#pictures-demo)
@@ -63,10 +65,14 @@
 
 ---
 
-
 ### Live Demo
 
 Link to the demo : https://my-github-pwa.netlify.app/
+
+
+### Media devices Demo
+
+Link to the Media devices Demo site : https://github-my-profil-mediadevices-demo.netlify.app/
 
 
 ### Movie Demo
