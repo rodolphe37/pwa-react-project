@@ -127,7 +127,8 @@
 .pull-requests {
   display: inline-block;
   margin-top: 25px;
-  margin-left: 382px;
+  /* margin-left: 382px; */
+  margin-left: 22%;
   margin-right: 22%;
 }
 .perso-stats {
