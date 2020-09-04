@@ -37,7 +37,7 @@
 
 -  [Live-Demo](#live-demo)
 
--  [Media-devices-Demo](#media-devices-demo)
+-  [Media-devices-Demo (link for desktop only)](#media-devices-demo)
 
 -  [Movie](#movie-demo)
 
