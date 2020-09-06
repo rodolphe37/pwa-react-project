@@ -159,7 +159,7 @@ Link to the Media devices Demo site : https://github-my-profil-mediadevices-demo
 
 ***First possibilty, (the most easy, fast and practical), Download and unzip my automatic installation script, put the name of your application when asked, and finally, press Enter key to complete the installation***
 
-[![go to the React template repository to follow the installation tutorial](https://github.com/rodolphe37/cra-template-github-my-profile/blob/master/README.md)]
+[go to the React template repository to follow the installation tutorial](https://github.com/rodolphe37/cra-template-github-my-profile/blob/master/README.md)
 
 ---
 
