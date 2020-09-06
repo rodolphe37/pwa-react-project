@@ -149,7 +149,9 @@ Link to the Media devices Demo site : https://github-my-profil-mediadevices-demo
 ---
 
 
-## Start project (you have two solution)
+## Start project
+
+**(you have two solution)**
 
 ***First possibilty, Fork or clone directly this repository:***
 
