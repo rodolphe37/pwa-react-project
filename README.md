@@ -50,7 +50,7 @@
 
 - [Start Project](#start-project)
 
-  - [With creat-reatc-app](#with-creat-react-app)
+  - [With creat-react-app](#with-creat-react-app)
 
   - [Customization of the application](#customization-of-the-application)
 
