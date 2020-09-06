@@ -48,12 +48,11 @@
   - [Cross-Plateform-Demo](#cross-plateform-app)
 
 
-[Start Project](#start-project)
+- [Start Project](#start-project)
 
-[With creat-reatc-app](#cra-template-github-my-profile)
+  - [With creat-reatc-app](#with-creat-react-app)
 
-
-[Customization of the application](#customization-of-the-application)
+  - [Customization of the application](#customization-of-the-application)
 
 
 [Author](#author)
