@@ -152,7 +152,7 @@ Link to the Media devices Demo site : https://github-my-profil-mediadevices-demo
 
 ## Start project (you have two solution)
 
-***First, Fork or clone directly this repository:***
+***First possibilty, Fork or clone directly this repository:***
 
 ```bash
 
@@ -168,17 +168,17 @@ $ npm i or $ npm install
 
 ---
 
-## With creat-reatc-app
+## With creat-react-app
 
 # cra-template-github-my-profile
 
-***Second, put this line of code in your console into the folder of your choice***
+***Second possibility (the most practical), put this line of code in your console at the root of the folder of your choice (after modifying your app name)***
 
 To use this template when creating a new app it's really easy.
 
 **here's how:**
 
-Put your app name in this line, at  ``` <YOUR NAME HERE> ``` and that's all!
+Put your app name in this line, at  ``` <YOUR APP NAME HERE> ``` and that's all!
 
 ```sh
 
