@@ -50,7 +50,7 @@
 
 [Start Project](#start-project)
 
-[MAking your own Project](#own-project)
+[With creat-reatc-app](#cra-template-github-my-profile)
 
 
 [Customization of the application](#customization-of-the-application)
@@ -150,9 +150,9 @@ Link to the Media devices Demo site : https://github-my-profil-mediadevices-demo
 ---
 
 
-## Start project
+## Start project (you have two solution)
 
-***Fork or clone directly this repository:***
+***First, Fork or clone directly this repository:***
 
 ```bash
 
@@ -171,6 +171,8 @@ $ npm i or $ npm install
 ## With creat-reatc-app
 
 # cra-template-github-my-profile
+
+***Second, put this line of code in your console into the folder of your choice***
 
 To use this template when creating a new app it's really easy.
 
