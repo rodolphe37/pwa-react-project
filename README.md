@@ -153,7 +153,17 @@ Link to the Media devices Demo site : https://github-my-profil-mediadevices-demo
 
 **(you have two solution)**
 
-***First possibilty, Fork or clone directly this repository:***
+## With creat-react-app
+
+# cra-template-github-my-profile
+
+***First possibilty, (the most easy, fast and practical), Download and unzip my automatic installation script, put the name of your application when asked, and finally, press Enter key to complete the installation***
+
+[![go to the React template repository to follow the installation tutorial](https://github.com/rodolphe37/cra-template-github-my-profile/blob/master/README.md)]
+
+---
+
+***Second possibility, Fork or clone directly this repository:***
 
 ```bash
 
@@ -167,30 +177,6 @@ $ npm i or $ npm install
 
 ```
 
----
-
-## With creat-react-app
-
-# cra-template-github-my-profile
-
-***Second possibility (the most practical), put this line of code in your console at the root of the folder of your choice (after modifying your app name)***
-
-To use this template when creating a new app it's really easy.
-
-**here's how:**
-
-Put your app name in this line, at  ``` <YOUR APP NAME HERE> ``` and that's all!
-
-```sh
-
-# One ligne code (big, but one line only anyway)
-mkdir packages && cd packages && git clone https://github.com/rodolphe37/cra-template-github-my-profile.git && cd .. && npx create-react-app <YOUR APP NAME HERE> --template file:./packages/cra-template-github-my-profile && rm -rf packages
-
-```
-![!install1](demo/install1.gif)
-![!install2](demo/install2.gif)
-
-***then continue to the section customization below***
 ---
 
 
