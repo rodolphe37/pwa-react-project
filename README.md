@@ -50,6 +50,8 @@
 
 [Start Project](#start-project)
 
+[MAking your own Project](#own-project)
+
 
 [Customization of the application](#customization-of-the-application)
 
@@ -164,6 +166,25 @@ $ npm i or $ npm install
 
 ```
 
+---
+
+## With creat-reatc-app
+
+# cra-template-github-my-profile
+
+To use this template when creating a new app it's really easy.
+
+**here's how:**
+
+Put your app name in this line, at  ``` <YOUR NAME HERE> ``` and that's all!
+
+```sh
+
+# One ligne code (big, but one line only anyway)
+mkdir packages && cd packages && git clone https://github.com/rodolphe37/cra-template-github-my-profile.git && cd .. && npx create-react-app <YOUR APP NAME HERE> --template file:./packages/cra-template-github-my-profile && rm -rf packages
+
+```
+***then continue to the section customization below***
 ---
 
 
