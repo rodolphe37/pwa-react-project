@@ -187,6 +187,9 @@ Put your app name in this line, at  ``` <YOUR APP NAME HERE> ``` and that's all!
 mkdir packages && cd packages && git clone https://github.com/rodolphe37/cra-template-github-my-profile.git && cd .. && npx create-react-app <YOUR APP NAME HERE> --template file:./packages/cra-template-github-my-profile && rm -rf packages
 
 ```
+![!install1](demo/install1.gif)
+![!install2](demo/install2.gif)
+
 ***then continue to the section customization below***
 ---
 
