@@ -157,6 +157,8 @@ Link to the Media devices Demo site : https://github-my-profil-mediadevices-demo
 
 - # cra-template-github-my-profile
 
+---
+
 ***First possibility (the most easy, fast and practical)***
 
 **🌟🌟The best & fastest solution**
