@@ -169,6 +169,7 @@ Juste type this in your console (with the name app you want)
 npx create-react-app <your-app-name-here> --template github-profile
 
 ```
+---
 
 ***Second possibilty, (another fastest solution), Download and unzip my automatic installation script, put the name of your application when asked, and finally, press Enter key to complete the installation***
 
