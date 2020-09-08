@@ -88,7 +88,7 @@ const About = (props) => {
               following && followers !== 0
                 ? <React.Fragment>
                   <div className="card"
-                    style={{ width: '16%', marginTop: '15px', borderRadius: '7px', backgroundColor: 'rgb(228 228 231)', flexDirection: 'inherit !important' }}>
+                    style={{ width: '19%', marginTop: '15px', borderRadius: '7px', backgroundColor: 'rgb(228 228 231)', flexDirection: 'inherit !important' }}>
                     {
                       followers !== 0
                         ?
