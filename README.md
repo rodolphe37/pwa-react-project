@@ -204,7 +204,7 @@ npx create-react-app <your-app-name-here> --template github-profile
 ![!install-step1b](demo/install-script1.jpg)
 ![!install-step3](demo/install-script3.jpg)
 
-<b>[👣 go to the React template repository to follow the installation tutorial ✌](https://github.com/rodolphe37/cra-template-github-my-profile/blob/master/README.md#solution-2)</b>
+<b>[👣 go to the React template repository to download the script and follow the installation tutorial ✌](https://github.com/rodolphe37/cra-template-github-my-profile/blob/master/README.md#solution-2)</b>
 
 ---
 
