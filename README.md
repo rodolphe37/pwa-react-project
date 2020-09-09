@@ -27,6 +27,7 @@ Being a PWA, it is installable under most operating systems as well as under and
 I am satisfied with this first version, yes first ... because I still have several improvements in mind such as the possibility of ordering the list, of being able to search among the repos via an input ... and many more! !!
 
 Enjoy The World 😉
+
 ---
 
 ### Application tested and verified under :
