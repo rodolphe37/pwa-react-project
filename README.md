@@ -7,10 +7,15 @@
 
 **Progressive Web App created with React.js**
 
+ - What the idea :
+The idea was to create a progressive multilingual (multi-platform) web application displaying all the information necessary for a global and rapid vision of your Github account and to make it easily customizable for all developers, juniors and / or job seekers.
+Possibly, this so that he can highlight their profile in front of potential employers and, therefore, increase the number of visitors to their github page.
+
 
 ***Github My Profile PWA (V1.4)***
 <img align="right" height="130px" alt="rodolphe37 Github Stats" src="https://imgur.com/y5S62AN.jpg" />
 
+- What is it :
 
 It is an open source multilingual (fr - en - pt) app licensed under the Creative Commons license.
 
