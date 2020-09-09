@@ -12,6 +12,21 @@
 <img align="right" height="130px" alt="rodolphe37 Github Stats" src="https://imgur.com/y5S62AN.jpg" />
 
 
+It is an open source multilingual (fr - en - pt) app licensed under the Creative Commons license.
+
+Being a PWA, it is installable under most operating systems as well as under android (Tested myself).
+
+ You can now have a quick view of your Github account information, such as:
+
+- Your personal stats in real time among other statistics of the most used languages ​​on the platform.
+
+- There is an "About" page and a footer that you can fully customize with your images, links, pdf, etc ...
+
+- Also, there is a list of 50 of your "created by you" and 50 "forked" repositories.
+
+I am satisfied with this first version, yes first ... because I still have several improvements in mind such as the possibility of ordering the list, of being able to search among the repos via an input ... and many more! !!
+
+Enjoy The World 😉
 ---
 
 ### Application tested and verified under :
