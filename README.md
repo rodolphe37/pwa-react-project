@@ -93,7 +93,7 @@ Enjoy The World 😉
 
 ### Live Demo
 
-[Link to the live demo :](https://my-github-pwa.netlify.app/)
+[Link to the live demo](https://my-github-pwa.netlify.app/)
 
 
 ### Media devices Demo
