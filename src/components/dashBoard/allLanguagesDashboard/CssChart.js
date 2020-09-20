@@ -1,18 +1,13 @@
-import React, { Component } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { Line } from 'react-chartjs-2';
-import { withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
-export class CssChart extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      Data: {},
-      Mode: "online",
-      CSS: [],
-    };
-  }
-  componentDidMount() {
+const CssChart = () => {
+  const [state, setState] = useState({ Data: {}, Mode: "online", CSS: [] })
+  const { t } = useTranslation();
+
+  useEffect(() => {
     axios.get(`https://raw.githubusercontent.com/madnight/githut/master/src/data/gh-pull-request.json`)
       .then(res => {
         const ipl = res.data;
@@ -20,7 +15,6 @@ export class CssChart extends Component {
         let year = [];
         let count = [];
         let result = [];
-        const { t } = this.props;
         ipl.forEach(record => {
           year.push(record.year);
           count.push(record.count);
@@ -40,7 +34,7 @@ export class CssChart extends Component {
         const total = [firstYear + secondYear + thirdYear + fourthYear + fifthYear + sixthYear + seventhYear + eighthYear + ninthYear]
         result.push(total)
         localStorage.setItem('Css', JSON.stringify(total))
-        this.setState({
+        setState({
           Data: {
             labels: [year[86], year[276], year[550], year[918], year[1348], year[1743], year[2087], year[2407], year[2574]],
             datasets: [
@@ -65,21 +59,19 @@ export class CssChart extends Component {
           }
         });
       })
+  }, [t])
 
-  }
-  render() {
-    return (
+
+
+  return (
+    <div>
+      <Line
+        data={state.Data}
+        options={{ maintainAspectRatio: false }} />
       <div>
-        <Line
-          data={this.state.Data}
-          options={{ maintainAspectRatio: false }} />
-        <div>
-        </div>
-
       </div>
-    )
-  }
-
+    </div>
+  )
 }
 
-export default withTranslation()(CssChart)
+export default CssChart
