@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import JavascriptChart from './allLanguagesDashboard/JavascriptChart';
 import JavaChart from './allLanguagesDashboard/JavaChart';
 import PhpChart from './allLanguagesDashboard/PhpChart';
@@ -12,12 +12,29 @@ import DartChart from './allLanguagesDashboard/DartChart';
 import SwiftChart from './allLanguagesDashboard/SwiftChart';
 import KotlinChart from './allLanguagesDashboard/KotlinChart'
 import VueChart from './allLanguagesDashboard/VueChart';
+import axios from 'axios';
+import { useStateValue } from '../../StateProvider';
+import { actionTypes } from '../../reducer';
 
 
 const AllLanguagesDashboard = () => {
+  // eslint-disable-next-line
+  const [{ }, dispatch] = useStateValue();
+
+  useEffect(() => {
+    axios.get(`https://raw.githubusercontent.com/madnight/githut/master/src/data/gh-pull-request.json`)
+      .then(res => {
+        dispatch({
+          type: actionTypes.SET_DATA,
+          Data: res.data
+        })
+      })
+      .catch((error) => alert(error.message))
+
+  }, [dispatch])
 
   return (
-    <React.Fragment>
+    < React.Fragment >
       <div>
         <div>
           <div className="javascript">
@@ -67,7 +84,7 @@ const AllLanguagesDashboard = () => {
           <br />
         </div>
       </div>
-    </React.Fragment>
+    </React.Fragment >
   )
 }
 export default AllLanguagesDashboard
