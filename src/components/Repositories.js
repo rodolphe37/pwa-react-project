@@ -7,11 +7,12 @@ import InfiniteLoopLoader from './infiniteLoopLoader/InfiniteLoopLoader';
 
 const { REACT_APP_USERNAME } = process.env
 
-const Users = () => {
+const Repositories = () => {
   const [data, setData] = useState([])
   const [mode, setMode] = useState('online')
   const [loading, setLoading] = useState(true)
   let idplus = [1]
+  let idplus2 = [1]
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -27,8 +28,8 @@ const Users = () => {
       })
     }).catch(err => {
       setMode('offline')
-      let collection2 = localStorage.getItem('repository');
-      setData(JSON.parse(collection2))
+      let collection = localStorage.getItem('repository');
+      setData(JSON.parse(collection))
     })
   }, [])
 
@@ -93,7 +94,7 @@ const Users = () => {
                     item.fork === true
                       ?
                       <tr key={item.id}>
-                        <td className="hidden">{idplus++}</td>
+                        <td className="hidden">{idplus2++}</td>
                         <td>{item.name}</td>
                         <td><a href={`${item.html_url}`} target="new">{t('clickOpen')}</a></td>
                         <td className="hidden"><Moment locale="fr">{item.created_at}</Moment></td>
@@ -119,4 +120,4 @@ const Users = () => {
   )
 }
 
-export default Users
+export default Repositories

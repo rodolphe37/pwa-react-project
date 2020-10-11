@@ -1,25 +1,16 @@
-import React, { useEffect } from 'react';
-import JavascriptChart from './allLanguagesDashboard/JavascriptChart';
-import JavaChart from './allLanguagesDashboard/JavaChart';
-import PhpChart from './allLanguagesDashboard/PhpChart';
-import PythonChart from './allLanguagesDashboard/PythonChart';
-import RubyChart from './allLanguagesDashboard/RubyChart';
-import CplusPlusChart from './allLanguagesDashboard/CplusPlusChart';
-import TypescriptChart from './allLanguagesDashboard/TypescriptChart';
-import HtmlChart from './allLanguagesDashboard/HtmlChart';
-import CssChart from './allLanguagesDashboard/CssChart';
-import DartChart from './allLanguagesDashboard/DartChart';
-import SwiftChart from './allLanguagesDashboard/SwiftChart';
-import KotlinChart from './allLanguagesDashboard/KotlinChart'
-import VueChart from './allLanguagesDashboard/VueChart';
+import React, { useEffect, useState } from 'react';
+import { JavascriptChart, JavaChart, PhpChart, PythonChart, RubyChart, CplusPlusChart, TypescriptChart, HtmlChart, CssChart, DartChart, SwiftChart, KotlinChart, VueChart, } from './allLanguagesDashboard/';
 import axios from 'axios';
 import { useStateValue } from '../../StateProvider';
 import { actionTypes } from '../../reducer';
+import { useTranslation } from 'react-i18next';
 
 
 const AllLanguagesDashboard = () => {
   // eslint-disable-next-line
   const [{ }, dispatch] = useStateValue();
+  const [mode, setMode] = useState('online')
+  const { t } = useTranslation();
 
   useEffect(() => {
     axios.get(`https://raw.githubusercontent.com/madnight/githut/master/src/data/gh-pull-request.json`)
@@ -29,13 +20,16 @@ const AllLanguagesDashboard = () => {
           Data: res.data
         })
       })
-      .catch((error) => alert(error.message))
+      .catch((error) => setMode('offline') && alert(error.message))
 
   }, [dispatch])
 
   return (
     < React.Fragment >
       <div>
+        {
+          mode === 'offline' ? <div className=" alert alert-danger" role="alert">{t('alert')}</div> : null
+        }
         <div>
           <div className="javascript">
             <JavascriptChart />
