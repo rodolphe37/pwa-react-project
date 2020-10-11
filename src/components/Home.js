@@ -4,7 +4,7 @@ import Footer from './shared/Footer';
 import { useTranslation } from 'react-i18next';
 
 
-const Home = (props) => {
+const Home = () => {
   const [info, setInfo] = useState([])
   const [mode, setMode] = useState('online')
 
@@ -13,8 +13,8 @@ const Home = (props) => {
   const { t } = useTranslation();
 
   useEffect(() => {
-    const url2 = `https://api.github.com/users/${REACT_APP_USERNAME}`
-    fetch(url2).then((res) => {
+    const url = `https://api.github.com/users/${REACT_APP_USERNAME}`
+    fetch(url).then((res) => {
       res.json().then((resultat) => {
         setInfo(resultat)
         localStorage.setItem('home', JSON.stringify(resultat))

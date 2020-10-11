@@ -33,8 +33,6 @@ this.addEventListener("install", (event) => {
 
 this.addEventListener("fetch", (event) => {
 
-  // console.warn("url", event.request.url)
-
   if (!navigator.onLine) {
     if (event.request.url === "https://my-github-pwa.netlify.app/static/js/main.chunk.js") {
       event.waitUntil(
