@@ -60,7 +60,7 @@ const Repositories = () => {
                 </thead>
                 <tbody>
                   {
-                    data.map((item) => (
+                    data.sort((a, b) => (a.updated_at > b.updated_at) ? -1 : 1).map((item) => (
                       item.fork === false
                         ?
                         <tr key={item.id}>
@@ -90,7 +90,7 @@ const Repositories = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {data.map((item) => (
+                  {data.sort((a, b) => (a.created_at > b.created_at) ? -1 : 1).map((item) => (
                     item.fork === true
                       ?
                       <tr key={item.id}>
