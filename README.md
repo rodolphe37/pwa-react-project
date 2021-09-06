@@ -3,7 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0a1a0b3f-9542-4602-b572-d6fd9d600a17/deploy-status)](https://app.netlify.com/sites/my-github-pwa/deploys)
 [![pas](https://img.shields.io/static/v1?&message=ProgressiveApp.Store&color=74b9ff&style=flat&label=Follow%20PWA%20My%20Github%20at)](https://progressiveapp.store/pwa/PWA-My-Github)
 
-# My GitHub "open Sources" project
+# My GitHub "open Sources" project (2021)
 
 **Progressive Web App created with React.js**
 
@@ -12,7 +12,7 @@ The idea was to create a progressive multilingual (multi-platform) web applicati
 Possibly, this so that he can highlight their profile in front of potential employers and, therefore, increase the number of visitors to their github page.
 
 
-***Github My Profile PWA (V1.4)***
+***Github My Profile PWA (V_2.0)***
 <img align="right" height="130px" alt="rodolphe37 Github Stats" src="https://imgur.com/y5S62AN.jpg" />
 
 - What is it :
