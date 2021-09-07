@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const HisPersonalStatsGithub = () => {
-  const { REACT_APP_USERNAME } = process.env
+  const { REACT_APP_USERNAME } = process.env;
 
   return (
     <div>
@@ -21,7 +21,7 @@ const HisPersonalStatsGithub = () => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HisPersonalStatsGithub
+export default HisPersonalStatsGithub;
