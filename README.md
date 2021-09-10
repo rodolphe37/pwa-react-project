@@ -13,7 +13,7 @@ Possibly, this so that he can highlight their profile in front of potential empl
 
 
 ***Github My Profile PWA (V_2.0)***
-<img align="right" height="130px" alt="rodolphe37 Github Stats" src="https://imgur.com/y5S62AN.jpg" />
+<img align="right" height="130px" alt="rodolphe37 Github Stats" src="https://i.imgur.com/ZUQq4Zk.png" />
 
 - What is it :
 
