@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import Logo from "../../assets/images/GitHub-profil.png";
+import Logo from "../../assets/images/GitHub-profile-done.png";
 
 const TopNav = () => {
   const { t } = useTranslation();
