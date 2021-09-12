@@ -1,7 +1,15 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/rodolphe37/pwa-react-project/blob/main/LICENSE)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/rodolphe37/pwa-react-project/graphs/commit-activity)
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://github.com/rodolphe37/pwa-react-project)
+[![JavaScript](https://img.shields.io/badge/--F7DF1E?logo=javascript&logoColor=000)](https://www.javascript.com/)
+[![GitHub issues](https://badgen.net/github/issues/rodolphe37/pwa-react-project/)](https://github.com/rodolphe37/pwa-react-project/issues)
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/rodolphe37/pwa-react-project)
+[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
+
 [![Website](https://i.imgur.com/xSu6S5v.png)](https://rodolphe-augusto.fr)
 ---
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0a1a0b3f-9542-4602-b572-d6fd9d600a17/deploy-status)](https://app.netlify.com/sites/my-github-pwa/deploys)
-[![pas](https://img.shields.io/static/v1?&message=ProgressiveApp.Store&color=74b9ff&style=flat&label=Follow%20PWA%20My%20Github%20at)](https://progressiveapp.store/pwa/PWA-My-Github)
+
 
 # My GitHub "open Sources" project (2021)
 
