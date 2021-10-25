@@ -4,6 +4,7 @@
 [![GitHub issues](https://badgen.net/github/issues/rodolphe37/pwa-react-project/)](https://github.com/rodolphe37/pwa-react-project/issues)
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/rodolphe37/pwa-react-project)
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/rodolphe37/pwa-react-project/master)
 <img   src="https://badges.aleen42.com/src/react.svg" alt="drawing" height="20" width="65"/>
 
 [![Website](https://i.imgur.com/xSu6S5v.png)](https://rodolphe-augusto.fr)
